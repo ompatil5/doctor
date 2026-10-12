@@ -10,7 +10,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(250, 247, 242, 0.96);
+  background-color: rgba(244, 232, 247, 0.96);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
@@ -248,14 +248,14 @@
 
 .btn-primary {
   background-color: var(--accent);
-  color: var(--ink);
+  color: #FFFFFF;
   border-color: var(--accent-hover);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px rgba(36, 12, 43, 0.15);
 }
 
 .btn-primary:hover {
   background-color: var(--accent-hover);
-  color: var(--ink);
+  color: #FFFFFF;
   text-decoration: none;
   transform: translateY(-1px);
 }
@@ -304,7 +304,7 @@
   border-top: 1px solid var(--line);
   display: flex;
   z-index: 995;
-  box-shadow: 0 -4px 12px rgba(11, 60, 73, 0.06);
+  box-shadow: 0 -4px 12px rgba(36, 12, 43, 0.08);
 }
 
 .mobile-bar-btn {
@@ -328,7 +328,7 @@
 
 .mobile-bar-btn.btn-book {
   background-color: var(--accent);
-  color: var(--ink);
+  color: #FFFFFF;
 }
 
 .mobile-bar-btn svg {
@@ -813,7 +813,7 @@
    13. Footer
    -------------------------------------------------------------------------- */
 .site-footer {
-  background-color: var(--teal-900);
+  background-color: var(--footer-bg, #240C2B);
   color: #FFFFFF;
   padding-top: 3.5rem;
   padding-bottom: 2rem;
@@ -822,12 +822,12 @@
 }
 
 .site-footer a {
-  color: #E4DED3;
+  color: #F8EFF9;
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: var(--accent);
+  color: var(--accent-mid, #9E64A7);
   text-decoration: underline;
 }
 
@@ -861,12 +861,12 @@
 }
 
 .footer-disclaimer {
-  border-top: 1px solid rgba(228, 222, 211, 0.2);
+  border-top: 1px solid rgba(214, 183, 222, 0.25);
   padding-top: 1.75rem;
   margin-top: 1.75rem;
   font-size: 0.85rem;
   line-height: 1.6;
-  color: #B2C2C6;
+  color: #D6B7DE;
 }
 
 .footer-bottom {
@@ -876,7 +876,7 @@
   align-items: center;
   gap: 1rem;
   padding-top: 1.25rem;
-  border-top: 1px solid rgba(228, 222, 211, 0.1);
+  border-top: 1px solid rgba(214, 183, 222, 0.15);
   font-size: 0.825rem;
-  color: #95A9AE;
+  color: #BF9AC8;
 }
