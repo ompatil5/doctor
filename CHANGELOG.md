@@ -138,3 +138,19 @@
 ### 7. Placeholders & Bracket Audit
 - Hand-cataloged in `PLACEHOLDERS.md`: All missing values are formatted as `<span class="todo">TO CONFIRM: ...</span>`.
 - Stray bracket check: All square brackets in HTML correspond to JSON-LD schema arrays or scientific reference citations (`[1]`&ndash;`[8]`). Zero stray `[...]` unconfirmed markers remain. &mdash; **PASS**
+
+- **Phase 6: Dedicated Photo Gallery Page & 113 Visual Archives (Commit `27c885b`)**
+  - **Full Photo Collection**: Uploaded and processed all 113 photographs from `Image/` into `assets/images/gallery/` (original JPEGs) and generated lightweight WebP versions in `assets/img/gallery/` (average size: 109.3 KB per image, 12.06 MB total).
+  - **Categorized Archives**: Structured all 113 photographs into 4 core clinical & public health domains:
+    - *Conferences & Lectures* (37 items)
+    - *Community Health Camps* (31 items)
+    - *Honors & Awards* (26 items)
+    - *Workshops & Patient Education* (19 items)
+  - **Interactive Features**: Added instant category filtering pills, live search filter by keyword or topic, visible photo count tracker, and a responsive keyboard-accessible Lightbox modal viewer (Prev/Next navigation, keyboard arrow keys, Escape to close, full-resolution JPEG link).
+  - **Pages Created**:
+    - `gallery/index.html` (primary gallery directory page)
+    - `gallery.html` (root gallery entry page)
+  - **Site-Wide Navigation Integration**: Added "Photo Gallery" to the desktop header Resources dropdown, mobile navigation drawer, and footer links across all 21 site pages.
+  - **SEO & Sitemap**: Added `https://ompatil5.github.io/Dr/gallery/` to `sitemap.xml`, configured BreadcrumbList JSON-LD, title (59 chars), and meta description (154 chars).
+  - **Integrity**: 0 broken relative links out of 1,335 total links; 0 title or description length violations; fully compliant with NMC/MMC conduct rules.
+
