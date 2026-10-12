@@ -50,6 +50,12 @@
   - Hand-wrote `robots.txt` referencing absolute sitemap URL.
   - Hand-wrote `sitemap.xml` listing all 19 canonical URLs with `<lastmod>`, `<changefreq>`, and `<priority>`.
 
+- **Offline / Local `file:///` Navigation Compatibility (Commit `b46c5f0`)**
+  - Resolved local browser folder navigation limitation: under `file:///` protocol (when double-clicking files directly in Windows Explorer without a web server), links to directory paths (e.g. `href="about/"`) display the browser's raw directory index instead of serving `index.html`.
+  - Updated all relative directory links across all 32 HTML files to explicitly point to `index.html` (e.g. `href="about/index.html"`, `href="../index.html"`, `href="../../index.html"`).
+  - Preserved canonical tags, Open Graph, and XML sitemaps as clean URLs.
+  - Verified 100% resolution across all platforms: offline `file:///`, local dev servers, and live GitHub Pages.
+
 ---
 
 ## Manual QA Verification Checklist & Audit Results
