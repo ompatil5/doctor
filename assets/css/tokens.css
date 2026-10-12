@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Design Tokens & Font Declarations
+   Dr. Firdous Shaikh — Diabetologist & Metabolic Specialist
+   ========================================================================== */
+
+/* Self-Hosted Fonts (WOFF2) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/inter-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/inter-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/inter-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/inter-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/fraunces-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/fraunces-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/fraunces-700.woff2') format('woff2');
+}
+
+:root {
+  /* Core Color Palette (Approved per AGENT_BRIEF.md & content-source.md) */
+  --bg: #FAF7F2;          /* Warm off-white page background */
+  --surface: #FFFFFF;     /* Pure white card and section surface */
+  --surface-alt: #F4EFE6; /* Subtle warm tinted background */
+  --ink: #12262C;         /* Slate deep ink body text */
+  --muted: #4A5E64;       /* Calm muted text for captions and meta */
+  --teal-900: #0B3C49;    /* Deep teal: headings, wordmark, header, footer */
+  --teal-800: #0E4857;    /* Intermediate rich teal */
+  --teal-700: #14586A;    /* Primary link & secondary outline teal */
+  --teal-50: #EDF4F6;     /* Light tint for accents & chips */
+  
+  /* Accent: Muted Gold (Used ONLY for button backgrounds & subtle highlights) */
+  --accent: #C8A04A;      /* Muted gold */
+  --accent-hover: #B58F3B;
+  --accent-light: #FBF4E4;
+  
+  /* Borders and Dividers */
+  --line: #E4DED3;        /* Soft neutral warm line */
+  --line-strong: #CDC4B5;
+  
+  /* Status & Todo Chip Styling */
+  --todo-bg: #FEF3C7;
+  --todo-ink: #92400E;
+  --todo-line: #F59E0B;
+  
+  /* Geometry & Elevation */
+  --radius: 10px;
+  --radius-sm: 6px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+  
+  --shadow-sm: 0 2px 6px rgba(11, 60, 73, 0.04);
+  --shadow-md: 0 6px 18px rgba(11, 60, 73, 0.07);
+  --shadow-lg: 0 12px 30px rgba(11, 60, 73, 0.10);
+  
+  /* Typography Tokens */
+  --font-head: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  
+  /* Layout Dimensions */
+  --max-w: 1140px;
+  --max-w-prose: 72ch;
+  --header-height: 76px;
+  --mobile-bar-height: 64px;
+  
+  /* Transitions */
+  --ease: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
