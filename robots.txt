@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ompatil5.github.io/Dr/sitemap.xml
