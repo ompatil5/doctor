@@ -7,9 +7,9 @@ This document collects all questions and details requiring client confirmation, 
 ## 1. Clinic & Practice Logistics (Contact, Consultations, Footer)
 
 - [ ] **Clinic Name:** What is the official name of the primary clinic in Mumbai?
-- [ ] **Physical Address:** Full street address, building/suite name, locality/area, and PIN code.
+- [x] **Physical Address:** 123 Healthcare Avenue, Bandra West, Mumbai 400050 *(Confirmed)*
 - [ ] **Landmarks:** Any helpful nearby landmarks or navigation directions for patients.
-- [ ] **Consultation Hours:** Specific days of the week and hours for in-person clinic visits (e.g., Monday–Saturday, 10:00 AM – 7:00 PM).
+- [x] **Consultation Hours:** 10:00 AM to 06:00 PM *(Confirmed)*
 - [ ] **Patient Phone:** Dedicated phone number for clinic appointments and inquiries.
 - [ ] **WhatsApp Number:** Dedicated WhatsApp number for booking and reports.
 - [ ] **Official Email:** Dedicated patient/clinic email address.
