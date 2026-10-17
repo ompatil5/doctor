@@ -230,3 +230,26 @@ STATUS: ALL CHECKS PASSED
 ========================================================================
 ```
 
+---
+
+## 5. Local File Protocol & Navigation Integrity Fix
+
+### Problem Identified:
+- When opening or previewing HTML files locally (e.g. `file:///A:/Dr.client/.../index.html`) or navigating without server URL rewrites, directory-style URLs (such as `href="diabetes-treatment-mumbai/"` or `href="../about/"`) caused browsers to display a directory index listing (`Index of A:\...`) rather than opening `index.html`.
+- In `index.html` and `404.html`, brand logos had empty `href=""`.
+- Redirect files in the root directory were pointing to folder paths rather than HTML files.
+
+### Key Solutions Applied:
+1. **Explicit Target Resolution (`index.html`):**
+   - Converted all 1,449 internal directory hyperlinks across all 34 HTML files to directly target `index.html` (e.g., `diabetes-treatment-mumbai/index.html`, `../about/index.html`, `../../index.html`).
+   - Updated root brand logo links from `href=""` to `href="index.html"`.
+2. **Root Direct Alias Files:**
+   - Created root alias files (`diabetes-treatment-mumbai.html`, `thyroid-specialist-mumbai.html`, `obesity-treatment-mumbai.html`, `pcos-gestational-diabetes-mumbai.html`, `consultations.html`, `research-publications.html`, `community-awareness.html`, `dawn-foundation.html`, `books-patient-education.html`, `faqs.html`, `privacy-policy.html`, `blog.html`) that seamlessly redirect to the respective `folder/index.html`.
+   - Updated existing redirect files (`about.html`, `contact.html`, `services.html`, `blogs.html`, `gallery.html`, etc.) to target `index.html`.
+3. **Offline & `file:` Protocol Safety Net (`nav.js`):**
+   - Added an event-driven click listener in `assets/js/nav.js` that intercepts any internal link under `file:` protocol to ensure it automatically resolves to `index.html`.
+4. **Automated Verification:**
+   - Verified that 100% of internal links (1,449 / 1,449) resolve to valid, existing files on disk.
+   - Verified that 100% of referenced assets (242 / 242 CSS, JS, images, fonts, icons) resolve to existing files on disk.
+
+

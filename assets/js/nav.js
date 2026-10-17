@@ -121,4 +121,32 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('mouseenter', openDropdown);
     item.addEventListener('mouseleave', closeDropdown);
   });
+
+  // --- Offline & File Protocol Link Protection ---
+  // Guarantees all links load index.html when testing locally without a web server
+  if (window.location.protocol === 'file:') {
+    document.addEventListener('click', function (e) {
+      var anchor = e.target.closest('a');
+      if (!anchor) return;
+      var href = anchor.getAttribute('href');
+      if (!href) return;
+      if (href.startsWith('http:') || href.startsWith('https:') || href.startsWith('//') || href.startsWith('tel:') || href.startsWith('mailto:') || href.startsWith('#') || href.startsWith('javascript:')) {
+        return;
+      }
+      if (href === '' || href === './') {
+        e.preventDefault();
+        window.location.href = 'index.html';
+      } else if (href === '../') {
+        e.preventDefault();
+        window.location.href = '../index.html';
+      } else if (href === '../../') {
+        e.preventDefault();
+        window.location.href = '../../index.html';
+      } else if (href.endsWith('/')) {
+        e.preventDefault();
+        window.location.href = href + 'index.html';
+      }
+    });
+  }
 });
+
