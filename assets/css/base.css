@@ -14,22 +14,26 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: clamp(16px, 0.35vw + 14.5px, 18px);
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
 }
 
 body {
   background-color: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: 1.0625rem; /* 17px */
+  font-size: 1.0625rem; /* 17px base */
   line-height: 1.7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  overflow-x: clip;
 }
 
 /* Skip Link for Accessibility */
@@ -60,10 +64,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: -0.015em;
   margin-bottom: 0.75em;
+  overflow-wrap: anywhere;
 }
 
 h1 {
-  font-size: clamp(2rem, 3.8vw + 1rem, 2.75rem);
+  font-size: clamp(1.9rem, 3.2vw + 0.8rem, 3.2rem);
   font-weight: 700;
   line-height: 1.18;
 }
@@ -85,6 +90,7 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   max-width: var(--max-w-prose);
+  overflow-wrap: anywhere;
 }
 
 strong, b {
@@ -98,6 +104,7 @@ a {
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color var(--ease), text-decoration-color var(--ease);
+  overflow-wrap: anywhere;
 }
 
 a:hover {
@@ -117,28 +124,33 @@ img, picture, video {
   display: block;
 }
 
+/* Tables */
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Container & Layout Utilities */
 .container {
-  width: 100%;
-  max-width: var(--max-w);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  width: min(100% - 2rem, 1120px);
+  margin-inline: auto;
 }
 
 .container-prose {
-  width: 100%;
-  max-width: 820px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  width: min(100% - 2rem, 820px);
+  margin-inline: auto;
 }
 
 .section {
-  padding-top: clamp(2.5rem, 5vw, 4.5rem);
-  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+  padding-top: clamp(2rem, 5vw, 4.5rem);
+  padding-bottom: clamp(2rem, 5vw, 4.5rem);
 }
 
 .section-alt {
@@ -161,7 +173,7 @@ img, picture, video {
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -170,7 +182,7 @@ img, picture, video {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .grid-3 {
     grid-template-columns: repeat(3, 1fr);
   }

@@ -1,58 +1,53 @@
 # Open Questions for Dr. Firdous Shaikh
 
-This document collects all open questions, proposed drafts, and items requiring client confirmation, updated for **Change Request #2**. Please review and provide feedback so that the corresponding `<span class="todo">` placeholders can be replaced.
+This document collects all open questions, proposed drafts, and items requiring client confirmation, updated for **Change Request #3**. Please review and provide feedback so that the corresponding items and placeholders can be updated.
 
 ---
 
-## 1. Professional Title, Pronouns & Editorial Identity
+## 1. Biography, Degrees & Fellowships (Priority)
 
-- [ ] **Pronoun Preference:** Across the entire website, all third-person copy currently uses **"Dr. Firdous Shaikh"** on first mention and **"Dr. Shaikh"** on subsequent mentions, strictly avoiding gendered pronouns (*she/her/he/his*). Please confirm your preferred pronoun usage for future editorial updates (e.g. whether you prefer third-person surname references only, or if specific pronouns should be used).
-- [ ] **Condition Page Naming vs. Title:** The professional title is confirmed as *"Diabetologist, Thyroid and Weight Management Physician"*. The corresponding condition page is titled *"Obesity & Metabolic Health"* (`/obesity-treatment-mumbai/`). Please confirm if you wish to keep this page title as is, or align it closer to "Weight Management" in a future update.
-
----
-
-## 2. DAWN Foundation: Vision & Mission Proposals
-
-The client has requested "Our Vision" and "Our Mission" sections on the new dedicated page `/dawn-foundation/`. Because exact wording was not supplied, placeholders have been published as `<span class="todo">TO CONFIRM: DAWN vision</span>` and `<span class="todo">TO CONFIRM: DAWN mission</span>`. Below are two short proposed drafts for each, with no outcome promises, superlatives, or commercial claims:
-
-### Vision Proposals (Select one or provide your own wording)
-- **Vision Proposal A (PROPOSAL, needs client approval):**
-  > "A healthcare landscape where every woman in India has timely access to metabolic screening, accurate endocrine education, and empathetic support at every life stage."
-- **Vision Proposal B (PROPOSAL, needs client approval):**
-  > "Bridging the detection and education gap in women's diabetes and endocrine health across communities through structured awareness and early clinical intervention."
-
-### Mission Proposals (Select one or provide your own wording)
-- **Mission Proposal A (PROPOSAL, needs client approval):**
-  > "To provide community-based diabetes and metabolic screening, educate women and families on endocrine health from puberty through menopause, and support timely diagnosis for underserved populations."
-- **Mission Proposal B (PROPOSAL, needs client approval):**
-  > "To bring proactive screening to women in schools, workplaces and local neighbourhoods, ensuring that symptoms of diabetes, thyroid disorders and metabolic health are recognised and addressed early."
+- [ ] **Missing Biography Details:** In your message you noted that some biography details were not mentioned. All details from the source document (timeline from 2012 to 2025, registrations, memberships, and awards) have been published on `/about/`. Which biography details are missing? Please list:
+  - Any other fellowships (full names and years)
+  - Degrees and medical qualifications
+  - Post-doctoral or specialized certificates
+  - Institutional positions, past hospital appointments
+  - Additional peer-reviewed publications and textbooks
+  *(Note: Medical advertising regulations require verified source documentation; we cannot publish unlisted details without your confirmation.)*
+- [ ] **LedBy Fellowship:** The About page includes a dedicated **Fellowships** section listing *Fellowship, Diabetes India (2025)*, *Fellowship, Indian Society of Chrono Medicine (2024)*, and *Fellow, LedBy*. Please confirm the year and full formal fellowship title for the LedBy fellowship so we can remove the `<span class="todo">` chip.
 
 ---
 
-## 3. Clinics & Practice Locations
+## 2. Facebook Profile URL
 
-- [ ] **Jyoti Clinic PIN Code & Bank Spelling:** The card states *"Mumbai - 50"*. We have used PIN **400050**. Please confirm if 400050 is correct. Also confirm the building's bank spelling: *"Above Abhudhaya Bank"* (as printed on the card) vs *"Above Abhyudaya Bank"*.
-- [ ] **Shetty Nursing Home:** You mentioned *"Shetty Nursing Home"*, but it was not on the visiting card and details were not provided. Is Shetty Nursing Home a third clinic location, or is it the facility/building that houses Jyoti Clinic? If it is a separate third clinic, please share its full address, consultation days, and timings so we can add it to the clinic list.
-- [ ] **Appointment Phone & WhatsApp:** The confirmed appointment number for both Jyoti Clinic and Niramay Diabetes Centre is **+91 99305 61774**. Per instructions, all WhatsApp buttons have been hidden. Is this phone number registered and active on WhatsApp for patient appointment coordination?
-- [ ] **Past Camp Locations (Kurla):** Per instructions, the Kurla clinic has been completely removed from all locations, footers, consultations, and metadata. "Kurla" currently appears solely in the list of past community screening camps on the Community page (*"Over the past several years Dr. Shaikh has conducted diabetes detection camps across Mumbai, in Khar, Bandra, Vile Parle, Kurla, Mira Road and Qureshi Nagar..."*). Please confirm whether you would like to keep "Kurla" in this historical outreach list or remove it there as well.
-
----
-
-## 4. Research Section Material Needed
-
-Per instructions, the research and publications page has been restructured into clean, editable blocks with `<figure>` and `<figcaption>` elements, and an active `<span class="todo">photos to be replaced by client</span>` chip. Please provide the final verified materials:
-1. **Publications List:** Complete list of journal papers (Article Title, Journal Name, Year, Volume/Issue, PubMed PMID and/or DOI link).
-2. **Conferences List:** Complete list of international and national presentations, poster abstracts, and oral talks.
-3. **Book Chapters:** Full titles, editors, and publishers of contributed textbook chapters.
-4. **Peer Review Service:** Current list of indexed academic journals for which you serve as an invited reviewer.
-5. **Research Photos:** 3 to 6 high-resolution photographs with captions and permission to publish on the website.
+- [ ] **Facebook Page URL Needed:** You requested Facebook to be included on the site. An inactive link slot has been added in the exact required format next to LinkedIn and Instagram in the footer of every page, the Contact page, and the search engine structured data (`sameAs`):
+  `<!-- FACEBOOK-SLOT: replace FB_URL with the real page URL and remove the comment markers <a href="FB_URL" target="_blank" rel="noopener noreferrer">Facebook</a> -->`
+  Please provide your official Facebook page or professional profile URL so it can be activated in a single edit without rendering broken links or placeholder chips.
 
 ---
 
-## 5. Women's Health and Mental Health Section Approval
+## 3. DAWN Foundation (Diabetes and Women's Network)
 
-Per Change Request #2, the Women's Health page has been retitled **"Women's Health and Mental Health"** and a dedicated *Mental Health and Diabetes Distress* section has been introduced, strictly using facts from the verified background materials (Modified Diabetes Distress Scale for India, Diabetes India Mental Health Group, referral policy for non-endocrine psychiatric conditions).
-- [ ] **Client Approval:** Please review the newly added section on `/pcos-gestational-diabetes-mumbai/` to confirm that the clinical tone and referral boundary wording are satisfactory.
+The dedicated page `/dawn-foundation/` has been completely rebuilt verbatim using your approved document (*"DAWN Vision, Mission and Objectives"*). Please confirm the following points:
+- [ ] **Mission Statement & Women's Focus:** DAWN's mission as written in the approved document does not explicitly mention women or women's health (*"To establish an empathetic, accessible, and structured ecosystem for diabetes care..."*), whereas the organisation's full name is *Diabetes and Women's Network*. Is this intentional, or would you like a specific line on women's endocrine health added to the mission?
+- [ ] **Contact Details Public Disclosure:** The document provides telephone number **+91 98222 93515** and email **drfirdousshaikh@gmail.com**. Please confirm whether these should be displayed publicly for international collaboration enquiries, and whether `drfirdousshaikh@gmail.com` is also intended as the general clinic appointment email.
+- [ ] **DAWN Logo & Dedicated Web/Social Presence:** If DAWN Foundation has its own official logo mark, dedicated website, or social media handle, please provide the image and URL so we can incorporate them.
+- [ ] **PubMed Reference for Objective 2:** Objective 2 references your published work on the Modified Diabetes Distress Scale (mDDS). Please provide the PubMed PMID or DOI link so we can link directly to the study.
+
+---
+
+## 4. Photo Gallery (`/gallery/`) & Image Review
+
+A dedicated, responsive photo gallery has been launched at `/gallery/` with 27 curated photographs organized across three categories (*Conferences and Talks*, *Awards and Recognition*, and *Community Camps*), complete with thumbnail and high-resolution WebP formats, category filters, and an accessible modal lightbox.
+- [ ] **Review Selected Photographs & Captions:** Please review the photos in `/gallery/` and the complete captions table in `GALLERY_CAPTIONS.md`. Per medical ethics standards, captions currently describe only verified, visible clinical presentations without unconfirmed names or dates.
+- [ ] **Additional Photographs:** If you would like to include additional photographs from recent conferences or award ceremonies, please share the image files along with approved captions.
+
+---
+
+## 5. Clinics & Practice Locations
+
+- [ ] **Appointment Phone & WhatsApp:** The confirmed appointment number for both Jyoti Clinic and Niramay Diabetes Centre is **+91 99305 61774**. In accordance with instructions, all direct WhatsApp links remain hidden until verified. Is this phone number registered and active on WhatsApp for patient appointment coordination?
+- [ ] **Shetty Nursing Home:** You previously mentioned *"Shetty Nursing Home"*, but details were not on the card. Is this a third clinic location, or the building hosting an existing clinic? If separate, please share consultation days and timings.
+- [ ] **Jyoti Clinic PIN Code & Bank Spelling:** The card states *"Mumbai - 50"*. We have used PIN **400050**. Please confirm if 400050 is correct, and confirm the building's bank spelling (*"Above Abhudhaya Bank"* vs *"Above Abhyudaya Bank"*).
 
 ---
 
@@ -68,4 +63,4 @@ Per Change Request #2, the Women's Health page has been retitled **"Women's Heal
 ## 7. Direct Contact Email & Book Purchase Links
 
 - [ ] **Clinic Email Address:** Please confirm the official patient-facing email address to replace `<span class="todo">TO CONFIRM: clinic email address</span>` on the Contact page.
-- [ ] **Authored Books Purchase / Download Links:** For *Path to Diabetes Mellitus Type 2 Remission* (2024) and *Footprints of Wellness: Managing Foot Care in Diabetes* (2025), please provide the publisher name and purchase or download URLs.
+- [ ] **Book Purchase/Download Links:** Please provide publisher names and purchase/download links for *Path to Diabetes Mellitus Type 2 Remission* and *Footprints of Wellness* on `/books-patient-education/`.

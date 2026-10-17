@@ -43,6 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
         closeMenu();
       });
     });
+
+    // Close menu if viewport expanded past mobile breakpoint (1180px)
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 1180 && drawer.classList.contains('is-open')) {
+        closeMenu();
+      }
+    });
   }
 
   // --- Accessible Desktop Dropdowns ---
