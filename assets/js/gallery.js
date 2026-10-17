@@ -66,7 +66,7 @@
       if (filteredItems.length === 0) {
         gridEl.innerHTML = `
           <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; background: var(--surface); border: 1px dashed var(--line); border-radius: var(--radius);">
-            <p style="font-family: var(--font-head); font-size: 1.25rem; color: var(--teal-900); margin-bottom: 0.5rem;">No matching photographs found</p>
+            <p style="font-family: var(--font-head); font-size: 1.25rem; color: var(--green-900); margin-bottom: 0.5rem;">No matching photographs found</p>
             <p style="color: var(--muted); font-size: 0.9rem;">Try selecting a different category or clearing your search term.</p>
           </div>
         `;

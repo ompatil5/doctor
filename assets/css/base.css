@@ -37,7 +37,7 @@ body {
   position: absolute;
   top: -100px;
   left: 1rem;
-  background: var(--teal-900);
+  background: var(--green-900);
   color: #FFFFFF;
   padding: 0.75rem 1.25rem;
   border-radius: var(--radius-sm);
@@ -49,13 +49,13 @@ body {
 
 .skip-link:focus {
   top: 1rem;
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--gold);
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-head);
-  color: var(--teal-900);
+  color: var(--green-900);
   line-height: 1.25;
   font-weight: 600;
   letter-spacing: -0.015em;
@@ -94,19 +94,19 @@ strong, b {
 
 /* Links */
 a {
-  color: var(--teal-700);
+  color: var(--green-700);
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color var(--ease), text-decoration-color var(--ease);
 }
 
 a:hover {
-  color: var(--teal-900);
-  text-decoration-color: var(--accent);
+  color: var(--green-900);
+  text-decoration-color: var(--gold);
 }
 
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-  outline: 2px solid var(--teal-700);
+  outline: 2px solid var(--green-700);
   outline-offset: 3px;
 }
 
@@ -142,7 +142,7 @@ img, picture, video {
 }
 
 .section-alt {
-  background-color: var(--surface);
+  background-color: var(--surface-soft);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -180,7 +180,7 @@ img, picture, video {
 .lead {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: var(--teal-900);
+  color: var(--green-900);
   margin-bottom: 1.5rem;
 }
 
@@ -231,8 +231,9 @@ img, picture, video {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--teal-700);
-  background-color: var(--teal-50);
+  color: var(--green-900);
+  background-color: var(--green-100);
+  border: 1px solid rgba(20, 69, 47, 0.15);
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-sm);
   margin-bottom: 0.75rem;

@@ -167,7 +167,7 @@ a {
   color: var(--navy-primary) !important;
 }
 
-.text-teal {
+.text-green {
   color: var(--accent-gold) !important;
 }
 
@@ -286,7 +286,7 @@ ul.list-unstyled li i {
 .bg-solid-navy .text-muted {
   color: rgba(255, 255, 255, 0.85) !important;
 }
-.bg-solid-navy .text-teal {
+.bg-solid-navy .text-green {
   color: #E2B6EC !important;
 }
 .bg-solid-navy .lead {
@@ -318,7 +318,7 @@ ul.list-unstyled li i {
 .bg-solid-navy .card .text-muted {
   color: rgba(255, 255, 255, 0.85) !important;
 }
-.bg-solid-navy .card .text-teal,
+.bg-solid-navy .card .text-green,
 .bg-solid-navy .card i {
   color: #E2B6EC !important;
 }

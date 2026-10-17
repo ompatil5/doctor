@@ -1,122 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ompatil5.github.io/Dr/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/about/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/about/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/diabetes-treatment-mumbai/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/diabetes-treatment-mumbai/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/thyroid-specialist-mumbai/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/thyroid-specialist-mumbai/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/obesity-treatment-mumbai/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/obesity-treatment-mumbai/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/pcos-gestational-diabetes-mumbai/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/pcos-gestational-diabetes-mumbai/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/consultations/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/consultations/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/research-publications/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/research-publications/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/community-awareness/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/community-awareness/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/books-patient-education/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/dawn-foundation/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/blog/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/books-patient-education/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ompatil5.github.io/doctor/blog/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/faqs/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/faqs/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/gallery/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/gallery/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/contact/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/contact/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/privacy-policy/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/privacy-policy/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/blog/what-does-hba1c-7-mean/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/blog/what-does-hba1c-7-mean/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/blog/type-2-diabetes-remission/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/blog/type-2-diabetes-remission/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/blog/borderline-thyroid-tsh/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/blog/borderline-thyroid-tsh/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/blog/gestational-diabetes-guide/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/blog/gestational-diabetes-guide/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ompatil5.github.io/Dr/blog/diabetes-ramadan-fasting-guide/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://ompatil5.github.io/doctor/blog/diabetes-ramadan-fasting-guide/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

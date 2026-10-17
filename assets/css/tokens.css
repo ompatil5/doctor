@@ -61,30 +61,36 @@
 }
 
 :root {
-  /* High-Contrast Luxury Lavender & Royal Plum Palette */
-  --bg: #F4E8F7;           /* Soft Light Lavender Background Tint */
-  --surface: #FFFFFF;      /* Pure Clean White Card Background */
-  --surface-alt: #EEDDF2;  /* Soft Lavender Subtle Tint */
-  --ink: #1C0722;          /* Deep Obsidian Text - Maximum Sharpness & Legibility */
-  --muted: #4D2654;        /* Deep Legible Muted Body Text */
+  /* White, Gold and Green Palette per Client Change Request #2 */
+  --bg: #FFFFFF;           /* main background: white */
+  --surface: #FFFFFF;      /* pure clean white card background */
+  --surface-soft: #FAF6EA; /* faint gold-tinted alternate sections */
+  --surface-alt: #FAF6EA;  /* alias for surface-soft */
+  --ink: #1B2A22;          /* body text */
+  --muted: #4B5C52;        /* muted text */
   
-  --teal-900: #3D1B44;     /* Rich Deep Royal Plum for Headings, Header, Brand */
-  --teal-800: #2F1135;     /* Darker Plum Accent */
-  --teal-700: #7B3884;     /* Rich Mauve / Plum Accent for links */
-  --teal-50: #EBD7F0;      /* Light Lavender Chip & Badge Tint */
+  --green-900: #14452F;    /* header, footer, headings */
+  --green-800: #19563B;    /* darker green accent */
+  --green-700: #1F6B47;    /* links, secondary buttons, icons */
+  --green-100: #E7F1EB;    /* light green tints, cards, chips */
+  --green-50: #F3F8F5;     /* ultra-light green surface tint */
   
-  --footer-bg: #240C2B;    /* Deep Obsidian Plum for Dark Footer */
+  --gold: #D4AF37;         /* primary button background, borders, dividers, small accents */
+  --gold-hover: #C29E2C;   /* gold hover state */
+  --gold-light: #FBF7EC;   /* soft gold tint */
+  --gold-subtle: #F3EBD0;  /* light gold chip/border tint */
   
-  /* Accent: Rich Mauve (Buttons & Badges) */
-  --accent: #7B3884;       /* Rich Mauve Accent for Buttons & Badges */
-  --accent-hover: #3D1B44; /* Dark Plum Accent Hover */
-  --accent-light: #F4E8F7; /* Light Lavender Tint */
-  --accent-subtle: #D6B7DE;/* Soft Lavender Badge Tint */
-  --accent-mid: #9E64A7;   /* Mid Lilac Accent */
+  --footer-bg: #14452F;    /* dark green footer */
+  
+  /* Button / Accent mappings */
+  --accent: #D4AF37;
+  --accent-hover: #C29E2C;
+  --accent-light: #FAF6EA;
+  --accent-subtle: #E7F1EB;
   
   /* Borders and Dividers */
-  --line: #D6B7DE;         /* Soft Clean Lavender Border */
-  --line-strong: #BF9AC8;  /* Stronger Lavender Divider */
+  --line: #E6E2D5;
+  --line-strong: #D4AF37;  /* gold accent divider */
   
   /* Status & Todo Chip Styling */
   --todo-bg: #FEF3C7;
@@ -97,9 +103,9 @@
   --radius-lg: 16px;
   --radius-pill: 9999px;
   
-  --shadow-sm: 0 2px 6px rgba(36, 12, 43, 0.05);
-  --shadow-md: 0 6px 18px rgba(36, 12, 43, 0.09);
-  --shadow-lg: 0 12px 30px rgba(36, 12, 43, 0.14);
+  --shadow-sm: 0 2px 6px rgba(20, 69, 47, 0.05);
+  --shadow-md: 0 6px 18px rgba(20, 69, 47, 0.09);
+  --shadow-lg: 0 12px 30px rgba(20, 69, 47, 0.14);
   
   /* Typography Tokens */
   --font-head: "Fraunces", Georgia, "Times New Roman", serif;

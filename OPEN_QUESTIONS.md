@@ -1,75 +1,71 @@
 # Open Questions for Dr. Firdous Shaikh
 
-This document collects all questions and details requiring client confirmation, grouped by page and operational priority. Please review and fill in the details so that the corresponding `<span class="todo">` placeholders can be replaced.
+This document collects all open questions, proposed drafts, and items requiring client confirmation, updated for **Change Request #2**. Please review and provide feedback so that the corresponding `<span class="todo">` placeholders can be replaced.
 
 ---
 
-## 1. Clinic & Practice Logistics (Contact, Consultations, Footer)
+## 1. Professional Title, Pronouns & Editorial Identity
 
-- [ ] **Clinic Name:** What is the official name of the primary clinic in Mumbai?
-- [x] **Physical Address:** 123 Healthcare Avenue, Bandra West, Mumbai 400050 *(Confirmed)*
-- [ ] **Landmarks:** Any helpful nearby landmarks or navigation directions for patients.
-- [x] **Consultation Hours:** 10:00 AM to 06:00 PM *(Confirmed)*
-- [ ] **Patient Phone:** Dedicated phone number for clinic appointments and inquiries.
-- [ ] **WhatsApp Number:** Dedicated WhatsApp number for booking and reports.
-- [ ] **Official Email:** Dedicated patient/clinic email address.
-- [ ] **Consultation Fees:** Should consultation fees (in-clinic / online) be displayed publicly on the website, or shared upon booking?
+- [ ] **Pronoun Preference:** Across the entire website, all third-person copy currently uses **"Dr. Firdous Shaikh"** on first mention and **"Dr. Shaikh"** on subsequent mentions, strictly avoiding gendered pronouns (*she/her/he/his*). Please confirm your preferred pronoun usage for future editorial updates (e.g. whether you prefer third-person surname references only, or if specific pronouns should be used).
+- [ ] **Condition Page Naming vs. Title:** The professional title is confirmed as *"Diabetologist, Thyroid and Weight Management Physician"*. The corresponding condition page is titled *"Obesity & Metabolic Health"* (`/obesity-treatment-mumbai/`). Please confirm if you wish to keep this page title as is, or align it closer to "Weight Management" in a future update.
 
 ---
 
-## 2. Online Consultations & Telehealth (Consultations Page)
+## 2. DAWN Foundation: Vision & Mission Proposals
+
+The client has requested "Our Vision" and "Our Mission" sections on the new dedicated page `/dawn-foundation/`. Because exact wording was not supplied, placeholders have been published as `<span class="todo">TO CONFIRM: DAWN vision</span>` and `<span class="todo">TO CONFIRM: DAWN mission</span>`. Below are two short proposed drafts for each, with no outcome promises, superlatives, or commercial claims:
+
+### Vision Proposals (Select one or provide your own wording)
+- **Vision Proposal A (PROPOSAL, needs client approval):**
+  > "A healthcare landscape where every woman in India has timely access to metabolic screening, accurate endocrine education, and empathetic support at every life stage."
+- **Vision Proposal B (PROPOSAL, needs client approval):**
+  > "Bridging the detection and education gap in women's diabetes and endocrine health across communities through structured awareness and early clinical intervention."
+
+### Mission Proposals (Select one or provide your own wording)
+- **Mission Proposal A (PROPOSAL, needs client approval):**
+  > "To provide community-based diabetes and metabolic screening, educate women and families on endocrine health from puberty through menopause, and support timely diagnosis for underserved populations."
+- **Mission Proposal B (PROPOSAL, needs client approval):**
+  > "To bring proactive screening to women in schools, workplaces and local neighbourhoods, ensuring that symptoms of diabetes, thyroid disorders and metabolic health are recognised and addressed early."
+
+---
+
+## 3. Clinics & Practice Locations
+
+- [ ] **Jyoti Clinic PIN Code & Bank Spelling:** The card states *"Mumbai - 50"*. We have used PIN **400050**. Please confirm if 400050 is correct. Also confirm the building's bank spelling: *"Above Abhudhaya Bank"* (as printed on the card) vs *"Above Abhyudaya Bank"*.
+- [ ] **Shetty Nursing Home:** You mentioned *"Shetty Nursing Home"*, but it was not on the visiting card and details were not provided. Is Shetty Nursing Home a third clinic location, or is it the facility/building that houses Jyoti Clinic? If it is a separate third clinic, please share its full address, consultation days, and timings so we can add it to the clinic list.
+- [ ] **Appointment Phone & WhatsApp:** The confirmed appointment number for both Jyoti Clinic and Niramay Diabetes Centre is **+91 99305 61774**. Per instructions, all WhatsApp buttons have been hidden. Is this phone number registered and active on WhatsApp for patient appointment coordination?
+- [ ] **Past Camp Locations (Kurla):** Per instructions, the Kurla clinic has been completely removed from all locations, footers, consultations, and metadata. "Kurla" currently appears solely in the list of past community screening camps on the Community page (*"Over the past several years Dr. Shaikh has conducted diabetes detection camps across Mumbai, in Khar, Bandra, Vile Parle, Kurla, Mira Road and Qureshi Nagar..."*). Please confirm whether you would like to keep "Kurla" in this historical outreach list or remove it there as well.
+
+---
+
+## 4. Research Section Material Needed
+
+Per instructions, the research and publications page has been restructured into clean, editable blocks with `<figure>` and `<figcaption>` elements, and an active `<span class="todo">photos to be replaced by client</span>` chip. Please provide the final verified materials:
+1. **Publications List:** Complete list of journal papers (Article Title, Journal Name, Year, Volume/Issue, PubMed PMID and/or DOI link).
+2. **Conferences List:** Complete list of international and national presentations, poster abstracts, and oral talks.
+3. **Book Chapters:** Full titles, editors, and publishers of contributed textbook chapters.
+4. **Peer Review Service:** Current list of indexed academic journals for which you serve as an invited reviewer.
+5. **Research Photos:** 3 to 6 high-resolution photographs with captions and permission to publish on the website.
+
+---
+
+## 5. Women's Health and Mental Health Section Approval
+
+Per Change Request #2, the Women's Health page has been retitled **"Women's Health and Mental Health"** and a dedicated *Mental Health and Diabetes Distress* section has been introduced, strictly using facts from the verified background materials (Modified Diabetes Distress Scale for India, Diabetes India Mental Health Group, referral policy for non-endocrine psychiatric conditions).
+- [ ] **Client Approval:** Please review the newly added section on `/pcos-gestational-diabetes-mumbai/` to confirm that the clinical tone and referral boundary wording are satisfactory.
+
+---
+
+## 6. Online Consultations & Telehealth Logistics
 
 - [ ] **Telehealth Platform:** Which platform is used for remote consultations (e.g., Google Meet, Zoom, WhatsApp Video)?
 - [ ] **Payment Methods:** How do patients complete payment (e.g., UPI, Net Banking, Razorpay / Stripe for international patients)?
-- [ ] **Geographic Scope:** Which states and countries can you legally and safely consult remotely?
-- [ ] **Follow-up Policy:** What is your policy for post-consultation report reviews and follow-up slots (e.g., free review within 7 days, or separate follow-up fee)?
-- [ ] **International Time Zones:** Are specific evening or weekend slots reserved for patients in the Gulf, UK, or US?
+- [ ] **Geographic Scope & International Patients:** Which states and countries do you consult remotely?
+- [ ] **Follow-up Policy:** What is your policy for post-consultation report reviews and follow-up slots?
 
 ---
 
-## 3. Qualifications & Professional Registrations (Home, About, Footer)
+## 7. Direct Contact Email & Book Purchase Links
 
-- [ ] **Royal College of Physicians Title:** Which exact designation should be displayed:
-  - *Option A:* Diploma in Clinical Endocrinology and Diabetes, Royal College of Physicians (UK)
-  - *Option B:* Postgraduate Certificate in Clinical Endocrinology and Diabetes (RCP UK)
-  - *Option C:* Dip. Diab (RCP UK)
-- [ ] **Asian Heart Institute / CPS Qualification:** Confirm preferred wording: *CPS Diabetology, Asian Heart Institute, Mumbai*.
-- [ ] **Public Display of Registration Numbers:** Confirm if both should remain visibly displayed in the footer:
-  - Maharashtra Medical Council Reg. No. 2015030842
-  - RSSDI Membership No. 8568
-
----
-
-## 4. DAWN Foundation Designation (Home, About, Women's Health, Community)
-
-- [ ] **Designation:** The source materials use both "Founder" and "Co-founder". We have used **"Founder"** across the site. Please confirm if this is preferred.
-- [ ] **DAWN Foundation Update for Women's Page:** The Women's Health page has a placeholder: *"[Add: one line on what DAWN does now, and a link to its page.]"*. Please provide a brief line describing its current community focus and website/social URL.
-
----
-
-## 5. Domain, Hosting & Integrations (SEO, Contact, Privacy)
-
-- [ ] **Domain Name:** Which domain is acquired or planned (e.g., `drfirdousshaikh.com`, `drfirdousshaikh.in`)?
-- [ ] **Form Submission Backend:** Which form endpoint service do you prefer for booking submissions (e.g., Formspree, Web3Forms, or direct WhatsApp button)?
-- [ ] **Social & Academic Links:** Please supply current URLs where available:
-  - Facebook page URL
-  - PubMed Author Search URL
-  - Google Scholar Profile URL
-  - ORCID Profile URL
-  - DAWN Foundation Website / Social Page URL
-- [ ] **Privacy Policy Review:** Review the drafted Privacy Policy with legal counsel to confirm data retention and cross-border handling for telehealth patients.
-
----
-
-## 6. Photography & Patient Media (All Pages)
-
-- [ ] **Portrait Selection:** Is the current profile photo (ACP India Chapter Award ceremony) approved as the primary hero image, or will a studio headshot be supplied?
-- [ ] **Camp & Conference Photos:** Confirm permission/consent for publishing attendees' photos from the March 2026 Diabetes & Arthritis Camp and 2025 RSSDI Kochi Conclave.
-
----
-
-## 7. FAQs & Medical Content Verification (FAQs, Blog)
-
-- [ ] **FAQ Item 1:** Answer needed for FAQ: *"Do you see patients online from other countries?"* (currently bracketed as *[Your answer.]* in source).
-- [ ] **Blog Post References:** References in the first five blog posts were compiled from memory. Please verify journal volume numbers, page ranges, and guideline citations prior to public distribution.
-- [ ] **Blog Publish Dates:** Confirm launch publication date (defaulted to October 12, 2026).
+- [ ] **Clinic Email Address:** Please confirm the official patient-facing email address to replace `<span class="todo">TO CONFIRM: clinic email address</span>` on the Contact page.
+- [ ] **Authored Books Purchase / Download Links:** For *Path to Diabetes Mellitus Type 2 Remission* (2024) and *Footprints of Wellness: Managing Foot Care in Diabetes* (2025), please provide the publisher name and purchase or download URLs.
