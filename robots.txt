@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ompatil5.github.io/Dr/sitemap.xml
+Sitemap: https://ompatil5.github.io/doctor/sitemap.xml

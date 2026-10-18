@@ -14,7 +14,9 @@ async function files(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
   const nested = await Promise.all(entries.map(async entry => {
     if (entry.isDirectory()) return ignored.has(entry.name) ? [] : files(join(dir, entry.name));
-    return entry.name.endsWith('.html') ? [join(dir, entry.name)] : [];
+    const isCanonicalPage = entry.name === 'index.html' ||
+      (dir === root && (entry.name === '404.html' || entry.name === 'index.html'));
+    return isCanonicalPage ? [join(dir, entry.name)] : [];
   }));
   return nested.flat();
 }
@@ -26,6 +28,15 @@ for (const file of await files(root)) {
     if (pattern.test(text)) failures.push(`${file}: ${label}`);
     pattern.lastIndex = 0;
   }
+  if (!text.includes('<title>')) failures.push(`${file}: missing title`);
+  const title = text.match(/<title>([^<]+)<\/title>/i)?.[1] ?? '';
+  if (title.length > 60) failures.push(`${file}: title exceeds 60 characters`);
+  const description = text.match(/<meta name="description" content="([^"]*)"/i)?.[1];
+  if (!description) failures.push(`${file}: missing meta description`);
+  else if (description.length > 155) failures.push(`${file}: description exceeds 155 characters`);
+  const h1s = text.match(/<h1\b/gi)?.length ?? 0;
+  if (h1s !== 1) failures.push(`${file}: expected one H1, found ${h1s}`);
+  if (!text.includes('rel="canonical"')) failures.push(`${file}: missing canonical URL`);
 }
 
 if (failures.length) {
