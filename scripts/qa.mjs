@@ -1,5 +1,5 @@
-import { readdir, readFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { access, readdir, readFile, stat } from 'node:fs/promises';
+import { dirname, join, normalize } from 'node:path';
 
 const root = process.cwd();
 const ignored = new Set(['.git', 'assets', 'node_modules']);
@@ -37,6 +37,19 @@ for (const file of await files(root)) {
   const h1s = text.match(/<h1\b/gi)?.length ?? 0;
   if (h1s !== 1) failures.push(`${file}: expected one H1, found ${h1s}`);
   if (!text.includes('rel="canonical"')) failures.push(`${file}: missing canonical URL`);
+
+  const rendered = text.replace(/<!--[\s\S]*?-->/g, '');
+  for (const match of rendered.matchAll(/(?:href|src)="([^"]+)"/gi)) {
+    const value = match[1].split(/[?#]/, 1)[0];
+    if (!value || /^(?:[a-z]+:|\/\/|#)/i.test(value)) continue;
+    let target = normalize(join(dirname(file), value));
+    try {
+      if ((await stat(target)).isDirectory()) target = join(target, 'index.html');
+      await access(target);
+    } catch {
+      failures.push(`${file}: unresolved local asset or link ${match[1]}`);
+    }
+  }
 }
 
 if (failures.length) {
