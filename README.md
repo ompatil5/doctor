@@ -67,7 +67,7 @@ Project/
 │   └── diabetes-ramadan-fasting-guide/           # Post 5: Ramadan fasting
 │
 └── assets/
-    ├── css/                                      # tokens.css, base.css, components.css, style.css
+    ├── css/                                      # tokens.css, base.css, components.css
     ├── js/                                       # nav.js, gallery-data.js, gallery.js, research-filter.js, booking-form.js
     ├── img/                                      # Responsive WebP photography
     └── fonts/                                    # Self-hosted WOFF2 fonts (Inter & Fraunces)

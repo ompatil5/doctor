@@ -191,7 +191,7 @@ OVERALL STATUS: ALL GATES PASSED (100% COMPLIANT)
 
 - Tightened the short-laptop Home hero (860px and wider, at heights up to 750px) so its heading, consultation callout and both actions remain visible at 1093×614 and 1280×720.
 - Kept the desktop navigation breakpoint at 1180px. Between 1180px and 1320px, the secondary brand strapline is hidden and desktop navigation spacing is reduced so the booking action remains fully visible without wrapping or clipping.
-- Applied the matching responsive rules to both CSS delivery paths: `site.css` for the home page and `components.css` for inner pages.
+- Consolidated all active pages onto `tokens.css`, `base.css` and `components.css`; deleted the unused legacy `style.css` and duplicate bundled `site.css`.
 
 ### Verified
 
@@ -205,7 +205,7 @@ OVERALL STATUS: ALL GATES PASSED (100% COMPLIANT)
 
 - No automated DOM `scrollWidth` sweep was available, so the 320px–1920px no-horizontal-scroll requirement was checked by CSS review and browser screenshots rather than programmatic measurement.
 - Lighthouse, a full keyboard-only walkthrough, live-form submission, and production hosting behaviour were not run in this follow-up.
-- No testimonial markup was found in HTML. Legacy, unused testimonial CSS remains in `assets/css/style.css`; that file is not loaded by the active pages and was intentionally left untouched because this task is limited to responsiveness.
+- No testimonial markup was found in HTML. The unused legacy testimonial CSS was removed with the deleted `assets/css/style.css` file.
 
 ---
 
@@ -445,6 +445,33 @@ NEGATIVE GREP VERIFICATION (Change Request #3)
 STATUS: ALL QA CRITERIA COMPLETED & VERIFIED
 ========================================================================
 ```
+
+---
+
+## Programmatic responsive audit and Lighthouse — 18 October 2026
+
+### Playwright responsive audit
+
+- Audited all 22 active pages at 320×568, 360×640, 375×667, 390×844, 412×915, 768×1024, 820×1180, 1024×768, 1093×614, 1280×720, 1366×768, 1440×900, 1536×864, 1920×1080 and 667×375 landscape: 330 page/viewport combinations.
+- Final results: **0** document horizontal-overflow failures, **0** elements wider than the viewport, **0** permanently clipped text failures, and **0** undersized interactive controls (less than 44×44px).
+- Fixed the mobile header’s internal brand/menu collision, responsive inline image sizing, blog-card grid minimum width, desktop header fit through 1600px, FAQ accordion target sizing, gallery-filter target sizing, and mobile credential-strip overflow.
+
+### CSS loading and consolidation
+
+- Every active page now loads exactly `tokens.css`, `base.css` and `components.css`.
+- Removed unused `assets/css/style.css` and the duplicate bundled `assets/css/site.css`; active CSS now has one source of truth.
+
+### Lighthouse mobile results
+
+| Page | Performance | Accessibility | Best Practices | SEO |
+| :--- | ---: | ---: | ---: | ---: |
+| Home | 81 | 96 | 100 | 100 |
+| Contact | 85 | 95 | 100 | 100 |
+| DAWN Foundation | 75 | 96 | 100 | 100 |
+| Gallery | 69 | 96 | 100 | 100 |
+| Type 2 Diabetes Remission article | 86 | 94 | 100 | 100 |
+
+These runs used Lighthouse 13.5.0 against the local static server with its standard mobile emulation. No performance or accessibility redesign was made as part of this responsive/CSS-cleanup request.
 
 
 
