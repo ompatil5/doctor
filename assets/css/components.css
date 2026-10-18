@@ -343,7 +343,7 @@
   color: var(--green-700);
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1367px) {
   .nav-desktop {
     display: flex;
   }
@@ -355,7 +355,7 @@
   }
 }
 
-@media (min-width: 1180px) and (max-width: 1600px) {
+@media (min-width: 1367px) and (max-width: 1600px) {
   .site-header .container {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
