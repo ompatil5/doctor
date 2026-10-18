@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.overflow = '';
     }
 
-    toggle.addEventListener('click', function () {
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
       var isOpen = toggle.getAttribute('aria-expanded') === 'true';
       if (isOpen) {
         closeMenu();
@@ -41,6 +42,39 @@ document.addEventListener('DOMContentLoaded', function () {
     drawer.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         closeMenu();
+      });
+    });
+
+    // Close on outside tap/click
+    document.addEventListener('click', function (e) {
+      if (drawer.classList.contains('is-open')) {
+        if (!drawer.contains(e.target) && !toggle.contains(e.target)) {
+          closeMenu();
+        }
+      }
+    });
+
+    // Tap-to-expand mobile submenus (Conditions, Community, Resources)
+    var mobileDropdownBtns = drawer.querySelectorAll('.mobile-dropdown-btn');
+    mobileDropdownBtns.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        var targetId = btn.getAttribute('aria-controls');
+        var subList = targetId ? document.getElementById(targetId) : btn.nextElementSibling;
+
+        if (isExpanded) {
+          btn.setAttribute('aria-expanded', 'false');
+          if (subList) {
+            subList.setAttribute('hidden', '');
+          }
+        } else {
+          btn.setAttribute('aria-expanded', 'true');
+          if (subList) {
+            subList.removeAttribute('hidden');
+          }
+        }
       });
     });
 
@@ -74,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
     trigger.addEventListener('click', function (e) {
       var expanded = trigger.getAttribute('aria-expanded') === 'true';
       if (!expanded) {
-        // If clicking to expand dropdown rather than navigate immediately
         e.preventDefault();
         openDropdown();
       }
@@ -156,4 +189,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-

@@ -118,10 +118,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Media */
-img, picture, video {
+img, picture, video, svg {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+iframe, embed, object {
+  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
 }
 
 /* Tables */
@@ -141,11 +148,21 @@ table {
 .container {
   width: min(100% - 2rem, 1120px);
   margin-inline: auto;
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
 }
 
 .container-prose {
   width: min(100% - 2rem, 820px);
   margin-inline: auto;
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+@media (max-width: 480px) {
+  .container, .container-prose {
+    width: min(100% - 1.25rem, 1120px);
+  }
 }
 
 .section {

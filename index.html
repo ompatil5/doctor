@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#14452F">
   <title>Dr. Firdous Shaikh | Diabetologist in Mumbai</title>
   <meta name="description" content="Dr. Firdous Shaikh, Diabetologist, Thyroid and Weight Management Physician in Mumbai. Evidence-based care in clinic and online.">
@@ -186,13 +186,16 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+    <!-- Mobile Drawer -->
   <div id="mobile-nav-drawer" class="mobile-drawer" aria-label="Mobile navigation">
     <ul class="mobile-nav-list">
       <li><a href="about/index.html" class="mobile-nav-link">About</a></li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Conditions</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-conditions">
+          <span>Conditions</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-conditions" class="mobile-sub-list" hidden>
           <li><a href="diabetes-treatment-mumbai/index.html" class="mobile-sub-link">Diabetes Care</a></li>
           <li><a href="thyroid-specialist-mumbai/index.html" class="mobile-sub-link">Thyroid Care</a></li>
           <li><a href="obesity-treatment-mumbai/index.html" class="mobile-sub-link">Obesity &amp; Metabolic Health</a></li>
@@ -201,16 +204,22 @@
       </li>
       <li><a href="consultations/index.html" class="mobile-nav-link">Consultations</a></li>
       <li><a href="research-publications/index.html" class="mobile-nav-link">Research &amp; Publications</a></li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Community</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-community">
+          <span>Community</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-community" class="mobile-sub-list" hidden>
           <li><a href="community-awareness/index.html" class="mobile-sub-link">Community &amp; Awareness</a></li>
           <li><a href="dawn-foundation/index.html" class="mobile-sub-link">DAWN Foundation</a></li>
         </ul>
       </li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Resources</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-resources">
+          <span>Resources</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-resources" class="mobile-sub-list" hidden>
           <li><a href="books-patient-education/index.html" class="mobile-sub-link">Books &amp; Education</a></li>
           <li><a href="blog/index.html" class="mobile-sub-link">Blog &amp; Articles</a></li>
           <li><a href="faqs/index.html" class="mobile-sub-link">FAQs</a></li>
@@ -241,7 +250,7 @@
           </div>
         </div>
         <div class="hero-portrait-wrap">
-          <img src="assets/img/dr-firdous-shaikh-portrait.webp" alt="Dr. Firdous Shaikh, diabetologist in Mumbai" class="hero-portrait" width="800" height="1067" fetchpriority="high">
+          <img src="assets/img/dr-firdous-shaikh-portrait.webp" srcset="assets/img/dr-firdous-shaikh-portrait-400.webp 400w, assets/img/dr-firdous-shaikh-portrait.webp 800w" sizes="(max-width: 600px) 360px, 480px" alt="Dr. Firdous Shaikh, diabetologist in Mumbai" class="hero-portrait" width="800" height="1067" fetchpriority="high">
         </div>
       </div>
     </section>
@@ -342,10 +351,10 @@
         <p>Founded in 2025 by Dr. Firdous Shaikh, DAWN Foundation works on continuity of diabetes care, diabetes-distress research and mental wellbeing. <a href="dawn-foundation/index.html">Learn more about DAWN Foundation &rarr;</a></p>
         <div class="grid grid-2" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
           <div>
-            <img src="assets/img/camp-screening-mumbai.webp" alt="Dr. Firdous Shaikh with attendees at Diabetes and Arthritis Camp Mumbai" width="1080" height="823" loading="lazy" style="border-radius: var(--radius); border: 1px solid var(--line);">
+            <img src="assets/img/camp-screening-mumbai.webp" srcset="assets/img/camp-screening-mumbai-540.webp 540w, assets/img/camp-screening-mumbai.webp 1080w" sizes="(max-width: 768px) 100vw, 540px" alt="Dr. Firdous Shaikh with attendees at Diabetes and Arthritis Camp Mumbai" width="1080" height="823" loading="lazy" style="border-radius: var(--radius); border: 1px solid var(--line);">
           </div>
           <div>
-            <img src="assets/img/camp-awareness-talk.webp" alt="Dr. Firdous Shaikh conducting public diabetes awareness session at community camp" width="1080" height="779" loading="lazy" style="border-radius: var(--radius); border: 1px solid var(--line);">
+            <img src="assets/img/camp-awareness-talk.webp" srcset="assets/img/camp-awareness-talk-540.webp 540w, assets/img/camp-awareness-talk.webp 1080w" sizes="(max-width: 768px) 100vw, 540px" alt="Dr. Firdous Shaikh conducting public diabetes awareness session at community camp" width="1080" height="779" loading="lazy" style="border-radius: var(--radius); border: 1px solid var(--line);">
           </div>
         </div>
         <p><a href="community-awareness/index.html" style="font-weight: 600;">Read about community screening camps &rarr;</a></p>

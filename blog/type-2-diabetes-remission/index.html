@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#14452F">
   <title>Can Type 2 Diabetes Be Reversed? Remission Explained</title>
   <meta name="description" content="What type 2 diabetes remission means, who can achieve it, and DiRECT study findings. By Dr. Firdous Shaikh, Mumbai diabetologist.">
@@ -127,13 +127,16 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+    <!-- Mobile Drawer -->
   <div id="mobile-nav-drawer" class="mobile-drawer" aria-label="Mobile navigation">
     <ul class="mobile-nav-list">
       <li><a href="../../about/index.html" class="mobile-nav-link">About</a></li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Conditions</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-conditions">
+          <span>Conditions</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-conditions" class="mobile-sub-list" hidden>
           <li><a href="../../diabetes-treatment-mumbai/index.html" class="mobile-sub-link">Diabetes Care</a></li>
           <li><a href="../../thyroid-specialist-mumbai/index.html" class="mobile-sub-link">Thyroid Care</a></li>
           <li><a href="../../obesity-treatment-mumbai/index.html" class="mobile-sub-link">Obesity &amp; Metabolic Health</a></li>
@@ -142,16 +145,22 @@
       </li>
       <li><a href="../../consultations/index.html" class="mobile-nav-link">Consultations</a></li>
       <li><a href="../../research-publications/index.html" class="mobile-nav-link">Research &amp; Publications</a></li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Community</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-community">
+          <span>Community</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-community" class="mobile-sub-list" hidden>
           <li><a href="../../community-awareness/index.html" class="mobile-sub-link">Community &amp; Awareness</a></li>
           <li><a href="../../dawn-foundation/index.html" class="mobile-sub-link">DAWN Foundation</a></li>
         </ul>
       </li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Resources</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-resources">
+          <span>Resources</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-resources" class="mobile-sub-list" hidden>
           <li><a href="../../books-patient-education/index.html" class="mobile-sub-link">Books &amp; Education</a></li>
           <li><a href="../../blog/index.html" class="mobile-sub-link">Blog &amp; Articles</a></li>
           <li><a href="../../faqs/index.html" class="mobile-sub-link">FAQs</a></li>

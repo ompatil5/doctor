@@ -1,5 +1,5 @@
 /**
- * Accessible Photo Gallery with Category Filters and Modal Lightbox
+ * Accessible Photo Gallery with Category Filters, Modal Lightbox, and Touch Gestures
  * Dr. Firdous Shaikh — Diabetologist, Thyroid and Weight Management Physician
  */
 document.addEventListener('DOMContentLoaded', function () {
@@ -136,6 +136,42 @@ document.addEventListener('DOMContentLoaded', function () {
         closeLightbox();
       }
     });
+
+    // Touch Swipe Navigation (Mobile Gestures)
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchEndX = 0;
+    var touchEndY = 0;
+
+    lightbox.addEventListener('touchstart', function (e) {
+      if (e.changedTouches && e.changedTouches.length > 0) {
+        touchStartX = e.changedTouches[0].clientX;
+        touchStartY = e.changedTouches[0].clientY;
+      }
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', function (e) {
+      if (e.changedTouches && e.changedTouches.length > 0) {
+        touchEndX = e.changedTouches[0].clientX;
+        touchEndY = e.changedTouches[0].clientY;
+        handleSwipe();
+      }
+    }, { passive: true });
+
+    function handleSwipe() {
+      var diffX = touchEndX - touchStartX;
+      var diffY = touchEndY - touchStartY;
+      // If horizontal swipe is prominent (> 40px and more horizontal than vertical)
+      if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < 0) {
+          // Swiped left -> show next image
+          showImage(currentIndex + 1);
+        } else {
+          // Swiped right -> show previous image
+          showImage(currentIndex - 1);
+        }
+      }
+    }
 
     // Keyboard navigation: Escape, Left, Right, Tab Trap
     document.addEventListener('keydown', function (e) {
