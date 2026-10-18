@@ -185,6 +185,30 @@ OVERALL STATUS: ALL GATES PASSED (100% COMPLIANT)
 
 ---
 
+## Responsive follow-up — 18 October 2026
+
+### Changes
+
+- Tightened the short-laptop Home hero (860px and wider, at heights up to 750px) so its heading, consultation callout and both actions remain visible at 1093×614 and 1280×720.
+- Kept the desktop navigation breakpoint at 1180px. Between 1180px and 1320px, the secondary brand strapline is hidden and desktop navigation spacing is reduced so the booking action remains fully visible without wrapping or clipping.
+- Applied the matching responsive rules to both CSS delivery paths: `site.css` for the home page and `components.css` for inner pages.
+
+### Verified
+
+- Used local Chrome against a local static server to capture all 22 active pages at 320×568, 768×1024 and 1280×720.
+- Visually inspected the mobile Gallery and Contact pages, tablet DAWN page, and the Home page at 1093×614, 1180×720 and 1280×720.
+- Confirmed the Home hero actions are visible in the two required short laptop viewports and that the 1180px and 1280px headers no longer clip the booking action.
+- Reviewed every HTML file for viewport metadata and responsive hazards, and all active CSS for fixed desktop widths, `min-height: 100vh` on the hero, non-shrinking media, and hover-only navigation. All pages include a viewport meta tag; media is constrained to its container; mobile navigation uses controls and desktop dropdowns also work with keyboard focus.
+- Ran `git diff --check` with no whitespace errors.
+
+### Not verified
+
+- No automated DOM `scrollWidth` sweep was available, so the 320px–1920px no-horizontal-scroll requirement was checked by CSS review and browser screenshots rather than programmatic measurement.
+- Lighthouse, a full keyboard-only walkthrough, live-form submission, and production hosting behaviour were not run in this follow-up.
+- No testimonial markup was found in HTML. Legacy, unused testimonial CSS remains in `assets/css/style.css`; that file is not loaded by the active pages and was intentionally left untouched because this task is limited to responsiveness.
+
+---
+
 ## 4. Footer Readability, Centre Alignment & Jyoti Clinic Timing Fix
 
 ### Key Updates Applied:
