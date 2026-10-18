@@ -6,6 +6,10 @@ This document collects all open questions, proposed drafts, and items requiring 
 
 ## 1. Biography, Degrees & Fellowships (Priority)
 
+- [ ] The Home hero now has a Consultation button only. Please confirm whether it should also retain a Book button.
+- [ ] The handwritten Home note may mean an orange-background or orange-frame portrait. Please confirm; no orange styling has been added because the approved palette is white, gold and green.
+- [ ] Please review the CKM and hormonal-imbalance pillar wording before launch.
+
 - [ ] Please confirm Zhejiang University (the recording said Zhengzhou University) and the factual wording that BKC Dedicated Covid Health Centre was one of Mumbai and India's largest Covid centres.
 - [ ] Please confirm Jyoti Clinic (Bandra West), Niramay Diabetes Centre (Mira Road East), and the year private practice began (resume says 2018; recording said 2019).
 - [ ] Please confirm whether "Dip. Diab (Emory)" is an appropriate credential; it is not shown because the resume body describes an advanced certificate.

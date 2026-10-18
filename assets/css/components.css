@@ -1656,3 +1656,26 @@
   box-shadow: var(--shadow-sm);
 }
 
+/* CR5 Home: text-first hero, biography and seven-pillar diagram */
+.hero-text-only { text-align: center; background-image: radial-gradient(circle at 18% 20%, rgba(212,175,55,.07), transparent 30%), radial-gradient(circle at 82% 75%, rgba(20,69,47,.05), transparent 32%); }
+.hero-text-only .hero-content { max-width: 880px; margin: 0 auto; }
+.hero-kicker { text-decoration: none; }
+.hero-kicker:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+.hero-text-only h1 { margin: 0 auto 1rem; }
+.hero-text-only h1 span { display: block; font-family: var(--font-body); font-size: clamp(1.05rem, 2.2vw, 1.45rem); font-weight: 600; letter-spacing: 0; margin-top: .6rem; }
+.about-home-grid { display: grid; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+.about-home-grid img { width: 100%; max-height: 60vh; object-fit: cover; object-position: top; border: 1px solid var(--gold); border-radius: var(--radius); }
+.pillar-intro { max-width: 68ch; margin: 0 auto 2rem; text-align: center; }
+.pillars-layout { display: grid; gap: 2rem; align-items: center; }
+.pillar-chain { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.pillar { min-height: 120px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .25rem; text-align: center; color: var(--green-900); text-decoration: none; border: 2px solid var(--gold); border-radius: 50%; aspect-ratio: 1; padding: .65rem; background: #fff; transition: transform var(--ease), background var(--ease); }
+.pillar:hover, .pillar:focus-visible { background: var(--green-100); transform: translateY(-3px); outline: 3px solid var(--green-700); outline-offset: 3px; }
+.pillar svg { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.pillar strong { font-size: .88rem; }
+.pillar span { font-size: .7rem; line-height: 1.2; }
+.guidelines-panel { border-left: 3px solid var(--gold); padding-left: 1rem; }
+.guideline-chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.guideline-chips span { padding: .45rem .6rem; border-radius: var(--radius-sm); background: #fff; border: 1px solid var(--line); font-size: .78rem; }
+@media (min-width: 768px) { .about-home-grid { grid-template-columns: minmax(260px, .75fr) 1.25fr; } .pillar-chain { grid-template-columns: repeat(4, minmax(96px, 1fr)); } }
+@media (min-width: 1180px) { .pillars-layout { grid-template-columns: minmax(0, 1.6fr) minmax(260px, .75fr); } .pillar-chain { grid-template-columns: repeat(4, minmax(96px, 1fr)); } .guidelines-panel::before { content: '←'; color: var(--gold); font-size: 2rem; float: left; margin-left: -1.6rem; } }
+

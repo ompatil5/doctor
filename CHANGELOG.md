@@ -7,6 +7,11 @@
 - Lighthouse completed for Home: Performance 94 and Accessibility 100. The full five-page, three-run medians remain to be run before launch.
 - Temporary Playwright dependencies were used only for QA and are not committed.
 
+## CR5 Home QA (19 October 2026)
+
+- Playwright checked Home at 320x568, 360x640, 390x844, 768x1024, 1024x768, 1093x614, 1280x720, 1366x768, 1536x864 and 1920x1080: no horizontal overflow, hero content visible, and all pillar links were at least 44px.
+- Lighthouse mobile, three independent runs: Performance 95, 96 and 97 (median 96); Accessibility 100, 100 and 100 (median 100).
+
 ## Change Request #2 Implementation (Branch `client-changes-2`)
 
 ### 1. Overview of Key Changes
