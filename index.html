@@ -26,6 +26,7 @@
   <!-- Preload Fonts -->
   <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/dr-firdous-shaikh-portrait.webp" imagesrcset="assets/img/dr-firdous-shaikh-portrait-400.webp 400w, assets/img/dr-firdous-shaikh-portrait.webp 800w" imagesizes="(max-width: 600px) 360px, 480px" fetchpriority="high">
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/tokens.css">
@@ -120,7 +121,7 @@
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="site-brand" aria-label="Dr. Firdous Shaikh Home">
-        <img src="assets/images/logo.jpg" alt="Dr. Firdous Shaikh Logo" class="brand-logo" width="44" height="44">
+        <img src="assets/img/logo-88.webp" alt="Dr. Firdous Shaikh Logo" class="brand-logo" width="44" height="44" decoding="async">
         <div class="brand-text">
           <span class="brand-name">Dr. Firdous Shaikh</span>
           <span class="brand-title">Diabetologist, Thyroid &amp; Weight Management Physician</span>
@@ -252,7 +253,7 @@
           </div>
         </div>
         <div class="hero-portrait-wrap">
-          <img src="assets/img/dr-firdous-shaikh-portrait.webp" srcset="assets/img/dr-firdous-shaikh-portrait-400.webp 400w, assets/img/dr-firdous-shaikh-portrait.webp 800w" sizes="(max-width: 600px) 360px, 480px" alt="Dr. Firdous Shaikh, diabetologist in Mumbai" class="hero-portrait" width="800" height="1067" fetchpriority="high">
+          <img src="assets/img/dr-firdous-shaikh-portrait.webp" srcset="assets/img/dr-firdous-shaikh-portrait-400.webp 400w, assets/img/dr-firdous-shaikh-portrait.webp 800w" sizes="(max-width: 600px) 360px, 480px" alt="Dr. Firdous Shaikh, diabetologist in Mumbai" class="hero-portrait" width="800" height="1067" fetchpriority="high" decoding="async">
         </div>
       </div>
     </section>
@@ -353,10 +354,10 @@
         <p>Founded in 2025 by Dr. Firdous Shaikh, DAWN Foundation works on continuity of diabetes care, diabetes-distress research and mental wellbeing. <a href="dawn-foundation/index.html">Learn more about DAWN Foundation &rarr;</a></p>
         <div class="grid grid-2" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
           <div>
-            <img src="assets/img/camp-screening-mumbai.webp" srcset="assets/img/camp-screening-mumbai-540.webp 540w, assets/img/camp-screening-mumbai.webp 1080w" sizes="(max-width: 768px) 100vw, 540px" alt="Dr. Firdous Shaikh with attendees at Diabetes and Arthritis Camp Mumbai" width="1080" height="823" loading="lazy" style="border-radius: var(--radius); border: 1px solid var(--line);">
+            <img src="assets/img/camp-screening-mumbai.webp" srcset="assets/img/camp-screening-mumbai-540.webp 540w, assets/img/camp-screening-mumbai.webp 1080w" sizes="(max-width: 768px) 100vw, 540px" alt="Dr. Firdous Shaikh with attendees at Diabetes and Arthritis Camp Mumbai" width="1080" height="823" loading="lazy" decoding="async" style="border-radius: var(--radius); border: 1px solid var(--line);">
           </div>
           <div>
-            <img src="assets/img/camp-awareness-talk.webp" srcset="assets/img/camp-awareness-talk-540.webp 540w, assets/img/camp-awareness-talk.webp 1080w" sizes="(max-width: 768px) 100vw, 540px" alt="Dr. Firdous Shaikh conducting public diabetes awareness session at community camp" width="1080" height="779" loading="lazy" style="border-radius: var(--radius); border: 1px solid var(--line);">
+            <img src="assets/img/camp-awareness-talk.webp" srcset="assets/img/camp-awareness-talk-540.webp 540w, assets/img/camp-awareness-talk.webp 1080w" sizes="(max-width: 768px) 100vw, 540px" alt="Dr. Firdous Shaikh conducting public diabetes awareness session at community camp" width="1080" height="779" loading="lazy" decoding="async" style="border-radius: var(--radius); border: 1px solid var(--line);">
           </div>
         </div>
         <p><a href="community-awareness/index.html" style="font-weight: 600;">Read about community screening camps &rarr;</a></p>
@@ -503,6 +504,6 @@
     </a>
   </div>
 
-  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/nav.js" defer></script>
 </body>
 </html>

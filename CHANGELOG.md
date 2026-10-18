@@ -473,5 +473,31 @@ STATUS: ALL QA CRITERIA COMPLETED & VERIFIED
 
 These runs used Lighthouse 13.5.0 against the local static server with its standard mobile emulation. No performance or accessibility redesign was made as part of this responsive/CSS-cleanup request.
 
+---
+
+## Lighthouse performance follow-up — 18 October 2026
+
+### Largest content and transfer audit
+
+- Home: the hero content is the LCP region; its portrait is preloaded at high priority and served at 400px or 800px through `srcset`.
+- DAWN Foundation and the Type 2 Diabetes Remission article: the opening text content is the LCP region; no content image is requested above the fold.
+- Gallery: the first visible 480px thumbnail is the LCP image candidate; full-resolution files remain deferred until the lightbox opens.
+- The previous largest shared transfers were the 103KB header logo and seven WOFF2 files. The header logo is now a 1.8KB WebP; the active font set is Inter 400 and Fraunces 600 only, both preloaded with `font-display: swap`.
+
+### Three-run Lighthouse mobile medians
+
+| Page | Performance | Accessibility | Best Practices | SEO |
+| :--- | ---: | ---: | ---: | ---: |
+| Home | 94 | 100 | 100 | 100 |
+| DAWN Foundation | 97 | 100 | 100 | 100 |
+| Gallery | 93 | 100 | 100 | 100 |
+| Type 2 Diabetes Remission article | 97 | 100 | 100 | 100 |
+
+The blog's prior Lighthouse failures were resolved by correcting the Key points heading level and the footer booking-button contrast. The navigation script is minified, non-essential page scripts use `defer`, below-the-fold images use lazy asynchronous decoding, and WebP files over 200KB were recompressed.
+
+### Responsive regression
+
+- Re-ran the complete Playwright audit after these changes: all 330 page/viewport combinations again have zero horizontal-overflow, oversized-element, and undersized-target findings.
+
 
 
