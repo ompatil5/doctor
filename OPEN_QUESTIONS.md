@@ -6,6 +6,13 @@ This document collects all open questions, proposed drafts, and items requiring 
 
 ## 1. Biography, Degrees & Fellowships (Priority)
 
+- [ ] Please confirm Zhejiang University (the recording said Zhengzhou University) and the factual wording that BKC Dedicated Covid Health Centre was one of Mumbai and India's largest Covid centres.
+- [ ] Please confirm Jyoti Clinic (Bandra West), Niramay Diabetes Centre (Mira Road East), and the year private practice began (resume says 2018; recording said 2019).
+- [ ] Please confirm whether "Dip. Diab (Emory)" is an appropriate credential; it is not shown because the resume body describes an advanced certificate.
+- [ ] Please confirm whether ACP and UDF membership numbers may be public, and whether LedBy may be described as a Corporate Leaders Fellowship without the "funded by Harvard University" wording.
+- [ ] Nothing in the resume is dated 2023 for the About timeline; please advise if an entry should be added.
+- [ ] The "one of the first Indian women" ATTD claim has not been published; please confirm only if supported.
+
 - [ ] **Missing Biography Details:** In your message you noted that some biography details were not mentioned. All details from the source document (timeline from 2012 to 2025, registrations, memberships, and awards) have been published on `/about/`. Which biography details are missing? Please list:
   - Any other fellowships (full names and years)
   - Degrees and medical qualifications
