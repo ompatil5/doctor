@@ -26,6 +26,11 @@ This document collects all open questions, proposed drafts, and items requiring 
 
 ## 2. Facebook Profile URL
 
+- [ ] Please confirm the appointment email for patient enquiries; the public address is currently also used by the mailto fallback, while a separate patient-enquiry address is preferred.
+- [ ] Please confirm which DAWN telephone number, if any, may be published. No DAWN telephone is currently shown.
+- [ ] Please send the selected photos with descriptive file names. No `new-photos/` folder was supplied.
+- [ ] Please review the new concise condition-card explanations (diabetes and thyroid) and CKM wording before launch.
+
 - [ ] **Facebook Page URL Needed:** You requested Facebook to be included on the site. An inactive link slot has been added in the exact required format next to LinkedIn and Instagram in the footer of every page, the Contact page, and the search engine structured data (`sameAs`):
   `<!-- FACEBOOK-SLOT: replace FB_URL with the real page URL and remove the comment markers <a href="FB_URL" target="_blank" rel="noopener noreferrer">Facebook</a> -->`
   Please provide your official Facebook page or professional profile URL so it can be activated in a single edit without rendering broken links or placeholder chips.

@@ -85,3 +85,7 @@ python -m http.server 8000
 ```
 
 Then open `http://localhost:8000` in your web browser.
+
+## Booking form delivery
+
+The default booking form opens the visitor's email app addressed to `drfirdousshaikh@gmail.com`. To use a form service later, set `FORM_ENDPOINT` in `assets/js/booking-form.js` to the supplied Formspree or Web3Forms endpoint/access-key flow. Do not add SMTP credentials or passwords to this repository.
