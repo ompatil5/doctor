@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#14452F">
-  <meta name="description" content="Visual archives of Dr. Firdous Shaikh: academic medical conferences, diabetes screening camps across Mumbai, and keynote presentations.">
+  <meta name="description" content="Explore photographs of Dr. Firdous Shaikh across academic medical conferences, clinical workshops, community detection camps, and public healthcare awards.">
   <link rel="canonical" href="https://ompatil5.github.io/doctor/gallery/">
+  <link rel="alternate" hreflang="en" href="https://ompatil5.github.io/doctor/gallery/">
+  <link rel="alternate" hreflang="x-default" href="https://ompatil5.github.io/doctor/gallery/">
   <title>Photo Gallery | Dr. Firdous Shaikh</title>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ompatil5.github.io/doctor/gallery/">
   <meta property="og:title" content="Photo Gallery | Dr. Firdous Shaikh">
-  <meta property="og:description" content="Visual archives: academic medical conferences, diabetes screening camps across Mumbai, and national medical honors.">
+  <meta property="og:description" content="Moments from conferences, community camps and awards. Visual archives of Dr. Firdous Shaikh.">
   <meta property="og:image" content="https://ompatil5.github.io/doctor/assets/img/dr-firdous-shaikh-portrait.webp">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Photo Gallery | Dr. Firdous Shaikh">
-  <meta name="twitter:description" content="Visual archives of academic conferences, diabetes detection camps, and public healthcare awards in Mumbai.">
+  <meta name="twitter:description" content="Moments from conferences, community camps and awards. Visual archives of Dr. Firdous Shaikh.">
   <meta name="twitter:image" content="https://ompatil5.github.io/doctor/assets/img/dr-firdous-shaikh-portrait.webp">
 
   <!-- Favicons -->
@@ -57,11 +59,10 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Header -->
-    <!-- Header -->
   <header class="site-header">
     <div class="container">
       <a href="../index.html" class="site-brand" aria-label="Dr. Firdous Shaikh Home">
-        <img src="../assets/images/logo.jpg" alt="Dr. Firdous Shaikh Logo" class="brand-logo" width="44" height="44">
+        <img src="../assets/img/logo-88.webp" alt="Dr. Firdous Shaikh Logo" class="brand-logo" width="44" height="44" decoding="async">
         <div class="brand-text">
           <span class="brand-name">Dr. Firdous Shaikh</span>
           <span class="brand-title">Diabetologist, Thyroid &amp; Weight Management Physician</span>
@@ -103,7 +104,7 @@
             </ul>
           </li>
           <li class="nav-item has-dropdown">
-            <a href="../books-patient-education/index.html" class="nav-link" aria-current="page" aria-haspopup="true" aria-expanded="false">
+            <a href="../books-patient-education/index.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
               Resources
               <span aria-hidden="true">&#9662;</span>
             </a>
@@ -111,7 +112,7 @@
               <li><a href="../books-patient-education/index.html" class="dropdown-item">Books &amp; Education</a></li>
               <li><a href="../blog/index.html" class="dropdown-item">Blog &amp; Articles</a></li>
               <li><a href="../faqs/index.html" class="dropdown-item">FAQs</a></li>
-              <li><a href="../gallery/index.html" class="dropdown-item">Photo Gallery</a></li>
+              <li><a href="../gallery/index.html" class="dropdown-item" aria-current="page">Photo Gallery</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -129,13 +130,16 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+    <!-- Mobile Drawer -->
   <div id="mobile-nav-drawer" class="mobile-drawer" aria-label="Mobile navigation">
     <ul class="mobile-nav-list">
       <li><a href="../about/index.html" class="mobile-nav-link">About</a></li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Conditions</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-conditions">
+          <span>Conditions</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-conditions" class="mobile-sub-list" hidden>
           <li><a href="../diabetes-treatment-mumbai/index.html" class="mobile-sub-link">Diabetes Care</a></li>
           <li><a href="../thyroid-specialist-mumbai/index.html" class="mobile-sub-link">Thyroid Care</a></li>
           <li><a href="../obesity-treatment-mumbai/index.html" class="mobile-sub-link">Obesity &amp; Metabolic Health</a></li>
@@ -144,16 +148,22 @@
       </li>
       <li><a href="../consultations/index.html" class="mobile-nav-link">Consultations</a></li>
       <li><a href="../research-publications/index.html" class="mobile-nav-link">Research &amp; Publications</a></li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Community</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-community">
+          <span>Community</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-community" class="mobile-sub-list" hidden>
           <li><a href="../community-awareness/index.html" class="mobile-sub-link">Community &amp; Awareness</a></li>
           <li><a href="../dawn-foundation/index.html" class="mobile-sub-link">DAWN Foundation</a></li>
         </ul>
       </li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Resources</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-resources">
+          <span>Resources</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-resources" class="mobile-sub-list" hidden>
           <li><a href="../books-patient-education/index.html" class="mobile-sub-link">Books &amp; Education</a></li>
           <li><a href="../blog/index.html" class="mobile-sub-link">Blog &amp; Articles</a></li>
           <li><a href="../faqs/index.html" class="mobile-sub-link">FAQs</a></li>
@@ -169,355 +179,276 @@
 
   <!-- Main Content -->
   <main id="main-content">
-    <!-- Page Hero Banner -->
-    <section class="gallery-hero">
+    <div class="container" style="padding-top: 1.5rem;">
+      <nav aria-label="Breadcrumb" style="font-size: 0.85rem; margin-bottom: 1.5rem;">
+        <a href="../index.html" style="color: var(--muted); text-decoration: none;">Home</a>
+        <span style="margin: 0 0.5rem; color: var(--muted);">&gt;</span>
+        <a href="../books-patient-education/index.html" style="color: var(--muted); text-decoration: none;">Resources</a>
+        <span style="margin: 0 0.5rem; color: var(--muted);">&gt;</span>
+        <span style="color: var(--ink); font-weight: 500;">Photo Gallery</span>
+      </nav>
+    </div>
+
+    <section class="section" style="padding-top: 0;">
       <div class="container">
-        <div>
-          <span class="badge-quiet">Visual Archives &amp; Field Work</span>
-          <h1>Official Photo &amp; Event Gallery</h1>
-          <p class="lead">
-            A photographic archive of academic medical conferences, diabetes screening drives across Mumbai, public health awareness sessions, and professional honors.
-          </p>
-        </div>
+        <span class="badge-quiet">Visual Archives</span>
+        <h1>Photo Gallery</h1>
+        <p class="lead">Moments from conferences, community camps and awards.</p>
 
-        <!-- Stats Strip -->
-        <div class="gallery-stats-strip">
-          <div class="gallery-stat-item">
-            <div class="gallery-stat-number">113</div>
-            <div class="gallery-stat-label">Archival Photographs</div>
-          </div>
-          <div class="gallery-stat-item">
-            <div class="gallery-stat-number">4</div>
-            <div class="gallery-stat-label">Core Clinical Categories</div>
-          </div>
-          <div class="gallery-stat-item">
-            <div class="gallery-stat-number">600+</div>
-            <div class="gallery-stat-label">Students &amp; Citizens Screened</div>
-          </div>
-          <div class="gallery-stat-item">
-            <div class="gallery-stat-number">Asia Book</div>
-            <div class="gallery-stat-label">Records Induction</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Controls & Grid -->
-    <section class="section" style="padding-top: 1.5rem;">
-      <div class="container">
-        <!-- Filter Bar & Search -->
-        <div class="gallery-controls">
-          <div class="gallery-controls-wrap">
-            <div class="gallery-filters" role="toolbar" aria-label="Photo categories">
-              <button type="button" class="filter-btn active" data-filter="all">
-                All Photos <span class="filter-count">113</span>
-              </button>
-              <button type="button" class="filter-btn" data-filter="conferences">
-                Conferences &amp; Lectures <span class="filter-count">37</span>
-              </button>
-              <button type="button" class="filter-btn" data-filter="camps">
-                Community Health Camps <span class="filter-count">31</span>
-              </button>
-              <button type="button" class="filter-btn" data-filter="awards">
-                Honors &amp; Awards <span class="filter-count">26</span>
-              </button>
-              <button type="button" class="filter-btn" data-filter="education">
-                Workshops &amp; Education <span class="filter-count">19</span>
-              </button>
-            </div>
-
-            <div class="gallery-search-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-              <input type="search" id="gallery-search" class="gallery-search-input" placeholder="Search photos by topic or keyword..." aria-label="Search gallery photos">
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-status-bar">
-          <div id="gallery-count-text">Showing 113 of 113 photos</div>
-          <div style="font-size: 0.8rem; color: var(--muted);">Click any photo to open full-screen preview</div>
+        <!-- Category Filter Buttons -->
+        <div class="gallery-filters" role="group" aria-label="Filter gallery by category">
+          <button type="button" class="gallery-filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="gallery-filter-btn" data-filter="conferences" aria-pressed="false">Conferences and Talks</button>
+          <button type="button" class="gallery-filter-btn" data-filter="awards" aria-pressed="false">Awards and Recognition</button>
+          <button type="button" class="gallery-filter-btn" data-filter="camps" aria-pressed="false">Community Camps</button>
         </div>
 
         <!-- Gallery Grid -->
-        <div id="gallery-grid" class="gallery-grid" data-asset-prefix="../">
-          <article class="gallery-card" data-index="0" tabindex="0" role="button" aria-label="View photo: Mumbai Police Health Screening Drive">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/1.webp" type="image/webp">
-                <img src="../assets/images/gallery/1.jpeg" alt="Mumbai Police Health Screening Drive - Dr. Firdous Shaikh Mumbai" width="1077" height="1400" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+        <div id="gallery-grid" class="gallery-grid">
+          <figure class="gallery-item" data-group="conferences" data-index="0">
+            <a href="../assets/img/gallery/large/17.webp" class="gallery-link" data-large="../assets/img/gallery/large/17.webp" data-caption="Dr. Firdous Shaikh speaking at a diabetes conference" data-alt="Dr. Firdous Shaikh speaking at a diabetes conference">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/17.webp" alt="Dr. Firdous Shaikh speaking at a diabetes conference" width="480" height="360" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Community Screening</span>
-              <h3 class="gallery-card-title">Mumbai Police Health Screening Drive</h3>
-              <p class="gallery-card-desc">Conducting preventive blood sugar and hypertension screening for on-duty police personnel.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="1" tabindex="0" role="button" aria-label="View photo: Clinical Diabetes Symposium">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/2.webp" type="image/webp">
-                <img src="../assets/images/gallery/2.jpeg" alt="Clinical Diabetes Symposium - Dr. Firdous Shaikh Mumbai" width="630" height="1400" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Dr. Firdous Shaikh speaking at a diabetes conference</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="conferences" data-index="1">
+            <a href="../assets/img/gallery/large/18.webp" class="gallery-link" data-large="../assets/img/gallery/large/18.webp" data-caption="Faculty panel discussion on clinical diabetes management" data-alt="Faculty panel discussion on clinical diabetes management">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/18.webp" alt="Faculty panel discussion on clinical diabetes management" width="480" height="360" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Medical Seminar</span>
-              <h3 class="gallery-card-title">Clinical Diabetes Symposium</h3>
-              <p class="gallery-card-desc">Chairing clinical presentation on patient-centric care in endocrinology.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="2" tabindex="0" role="button" aria-label="View photo: School Student Diabetes Awareness Camp">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/3.webp" type="image/webp">
-                <img src="../assets/images/gallery/3.jpeg" alt="School Student Diabetes Awareness Camp - Dr. Firdous Shaikh Mumbai" width="413" height="531" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Faculty panel discussion on clinical diabetes management</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="conferences" data-index="2">
+            <a href="../assets/img/gallery/large/19.webp" class="gallery-link" data-large="../assets/img/gallery/large/19.webp" data-caption="Dr. Firdous Shaikh delivering an academic lecture on metabolic care" data-alt="Dr. Firdous Shaikh delivering an academic lecture on metabolic care">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/19.webp" alt="Dr. Firdous Shaikh delivering an academic lecture on metabolic care" width="480" height="360" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Public Health</span>
-              <h3 class="gallery-card-title">School Student Diabetes Awareness Camp</h3>
-              <p class="gallery-card-desc">Educational health camp providing growth and glucose screenings for school students in Mumbai.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="3" tabindex="0" role="button" aria-label="View photo: Symposium on Diabetic Kidney Disease">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/4.webp" type="image/webp">
-                <img src="../assets/images/gallery/4.jpeg" alt="Symposium on Diabetic Kidney Disease - Dr. Firdous Shaikh Mumbai" width="1080" height="1283" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Dr. Firdous Shaikh delivering an academic lecture on metabolic care</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="conferences" data-index="3">
+            <a href="../assets/img/gallery/large/20.webp" class="gallery-link" data-large="../assets/img/gallery/large/20.webp" data-caption="Dr. Firdous Shaikh addressing delegates at an academic medical assembly" data-alt="Dr. Firdous Shaikh addressing delegates at an academic medical assembly">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/20.webp" alt="Dr. Firdous Shaikh addressing delegates at an academic medical assembly" width="480" height="360" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Medical Education</span>
-              <h3 class="gallery-card-title">Symposium on Diabetic Kidney Disease</h3>
-              <p class="gallery-card-desc">Faculty discussion on early nephropathy screening and cardiorenal preservation.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="4" tabindex="0" role="button" aria-label="View photo: Vasai Community Detection Camp">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/5.webp" type="image/webp">
-                <img src="../assets/images/gallery/5.jpeg" alt="Vasai Community Detection Camp - Dr. Firdous Shaikh Mumbai" width="787" height="1400" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Dr. Firdous Shaikh addressing delegates at an academic medical assembly</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="conferences" data-index="4">
+            <a href="../assets/img/gallery/large/22.webp" class="gallery-link" data-large="../assets/img/gallery/large/22.webp" data-caption="Clinical presentation on incretin therapies and metabolic evidence" data-alt="Clinical presentation on incretin therapies and metabolic evidence">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/22.webp" alt="Clinical presentation on incretin therapies and metabolic evidence" width="480" height="360" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Outreach Initiative</span>
-              <h3 class="gallery-card-title">Vasai Community Detection Camp</h3>
-              <p class="gallery-card-desc">Community screening and essential emergency CPR training session for adolescent girls in Vasai.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="5" tabindex="0" role="button" aria-label="View photo: Khar & Bandra Community Health Camp">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/6.webp" type="image/webp">
-                <img src="../assets/images/gallery/6.jpeg" alt="Khar & Bandra Community Health Camp - Dr. Firdous Shaikh Mumbai" width="787" height="1400" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Clinical presentation on incretin therapies and metabolic evidence</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="conferences" data-index="5">
+            <a href="../assets/img/gallery/large/24.webp" class="gallery-link" data-large="../assets/img/gallery/large/24.webp" data-caption="Panel discussion on continuous glucose monitoring and time-in-range" data-alt="Panel discussion on continuous glucose monitoring and time-in-range">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/24.webp" alt="Panel discussion on continuous glucose monitoring and time-in-range" width="480" height="320" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Free Medical Camp</span>
-              <h3 class="gallery-card-title">Khar & Bandra Community Health Camp</h3>
-              <p class="gallery-card-desc">Providing free blood glucose checks, HbA1c guidance, and dietary counselling in Bandra West.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="6" tabindex="0" role="button" aria-label="View photo: Misaal Mumbai Health Initiative">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/7.webp" type="image/webp">
-                <img src="../assets/images/gallery/7.jpeg" alt="Misaal Mumbai Health Initiative - Dr. Firdous Shaikh Mumbai" width="1400" height="630" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Panel discussion on continuous glucose monitoring and time-in-range</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="conferences" data-index="6">
+            <a href="../assets/img/gallery/large/26.webp" class="gallery-link" data-large="../assets/img/gallery/large/26.webp" data-caption="Medical education lecture on diagnostic criteria in diabetes" data-alt="Medical education lecture on diagnostic criteria in diabetes">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/26.webp" alt="Medical education lecture on diagnostic criteria in diabetes" width="480" height="360" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Public Health Drive</span>
-              <h3 class="gallery-card-title">Misaal Mumbai Health Initiative</h3>
-              <p class="gallery-card-desc">Collaborative preventive health check-ups and nutritional guidance for underprivileged school children.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="7" tabindex="0" role="button" aria-label="View photo: Qureshi Nagar Community Health Camp">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/9.webp" type="image/webp">
-                <img src="../assets/images/gallery/9.jpeg" alt="Qureshi Nagar Community Health Camp - Dr. Firdous Shaikh Mumbai" width="533" height="401" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Medical education lecture on diagnostic criteria in diabetes</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="conferences" data-index="7">
+            <a href="../assets/img/gallery/large/27.webp" class="gallery-link" data-large="../assets/img/gallery/large/27.webp" data-caption="Dr. Firdous Shaikh participating in an interdisciplinary clinical symposium" data-alt="Dr. Firdous Shaikh participating in an interdisciplinary clinical symposium">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/27.webp" alt="Dr. Firdous Shaikh participating in an interdisciplinary clinical symposium" width="480" height="480" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Screening Drive</span>
-              <h3 class="gallery-card-title">Qureshi Nagar Community Health Camp</h3>
-              <p class="gallery-card-desc">Organizing neighborhood screening camps to identify undetected prediabetes and hypertension.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="8" tabindex="0" role="button" aria-label="View photo: Senior Citizen Metabolic Health Drive">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/10.webp" type="image/webp">
-                <img src="../assets/images/gallery/10.jpeg" alt="Senior Citizen Metabolic Health Drive - Dr. Firdous Shaikh Mumbai" width="933" height="1400" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Dr. Firdous Shaikh participating in an interdisciplinary clinical symposium</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="conferences" data-index="8">
+            <a href="../assets/img/gallery/large/47.webp" class="gallery-link" data-large="../assets/img/gallery/large/47.webp" data-caption="Faculty panel and podium presentation at an academic diabetes meeting" data-alt="Faculty panel and podium presentation at an academic diabetes meeting">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/47.webp" alt="Faculty panel and podium presentation at an academic diabetes meeting" width="480" height="320" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Preventive Camp</span>
-              <h3 class="gallery-card-title">Senior Citizen Metabolic Health Drive</h3>
-              <p class="gallery-card-desc">Comprehensive health camp focusing on cardiovascular risk factors and medication review for seniors.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="9" tabindex="0" role="button" aria-label="View photo: Mira Road Diabetes Awareness Camp">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/11.webp" type="image/webp">
-                <img src="../assets/images/gallery/11.jpeg" alt="Mira Road Diabetes Awareness Camp - Dr. Firdous Shaikh Mumbai" width="1320" height="872" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Faculty panel and podium presentation at an academic diabetes meeting</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="awards" data-index="9">
+            <a href="../assets/img/gallery/large/14.webp" class="gallery-link" data-large="../assets/img/gallery/large/14.webp" data-caption="Felicitation ceremony recognising clinical contributions in diabetes care" data-alt="Felicitation ceremony recognising clinical contributions in diabetes care">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/14.webp" alt="Felicitation ceremony recognising clinical contributions in diabetes care" width="480" height="360" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Community Screening</span>
-              <h3 class="gallery-card-title">Mira Road Diabetes Awareness Camp</h3>
-              <p class="gallery-card-desc">Public outreach screening camp offering spot capillary blood glucose testing and risk scoring.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="10" tabindex="0" role="button" aria-label="View photo: Free Diabetes & Arthritis Detection Camp">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/12.webp" type="image/webp">
-                <img src="../assets/images/gallery/12.jpeg" alt="Free Diabetes & Arthritis Detection Camp - Dr. Firdous Shaikh Mumbai" width="960" height="1280" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Felicitation ceremony recognising clinical contributions in diabetes care</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="awards" data-index="10">
+            <a href="../assets/img/gallery/large/30.webp" class="gallery-link" data-large="../assets/img/gallery/large/30.webp" data-caption="Professional felicitation with medical colleagues and faculty" data-alt="Professional felicitation with medical colleagues and faculty">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/30.webp" alt="Professional felicitation with medical colleagues and faculty" width="480" height="320" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Public Health</span>
-              <h3 class="gallery-card-title">Free Diabetes & Arthritis Detection Camp</h3>
-              <p class="gallery-card-desc">Interdisciplinary screening camp combining metabolic assessments with joint mobility screenings.</p>
-            </div>
-          </article>
-          <article class="gallery-card" data-index="11" tabindex="0" role="button" aria-label="View photo: World Diabetes Day Screening Pavilion">
-            <div class="gallery-img-container">
-              <picture>
-                <source srcset="../assets/img/gallery/13.webp" type="image/webp">
-                <img src="../assets/images/gallery/13.jpeg" alt="World Diabetes Day Screening Pavilion - Dr. Firdous Shaikh Mumbai" width="1400" height="1400" loading="lazy">
-              </picture>
-              <div class="gallery-overlay" aria-hidden="true">
-                <span class="gallery-overlay-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  View High-Res Photo
-                </span>
+              <figcaption class="gallery-caption">Professional felicitation with medical colleagues and faculty</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="awards" data-index="11">
+            <a href="../assets/img/gallery/large/31.webp" class="gallery-link" data-large="../assets/img/gallery/large/31.webp" data-caption="Certificate presentation for the Asia Book of Records lipid screening initiative" data-alt="Certificate presentation for the Asia Book of Records lipid screening initiative">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/31.webp" alt="Certificate presentation for the Asia Book of Records lipid screening initiative" width="480" height="768" loading="lazy" decoding="async">
               </div>
-            </div>
-            <div class="gallery-card-body">
-              <span class="gallery-card-badge">Outreach Initiative</span>
-              <h3 class="gallery-card-title">World Diabetes Day Screening Pavilion</h3>
-              <p class="gallery-card-desc">Community pavilion providing free risk-assessment questionnaires and lifestyle counselling.</p>
-            </div>
-          </article>
+              <figcaption class="gallery-caption">Certificate presentation for the Asia Book of Records lipid screening initiative</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="awards" data-index="12">
+            <a href="../assets/img/gallery/large/32.webp" class="gallery-link" data-large="../assets/img/gallery/large/32.webp" data-caption="Felicitation by the Mayor of Mumbai for COVID-19 duty" data-alt="Felicitation by the Mayor of Mumbai for COVID-19 duty">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/32.webp" alt="Felicitation by the Mayor of Mumbai for COVID-19 duty" width="480" height="853" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Felicitation by the Mayor of Mumbai for COVID-19 duty</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="awards" data-index="13">
+            <a href="../assets/img/gallery/large/33.webp" class="gallery-link" data-large="../assets/img/gallery/large/33.webp" data-caption="Hello Diabetes D-NextGen Award presentation for diabetes education" data-alt="Hello Diabetes D-NextGen Award presentation for diabetes education">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/33.webp" alt="Hello Diabetes D-NextGen Award presentation for diabetes education" width="480" height="519" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Hello Diabetes D-NextGen Award presentation for diabetes education</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="awards" data-index="14">
+            <a href="../assets/img/gallery/large/35.webp" class="gallery-link" data-large="../assets/img/gallery/large/35.webp" data-caption="Recognition from the American College of Physicians India Chapter" data-alt="Recognition from the American College of Physicians India Chapter">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/35.webp" alt="Recognition from the American College of Physicians India Chapter" width="480" height="854" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Recognition from the American College of Physicians India Chapter</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="awards" data-index="15">
+            <a href="../assets/img/gallery/large/37.webp" class="gallery-link" data-large="../assets/img/gallery/large/37.webp" data-caption="Academic award recognition at an international diabetes conference" data-alt="Academic award recognition at an international diabetes conference">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/37.webp" alt="Academic award recognition at an international diabetes conference" width="480" height="853" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Academic award recognition at an international diabetes conference</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="awards" data-index="16">
+            <a href="../assets/img/gallery/large/38.webp" class="gallery-link" data-large="../assets/img/gallery/large/38.webp" data-caption="Presentation at the 11th Annual Women Summit Awards, NSE Mumbai" data-alt="Presentation at the 11th Annual Women Summit Awards, NSE Mumbai">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/38.webp" alt="Presentation at the 11th Annual Women Summit Awards, NSE Mumbai" width="480" height="360" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Presentation at the 11th Annual Women Summit Awards, NSE Mumbai</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="awards" data-index="17">
+            <a href="../assets/img/gallery/large/40.webp" class="gallery-link" data-large="../assets/img/gallery/large/40.webp" data-caption="Presentation of trophy recognising work in diabetes education" data-alt="Presentation of trophy recognising work in diabetes education">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/40.webp" alt="Presentation of trophy recognising work in diabetes education" width="480" height="360" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Presentation of trophy recognising work in diabetes education</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="camps" data-index="18">
+            <a href="../assets/img/gallery/large/1.webp" class="gallery-link" data-large="../assets/img/gallery/large/1.webp" data-caption="Diabetes and health screening camp for Mumbai police personnel" data-alt="Diabetes and health screening camp for Mumbai police personnel">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/1.webp" alt="Diabetes and health screening camp for Mumbai police personnel" width="480" height="624" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Diabetes and health screening camp for Mumbai police personnel</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="camps" data-index="19">
+            <a href="../assets/img/gallery/large/7.webp" class="gallery-link" data-large="../assets/img/gallery/large/7.webp" data-caption="Preventive health screening drive for school students" data-alt="Preventive health screening drive for school students">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/7.webp" alt="Preventive health screening drive for school students" width="480" height="216" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Preventive health screening drive for school students</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="camps" data-index="20">
+            <a href="../assets/img/gallery/large/11.webp" class="gallery-link" data-large="../assets/img/gallery/large/11.webp" data-caption="Community diabetes screening and awareness camp in Mira Road" data-alt="Community diabetes screening and awareness camp in Mira Road">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/11.webp" alt="Community diabetes screening and awareness camp in Mira Road" width="480" height="317" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Community diabetes screening and awareness camp in Mira Road</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="camps" data-index="21">
+            <a href="../assets/img/gallery/large/13.webp" class="gallery-link" data-large="../assets/img/gallery/large/13.webp" data-caption="World Diabetes Day public health awareness pavilion" data-alt="World Diabetes Day public health awareness pavilion">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/13.webp" alt="World Diabetes Day public health awareness pavilion" width="480" height="480" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">World Diabetes Day public health awareness pavilion</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="camps" data-index="22">
+            <a href="../assets/img/gallery/large/15.webp" class="gallery-link" data-large="../assets/img/gallery/large/15.webp" data-caption="Community lipid and metabolic screening drive in Mumbai" data-alt="Community lipid and metabolic screening drive in Mumbai">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/15.webp" alt="Community lipid and metabolic screening drive in Mumbai" width="480" height="360" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Community lipid and metabolic screening drive in Mumbai</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="camps" data-index="23">
+            <a href="../assets/img/gallery/large/16.webp" class="gallery-link" data-large="../assets/img/gallery/large/16.webp" data-caption="Healthcare outreach team conducting community awareness" data-alt="Healthcare outreach team conducting community awareness">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/16.webp" alt="Healthcare outreach team conducting community awareness" width="480" height="480" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Healthcare outreach team conducting community awareness</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="camps" data-index="24">
+            <a href="../assets/img/gallery/large/55.webp" class="gallery-link" data-large="../assets/img/gallery/large/55.webp" data-caption="Health screening session for school children in Mumbai" data-alt="Health screening session for school children in Mumbai">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/55.webp" alt="Health screening session for school children in Mumbai" width="480" height="319" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Health screening session for school children in Mumbai</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="camps" data-index="25">
+            <a href="../assets/img/gallery/large/56.webp" class="gallery-link" data-large="../assets/img/gallery/large/56.webp" data-caption="Community screening and health awareness camp in Vasai" data-alt="Community screening and health awareness camp in Vasai">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/56.webp" alt="Community screening and health awareness camp in Vasai" width="480" height="320" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Community screening and health awareness camp in Vasai</figcaption>
+            </a>
+          </figure>
+          <figure class="gallery-item" data-group="camps" data-index="26">
+            <a href="../assets/img/gallery/large/112.webp" class="gallery-link" data-large="../assets/img/gallery/large/112.webp" data-caption="Community diabetes awareness and screening camp in Bandra" data-alt="Community diabetes awareness and screening camp in Bandra">
+              <div class="gallery-img-wrap">
+                <img src="../assets/img/gallery/thumb/112.webp" alt="Community diabetes awareness and screening camp in Bandra" width="480" height="480" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="gallery-caption">Community diabetes awareness and screening camp in Bandra</figcaption>
+            </a>
+          </figure>
         </div>
 
-        <!-- Consultation Banner -->
-        <div class="card card-primary" style="margin-top: 3rem; text-align: center; padding: 2.5rem 1.5rem;">
-          <h2 style="font-size: 1.5rem; color: var(--green-900); margin-bottom: 0.5rem;">Collaborate or Invite for Community Health Screening</h2>
-          <p style="color: var(--muted); max-width: 640px; margin: 0 auto 1.5rem auto; line-height: 1.6;">
-            Dr. Firdous Shaikh partners with civic bodies, police departments, educational institutions, and NGOs to conduct preventive diabetes and metabolic risk screening camps.
-          </p>
-          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <a href="../community-awareness/index.html" class="btn btn-primary">Learn About Community Drives</a>
-            <a href="../contact/index.html" class="btn btn-secondary">Contact Clinic Office</a>
-          </div>
-        </div>
+        <!-- Consent Disclaimer -->
+        <p class="text-small text-muted" style="margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1.25rem; font-style: italic;">
+          Photographs are shared with consent. To request removal of a photograph, please contact the clinic.
+        </p>
       </div>
     </section>
   </main>
 
-  <!-- Lightbox Modal Viewer -->
-  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+  <!-- Lightbox Modal -->
+  <div id="gallery-lightbox" class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <div class="lightbox-backdrop"></div>
     <div class="lightbox-dialog">
-      <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close photo viewer">&times;</button>
-      
-      <button type="button" id="lightbox-prev" class="lightbox-prev" aria-label="Previous photograph">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      </button>
-
-      <button type="button" id="lightbox-next" class="lightbox-next" aria-label="Next photograph">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-      </button>
-
+      <button type="button" id="lightbox-close" class="lightbox-btn-close" aria-label="Close photo preview">&times;</button>
+      <button type="button" id="lightbox-prev" class="lightbox-nav-btn lightbox-btn-prev" aria-label="Previous photo">&#8249;</button>
       <div class="lightbox-img-wrap">
-        <img id="lightbox-img" src="" alt="Photo preview">
+        <img id="lightbox-img" class="lightbox-img" src="" alt="" width="1600" height="1200" loading="lazy" decoding="async">
       </div>
-
-      <div class="lightbox-caption">
-        <div id="lightbox-counter" class="lightbox-counter">Photo 1 of 113</div>
-        <div id="lightbox-badge" class="gallery-card-badge" style="color: var(--accent-subtle);">Category</div>
-        <h2 id="lightbox-title" class="lightbox-title">Photograph Title</h2>
-        <p id="lightbox-desc" class="lightbox-desc">Photograph description caption.</p>
-        <div class="lightbox-action-row">
-          <a id="lightbox-orig-link" href="#" target="_blank" class="lightbox-action-link">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-            Open Full Resolution JPEG
-          </a>
-        </div>
+      <button type="button" id="lightbox-next" class="lightbox-nav-btn lightbox-btn-next" aria-label="Next photo">&#8250;</button>
+      <div class="lightbox-meta">
+        <div id="lightbox-caption" class="lightbox-caption-text"></div>
+        <div id="lightbox-counter" class="lightbox-counter"></div>
       </div>
     </div>
   </div>
 
-      <!-- Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -576,6 +507,8 @@
             <div>LinkedIn: <a href="https://www.linkedin.com/in/drfirdousshaikh" target="_blank" rel="noopener noreferrer">drfirdousshaikh</a></div>
             <div><a href="https://www.instagram.com/firdous1915" target="_blank" rel="noopener noreferrer">Instagram @firdous1915</a></div>
             <div><a href="https://www.instagram.com/shaikhdrfirdous" target="_blank" rel="noopener noreferrer">Instagram @shaikhdrfirdous</a></div>
+            <!-- FACEBOOK-SLOT: replace FB_URL with the real page URL and remove the comment markers
+            <a href="FB_URL" target="_blank" rel="noopener noreferrer">Facebook</a> -->
           </div>
         </div>
       </div>
@@ -606,8 +539,7 @@
     </a>
   </div>
 
-  <script src="../assets/js/nav.js"></script>
-  <script src="../assets/js/gallery-data.js"></script>
-  <script src="../assets/js/gallery.js"></script>
+  <script src="../assets/js/nav.js" defer></script>
+  <script src="../assets/js/gallery.js" defer></script>
 </body>
 </html>

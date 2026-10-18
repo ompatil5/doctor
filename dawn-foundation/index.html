@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Care, screening and health education focused on women with diabetes in India. Learn about DAWN Foundation, founded by Dr. Firdous Shaikh.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="DAWN Foundation, founded by Dr. Firdous Shaikh, works on continuity of diabetes care, diabetes distress research and mental wellbeing.">
   <meta name="theme-color" content="#14452F">
   <link rel="canonical" href="https://ompatil5.github.io/doctor/dawn-foundation/">
   <link rel="alternate" hreflang="en" href="https://ompatil5.github.io/doctor/dawn-foundation/">
@@ -14,13 +14,13 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ompatil5.github.io/doctor/dawn-foundation/">
   <meta property="og:title" content="DAWN Foundation | Diabetes and Women's Network">
-  <meta property="og:description" content="Screening, education and health support built around women. Founded by Dr. Firdous Shaikh.">
+  <meta property="og:description" content="DAWN Foundation, founded by Dr. Firdous Shaikh, works on continuity of diabetes care, diabetes distress research and mental wellbeing.">
   <meta property="og:image" content="https://ompatil5.github.io/doctor/assets/img/dr-firdous-shaikh-portrait.webp">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DAWN Foundation | Diabetes and Women's Network">
-  <meta name="twitter:description" content="Screening, education and health support built around women. Founded by Dr. Firdous Shaikh.">
+  <meta name="twitter:description" content="DAWN Foundation, founded by Dr. Firdous Shaikh, works on continuity of diabetes care, diabetes distress research and mental wellbeing.">
   <meta name="twitter:image" content="https://ompatil5.github.io/doctor/assets/img/dr-firdous-shaikh-portrait.webp">
 
   <!-- Favicons -->
@@ -48,12 +48,6 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Community",
-        "item": "https://ompatil5.github.io/doctor/community-awareness/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
         "name": "DAWN Foundation",
         "item": "https://ompatil5.github.io/doctor/dawn-foundation/"
       }
@@ -66,15 +60,25 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Diabetes and Women's Network",
-    "alternateName": "DAWN Foundation",
+    "name": "DAWN Foundation",
+    "alternateName": "Diabetes and Women's Network",
     "founder": {
       "@type": "Person",
       "name": "Dr. Firdous Shaikh"
     },
-    "foundingDate": "2025-10",
-    "description": "Screening, education and health support built around women.",
-    "url": "https://ompatil5.github.io/doctor/dawn-foundation/"
+    "foundingDate": "2025",
+    "description": "DAWN Foundation (Diabetes and Women's Network) exists to close the gap between clinical diagnosis and lived experience in diabetes care, with a particular focus on paediatric Type 1 Diabetes Mellitus (T1DM), Type 2 Diabetes care, and the psychosocial burden of chronic metabolic disease.",
+    "url": "https://ompatil5.github.io/doctor/dawn-foundation/",
+    "email": "drfirdousshaikh@gmail.com",
+    "telephone": "+919822293515",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+919822293515",
+        "email": "drfirdousshaikh@gmail.com",
+        "contactType": "collaboration enquiries"
+      }
+    ]
   }
   </script>
 </head>
@@ -85,7 +89,7 @@
   <header class="site-header">
     <div class="container">
       <a href="../index.html" class="site-brand" aria-label="Dr. Firdous Shaikh Home">
-        <img src="../assets/images/logo.jpg" alt="Dr. Firdous Shaikh Logo" class="brand-logo" width="44" height="44">
+        <img src="../assets/img/logo-88.webp" alt="Dr. Firdous Shaikh Logo" class="brand-logo" width="44" height="44" decoding="async">
         <div class="brand-text">
           <span class="brand-name">Dr. Firdous Shaikh</span>
           <span class="brand-title">Diabetologist, Thyroid &amp; Weight Management Physician</span>
@@ -117,13 +121,13 @@
             <a href="../research-publications/index.html" class="nav-link">Research</a>
           </li>
           <li class="nav-item has-dropdown">
-            <a href="../community-awareness/index.html" class="nav-link" aria-haspopup="true" aria-expanded="false" aria-current="page">
+            <a href="../community-awareness/index.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
               Community
               <span aria-hidden="true">&#9662;</span>
             </a>
             <ul class="dropdown-menu" aria-label="Community submenu">
               <li><a href="../community-awareness/index.html" class="dropdown-item">Community &amp; Awareness</a></li>
-              <li><a href="./index.html" class="dropdown-item" aria-current="page">DAWN Foundation</a></li>
+              <li><a href="../dawn-foundation/index.html" class="dropdown-item">DAWN Foundation</a></li>
             </ul>
           </li>
           <li class="nav-item has-dropdown">
@@ -153,13 +157,16 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+    <!-- Mobile Drawer -->
   <div id="mobile-nav-drawer" class="mobile-drawer" aria-label="Mobile navigation">
     <ul class="mobile-nav-list">
       <li><a href="../about/index.html" class="mobile-nav-link">About</a></li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Conditions</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-conditions">
+          <span>Conditions</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-conditions" class="mobile-sub-list" hidden>
           <li><a href="../diabetes-treatment-mumbai/index.html" class="mobile-sub-link">Diabetes Care</a></li>
           <li><a href="../thyroid-specialist-mumbai/index.html" class="mobile-sub-link">Thyroid Care</a></li>
           <li><a href="../obesity-treatment-mumbai/index.html" class="mobile-sub-link">Obesity &amp; Metabolic Health</a></li>
@@ -168,16 +175,22 @@
       </li>
       <li><a href="../consultations/index.html" class="mobile-nav-link">Consultations</a></li>
       <li><a href="../research-publications/index.html" class="mobile-nav-link">Research &amp; Publications</a></li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Community</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-community">
+          <span>Community</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-community" class="mobile-sub-list" hidden>
           <li><a href="../community-awareness/index.html" class="mobile-sub-link">Community &amp; Awareness</a></li>
-          <li><a href="./index.html" class="mobile-sub-link" aria-current="page">DAWN Foundation</a></li>
+          <li><a href="../dawn-foundation/index.html" class="mobile-sub-link">DAWN Foundation</a></li>
         </ul>
       </li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Resources</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-resources">
+          <span>Resources</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-resources" class="mobile-sub-list" hidden>
           <li><a href="../books-patient-education/index.html" class="mobile-sub-link">Books &amp; Education</a></li>
           <li><a href="../blog/index.html" class="mobile-sub-link">Blog &amp; Articles</a></li>
           <li><a href="../faqs/index.html" class="mobile-sub-link">FAQs</a></li>
@@ -205,42 +218,112 @@
 
     <section class="section" style="padding-top: 0;">
       <div class="container container-prose">
-        <span class="badge-quiet">Community Initiative</span>
-        <h1>DAWN Foundation (Diabetes and Women's Network)</h1>
-        <p class="lead">Screening, education and healthcare support built around women.</p>
+        <span class="badge-quiet">Global Health Initiative</span>
+        <h1>DAWN Foundation: Diabetes and Women's Network</h1>
+        <p class="lead" style="color: var(--muted); font-size: 1.1rem; margin-bottom: 2rem;">Founded in 2025 by Dr. Firdous Shaikh. Mumbai, India.</p>
 
-        <p>The DAWN Foundation (Diabetes and Women's Network) was founded in October 2025 by Dr. Firdous Shaikh.</p>
+        <!-- Table of Contents -->
+        <nav class="dawn-toc" aria-label="Table of Contents">
+          <strong style="color: var(--green-900); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">Table of Contents</strong>
+          <ul class="dawn-toc-list">
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#how-we-work">How We Work</a></li>
+            <li><a href="#aim">Aim</a></li>
+            <li><a href="#strategic-objectives">Strategic Objectives</a></li>
+            <li><a href="#invitation-to-collaborate">An Invitation to Collaborate</a></li>
+            <li><a href="#collaboration-enquiries">Collaboration Enquiries</a></li>
+          </ul>
+        </nav>
 
-        <h2>Why DAWN Was Founded</h2>
-        <p>Women carry diabetes differently. Hormones shift through puberty, pregnancy and menopause, and social pressure often pushes a woman's own health to the bottom of the list. In India, women often come last in their own family's health priorities, and many are diagnosed late.</p>
-        <p>Dr. Shaikh founded the DAWN Foundation to help change that reality through screening, education and support built specifically around women.</p>
+        <!-- Vision and Mission Highlight Cards -->
+        <div class="dawn-vision-mission">
+          <div id="vision" class="dawn-card">
+            <h2 style="font-size: 1.35rem; margin-top: 0;">Vision</h2>
+            <p>A world in which every individual living with diabetes, irrespective of age, geography, or socioeconomic circumstance, has uninterrupted access to continuous, compassionate, and evidence-based care that addresses both the metabolic and psychosocial dimensions of the disease, and in which distance is no longer a barrier to sustained clinical engagement.</p>
+          </div>
 
-        <h2>Our Vision</h2>
-        <p><span class="todo">TO CONFIRM: DAWN vision</span></p>
-
-        <h2>Our Mission</h2>
-        <p><span class="todo">TO CONFIRM: DAWN mission</span></p>
-
-        <h2>Clinical Focus for Women</h2>
-        <p>In clinical practice, Dr. Shaikh sees women for polycystic ovary syndrome (PCOS), gestational diabetes, thyroid disorders around pregnancy, and diabetes at all stages of life.</p>
-        <p>For detailed medical information on PCOS, gestational diabetes and thyroid conditions in pregnancy, please visit the <a href="../pcos-gestational-diabetes-mumbai/index.html">Women's Health and Mental Health</a> page.</p>
-
-        <div class="callout-doctor" style="margin-top: 2.5rem;">
-          <h4>Consultation and Outreach Enquiries</h4>
-          <p>For community screening partnerships, educational sessions or clinical appointments, please write to the clinic or book a consultation.</p>
-          <div style="margin-top: 1rem;">
-            <a href="../contact/index.html" class="btn btn-primary">Book a consultation</a>
+          <div id="mission" class="dawn-card">
+            <h2 style="font-size: 1.35rem; margin-top: 0;">Mission</h2>
+            <p>DAWN Foundation (Diabetes and Women's Network) exists to close the gap between clinical diagnosis and lived experience in diabetes care, with a particular focus on paediatric Type 1 Diabetes Mellitus (T1DM), Type 2 Diabetes care, and the psychosocial burden of chronic metabolic disease. We do this by building structured, replicable models of continuity of care, generating culturally validated screening tools for the South and Southeast Asian population, and fostering a global network of clinicians, researchers, and caregivers committed to holistic, data-driven diabetes management.</p>
+            <p style="margin-bottom: 0;">Mental health and wellness sit at the core of everything DAWN Foundation undertakes. We hold that diabetes cannot be managed as a purely metabolic condition; the psychological burden it places on people living with diabetes and caregivers is inseparable from clinical outcome, and every initiative we build is designed around this premise.</p>
           </div>
         </div>
 
-        <div style="margin-top: 2rem; font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 1rem;">
-          <p><em>Medical Disclaimer: The DAWN Foundation provides health education and community screening initiatives. This website provides general medical information and is not a substitute for formal diagnosis or clinical treatment.</em></p>
+        <!-- How We Work -->
+        <section id="how-we-work" style="margin-top: 3rem;">
+          <h2>How We Work</h2>
+          <p>DAWN Foundation is built around global connection, with particular emphasis on low- and middle-income countries (LMIC), where the burden of diabetes is rising fastest, and the infrastructure to address its psychosocial dimensions is often thinnest. Our approach is deliberately practice-oriented: research undertaken under the DAWN umbrella is intended not to remain confined to publication, but to be actively translated into policy and ground-level impact and change. We pursue this through:</p>
+          <ul style="padding-left: 1.25rem; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li><strong>Global case studies:</strong> drawing on real-world scenarios from across diverse healthcare settings to surface what works, and why, in contexts unlike our own.</li>
+            <li><strong>Candid, question-driven webinars:</strong> participating in and convening dialogue that is willing to ask the difficult questions, rather than restating consensus.</li>
+            <li><strong>A collaborative model:</strong> built with partner organisations over time, so that shared learning ultimately translates into improved clinical practice on the ground.</li>
+          </ul>
+        </section>
+
+        <!-- Aim -->
+        <section id="aim" style="margin-top: 3rem;">
+          <h2>Aim</h2>
+          <p>To design, validate, and scale two complementary, evidence-anchored initiatives: a sustainable continuity-of-care model for children with T1DM and their caregivers, and a cross-culturally validated instrument for diabetes-related psychological distress in partnership with international diabetes organisations, so that both may be adopted, adapted, and studied across diverse healthcare settings.</p>
+        </section>
+
+        <!-- Strategic Objectives -->
+        <section id="strategic-objectives" style="margin-top: 3rem;">
+          <h2>Strategic Objectives</h2>
+
+          <div class="dawn-objective-card">
+            <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--green-900);">Objective 1: A Sustainable Continuity-of-Care Model for Children with Type 1 Diabetes and Their Caregivers</h3>
+            <p>Children with T1DM and their families frequently disengage from structured follow-up between hospital visits, particularly where distance, cost, or caregiver burden limit access to specialist care. This objective addresses that gap through a low-resource, replicable engagement framework built around three pillars:</p>
+            <ul style="padding-left: 1.25rem; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li><strong>Structured monthly progress review:</strong> scheduled visits (in-person or telehealth-enabled) to track glycaemic control, growth parameters, insulin technique, and psychosocial adjustment, using a standardised progress-tracking format that generates longitudinal, analysable data.</li>
+              <li><strong>Caregiver-inclusive awareness content:</strong> a structured library of short awareness and education videos addressing insulin management, hypoglycaemia recognition, nutrition, school integration, and caregiver mental health, designed for repeated use between visits.</li>
+              <li><strong>Distance-agnostic engagement:</strong> a sustainable module allowing children and caregivers in remote or underserved areas to remain continuously engaged with the care team despite geographic separation, reducing loss-to-follow-up and enabling earlier identification of clinical or psychosocial deterioration.</li>
+            </ul>
+            <p style="margin-bottom: 0;">The model is intended to generate prospective outcome data (glycaemic, anthropometric, and distress-scale trends) suitable for joint publication and for adaptation by partner organisations operating in comparable resource settings.</p>
+          </div>
+
+          <div class="dawn-objective-card">
+            <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--green-900);">Objective 2: Cross-Cultural Refinement and Validation of the Modified Diabetes Distress Scale (mDDS)</h3>
+            <p>Diabetes distress is a well-established, independent predictor of glycaemic outcomes, yet the majority of validated distress instruments were developed and normed on Western cohorts, whose sociocultural stressors, family structures, and health-system contexts differ substantially from those of South and Southeast Asian populations. In response, the Modified Diabetes Distress Scale (mDDS) was developed and has already undergone initial validation, with the supporting paper published and indexed on PubMed.</p>
+            <ul style="padding-left: 1.25rem; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li><strong>Current stage:</strong> refinement of the validated South and Southeast Asian instrument into a monograph-length work, expanding on item development, psychometric performance, and population-specific distress domains.</li>
+              <li><strong>Next stage:</strong> cross-continental adaptation and validation, in collaboration with partner organisations, to establish the mDDS as a culturally responsive alternative or complement to existing distress scales across diverse populations.</li>
+            </ul>
+            <p style="margin-bottom: 0;">This objective is offered as a specific, concrete avenue for collaborative multi-country research; data collection, translation and back-translation, and comparative psychometric analysis are all natural points of partnership.</p>
+          </div>
+        </section>
+
+        <!-- An Invitation to Collaborate -->
+        <section id="invitation-to-collaborate" style="margin-top: 3rem;">
+          <h2>An Invitation to Collaborate</h2>
+          <p>DAWN Foundation is seeking partnership with international diabetes organisations that share this commitment to closing gaps in continuity of care and to culturally responsive, evidence-based tools for psychosocial assessment in diabetes. We welcome the opportunity to discuss how our ongoing work in paediatric T1DM engagement, T2DM, chronic disease conditions, and diabetes-distress research might align with and contribute to your organisation's priorities.</p>
+        </section>
+
+        <!-- Collaboration Enquiries Card -->
+        <div id="collaboration-enquiries" class="callout-doctor" style="margin-top: 2.5rem; border-left-color: var(--gold); background-color: var(--surface-soft);">
+          <h3 style="font-size: 1.25rem; margin-top: 0; color: var(--green-900);">Collaboration Enquiries</h3>
+          <p class="text-small" style="margin-bottom: 0.75rem;">
+            <strong>Email:</strong> <a href="mailto:drfirdousshaikh@gmail.com">drfirdousshaikh@gmail.com</a>
+          </p>
+          <p class="text-small" style="margin-bottom: 0.75rem;">
+            <strong>Phone:</strong> <a href="tel:+919822293515">+91 98222 93515</a>
+          </p>
+          <p class="text-small" style="margin-bottom: 1rem;">
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/drfirdousshaikh" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/drfirdousshaikh</a>
+          </p>
+          <p class="text-small text-muted" style="margin-bottom: 1.25rem; font-style: italic;">
+            Please note: this phone number and email address are for DAWN Foundation and international collaboration enquiries only. Patient appointments should be scheduled via the clinic contact page.
+          </p>
+          <div>
+            <a href="../contact/index.html" class="btn btn-primary btn-sm">Book a patient consultation</a>
+          </div>
         </div>
+
       </div>
     </section>
   </main>
 
-    <!-- Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -299,6 +382,8 @@
             <div>LinkedIn: <a href="https://www.linkedin.com/in/drfirdousshaikh" target="_blank" rel="noopener noreferrer">drfirdousshaikh</a></div>
             <div><a href="https://www.instagram.com/firdous1915" target="_blank" rel="noopener noreferrer">Instagram @firdous1915</a></div>
             <div><a href="https://www.instagram.com/shaikhdrfirdous" target="_blank" rel="noopener noreferrer">Instagram @shaikhdrfirdous</a></div>
+            <!-- FACEBOOK-SLOT: replace FB_URL with the real page URL and remove the comment markers
+            <a href="FB_URL" target="_blank" rel="noopener noreferrer">Facebook</a> -->
           </div>
         </div>
       </div>
@@ -329,6 +414,6 @@
     </a>
   </div>
 
-  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/nav.js" defer></script>
 </body>
 </html>

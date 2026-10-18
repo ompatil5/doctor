@@ -13,51 +13,11 @@
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('../fonts/inter-500.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('../fonts/inter-600.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/inter-700.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/fraunces-400.woff2') format('woff2');
-}
-
-@font-face {
   font-family: 'Fraunces';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
   src: url('../fonts/fraunces-600.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/fraunces-700.woff2') format('woff2');
 }
 
 :root {
@@ -114,9 +74,14 @@
   /* Layout Dimensions */
   --max-w: 1140px;
   --max-w-prose: 72ch;
-  --header-height: 84px;
-  --mobile-bar-height: 64px;
+  --header-height: 70px;
+  --mobile-bar-height: calc(52px + env(safe-area-inset-bottom, 0px));
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
   
   /* Transitions */
   --ease: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
+

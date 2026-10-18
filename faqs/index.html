@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#14452F">
   <title>Frequently Asked Questions | Dr. Firdous Shaikh</title>
   <meta name="description" content="Common questions on diabetes care, thyroid management, online consultations and appointments with Dr. Firdous Shaikh.">
@@ -93,7 +93,7 @@
   <header class="site-header">
     <div class="container">
       <a href="../index.html" class="site-brand" aria-label="Dr. Firdous Shaikh Home">
-        <img src="../assets/images/logo.jpg" alt="Dr. Firdous Shaikh Logo" class="brand-logo" width="44" height="44">
+        <img src="../assets/img/logo-88.webp" alt="Dr. Firdous Shaikh Logo" class="brand-logo" width="44" height="44" decoding="async">
         <div class="brand-text">
           <span class="brand-name">Dr. Firdous Shaikh</span>
           <span class="brand-title">Diabetologist, Thyroid &amp; Weight Management Physician</span>
@@ -161,13 +161,16 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+    <!-- Mobile Drawer -->
   <div id="mobile-nav-drawer" class="mobile-drawer" aria-label="Mobile navigation">
     <ul class="mobile-nav-list">
       <li><a href="../about/index.html" class="mobile-nav-link">About</a></li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Conditions</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-conditions">
+          <span>Conditions</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-conditions" class="mobile-sub-list" hidden>
           <li><a href="../diabetes-treatment-mumbai/index.html" class="mobile-sub-link">Diabetes Care</a></li>
           <li><a href="../thyroid-specialist-mumbai/index.html" class="mobile-sub-link">Thyroid Care</a></li>
           <li><a href="../obesity-treatment-mumbai/index.html" class="mobile-sub-link">Obesity &amp; Metabolic Health</a></li>
@@ -176,16 +179,22 @@
       </li>
       <li><a href="../consultations/index.html" class="mobile-nav-link">Consultations</a></li>
       <li><a href="../research-publications/index.html" class="mobile-nav-link">Research &amp; Publications</a></li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Community</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-community">
+          <span>Community</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-community" class="mobile-sub-list" hidden>
           <li><a href="../community-awareness/index.html" class="mobile-sub-link">Community &amp; Awareness</a></li>
           <li><a href="../dawn-foundation/index.html" class="mobile-sub-link">DAWN Foundation</a></li>
         </ul>
       </li>
-      <li>
-        <span class="mobile-nav-link" style="color: var(--green-900); font-weight: 600;">Resources</span>
-        <ul class="mobile-sub-list">
+      <li class="mobile-nav-item has-sub">
+        <button type="button" class="mobile-dropdown-btn" aria-expanded="false" aria-controls="mobile-sub-resources">
+          <span>Resources</span>
+          <span class="mobile-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <ul id="mobile-sub-resources" class="mobile-sub-list" hidden>
           <li><a href="../books-patient-education/index.html" class="mobile-sub-link">Books &amp; Education</a></li>
           <li><a href="../blog/index.html" class="mobile-sub-link">Blog &amp; Articles</a></li>
           <li><a href="../faqs/index.html" class="mobile-sub-link">FAQs</a></li>
@@ -325,6 +334,8 @@
             <div>LinkedIn: <a href="https://www.linkedin.com/in/drfirdousshaikh" target="_blank" rel="noopener noreferrer">drfirdousshaikh</a></div>
             <div><a href="https://www.instagram.com/firdous1915" target="_blank" rel="noopener noreferrer">Instagram @firdous1915</a></div>
             <div><a href="https://www.instagram.com/shaikhdrfirdous" target="_blank" rel="noopener noreferrer">Instagram @shaikhdrfirdous</a></div>
+            <!-- FACEBOOK-SLOT: replace FB_URL with the real page URL and remove the comment markers
+            <a href="FB_URL" target="_blank" rel="noopener noreferrer">Facebook</a> -->
           </div>
         </div>
       </div>
