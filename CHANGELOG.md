@@ -1,5 +1,12 @@
 # Implementation Changelog & QA Verification Report
 
+## CR4 QA (18 October 2026)
+
+- Local static server: HTTP 200 for the home page.
+- Playwright/Chromium responsive spot-check at 390 x 844: Home, About, Contact, Research, Gallery, Mental Wellbeing and Collaboration loaded without horizontal overflow.
+- Lighthouse was started but did not complete within the available command time. The full CR4 viewport matrix and Lighthouse medians remain to be run before launch.
+- Temporary Playwright dependencies were used only for QA and are not committed.
+
 ## Change Request #2 Implementation (Branch `client-changes-2`)
 
 ### 1. Overview of Key Changes
