@@ -1713,4 +1713,8 @@
 .link-list li + li { margin-top: 8px; }
 .dropdown-item,
 .mobile-nav-link { width: 100%; padding-left: 12px; padding-right: 12px; }
-@media (min-width: 768px) { .site-header .nav-link { padding-left: 8px; padding-right: 8px; } }
+@media (min-width: 768px) { .site-header .nav-link { padding-left: 8px; padding-right: 8px; } }.hero-kicker,
+.footer-email a,
+.footer-social a,
+.footer-bottom a,
+.about-home-grid a:not(.btn) { display:inline-flex; align-items:center; min-height:44px; padding:8px 0; }
