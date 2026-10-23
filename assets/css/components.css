@@ -1692,3 +1692,25 @@
 .guideline-chips span { padding: .45rem .6rem; border-radius: var(--radius-sm); background: #fff; border: 1px solid var(--line); font-size: .78rem; }
 @media (min-width: 768px) { .about-home-grid { grid-template-columns: minmax(260px, .75fr) 1.25fr; } .pillar-chain { grid-template-columns: repeat(4, minmax(96px, 1fr)); } }
 @media (min-width: 1180px) { .pillars-layout { grid-template-columns: minmax(0, 1.6fr) minmax(260px, .75fr); } .pillar-chain { grid-template-columns: repeat(4, minmax(96px, 1fr)); } .guidelines-panel::before { content: '←'; color: var(--gold); font-size: 2rem; float: left; margin-left: -1.6rem; } }
+
+/* WCAG 2.2 target size for non-inline navigation and list links */
+.site-header .nav-link,
+.dropdown-item,
+.mobile-nav-link,
+.footer-links a,
+.page-toc-list a,
+.card > a:not(.btn),
+.grid > a:not(.btn),
+.link-list a,
+.breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 0;
+}
+.footer-links li + li,
+.page-toc-list li + li,
+.link-list li + li { margin-top: 8px; }
+.dropdown-item,
+.mobile-nav-link { width: 100%; padding-left: 12px; padding-right: 12px; }
+@media (min-width: 768px) { .site-header .nav-link { padding-left: 8px; padding-right: 8px; } }
