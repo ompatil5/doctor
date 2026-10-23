@@ -1718,3 +1718,4 @@
 .footer-social a,
 .footer-bottom a,
 .about-home-grid a:not(.btn) { display:inline-flex; align-items:center; min-height:44px; padding:8px 0; }
+.booking-form-section { margin: 2rem 0; } .booking-form { display:grid; gap:1rem; max-width:42rem; margin:auto; } .booking-form input, .booking-form select, .booking-form textarea { width:100%; font-size:16px; padding:.7rem; } .form-field { display:grid; gap:.35rem; } .form-error { color:#a61b1b; min-height:1.2em; } .honeypot { display:none; }

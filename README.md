@@ -89,3 +89,6 @@ Then open `http://localhost:8000` in your web browser.
 ## Booking form delivery
 
 The default booking form opens the visitor's email app addressed to `drfirdousshaikh@gmail.com`. To use a form service later, set `FORM_ENDPOINT` in `assets/js/booking-form.js` to the supplied Formspree or Web3Forms endpoint/access-key flow. Do not add SMTP credentials or passwords to this repository.
+
+## Booking form
+Set FORM_ENDPOINT in ssets/js/booking-form.js to a Web3Forms or Formspree endpoint when available. The public email address is used for the mailto fallback until a separate patient-enquiry address is confirmed.

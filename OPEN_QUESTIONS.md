@@ -88,3 +88,6 @@ A dedicated, responsive photo gallery has been launched at `/gallery/` with 27 c
 
 - [ ] **Clinic Email Address:** Please confirm the official patient-facing email address to replace `<span class="todo">TO CONFIRM: clinic email address</span>` on the Contact page.
 - [ ] **Book Purchase/Download Links:** Please provide publisher names and purchase/download links for *Path to Diabetes Mellitus Type 2 Remission* and *Footprints of Wellness* on `/books-patient-education/`.
+
+- [ ] Please provide a separate email address for patient enquiries; the booking form currently uses the public address.
+- [ ] The booking form endpoint is intentionally empty until a suitable form service endpoint is confirmed.

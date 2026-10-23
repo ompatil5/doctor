@@ -174,9 +174,7 @@
           </p>
         </div>
 
-        <div style="margin: 2.5rem 0; text-align: center;">
-          <a href="../contact/" class="btn btn-primary btn-lg">Book a consultation</a>
-        </div>
+        <section class="booking-form-section"><form class="booking-form" data-booking-form data-subject="Appointment request" novalidate><h2>Book a consultation</h2><div class="form-field"><label for="consult-book-name">Name</label><input id="consult-book-name" name="name" type="text" required><span class="form-error" aria-live="polite"></span></div><div class="form-field"><label for="consult-book-phone">Phone</label><input id="consult-book-phone" name="phone" type="tel" required><span class="form-error" aria-live="polite"></span></div><div class="form-field"><label for="consult-book-clinic">Preferred clinic</label><select id="consult-book-clinic" name="clinic"><option>Jyoti Clinic, Bandra West</option><option>Niramay Diabetes Centre, Mira Road East</option><option>Online</option></select></div><div class="form-field"><label for="consult-book-time">Preferred day or time</label><input id="consult-book-time" name="preferred_time" type="text"><span class="form-error" aria-live="polite"></span></div><div class="form-field"><label for="consult-book-reason">Short reason</label><textarea id="consult-book-reason" name="reason" rows="3"></textarea><small>Please do not include detailed medical information.</small><span class="form-error" aria-live="polite"></span></div><div class="form-field honeypot" aria-hidden="true"><label for="consult-book-website">Website</label><input id="consult-book-website" name="website" type="text" tabindex="-1" autocomplete="off"></div><div class="form-field"><label><input name="consent" type="checkbox" required> I agree to the <a href="../privacy-policy/">privacy policy</a>.</label><span class="form-error" aria-live="polite"></span></div><button type="submit" class="btn btn-primary">Submit request</button><p class="form-status" aria-live="polite"></p></form></section>
 
       </div>
     </section>
@@ -273,6 +271,6 @@
     </a>
   </div>
 
-  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/nav.js" defer></script>`r`n  <script src="../assets/js/booking-form.js" defer></script>
 </body>
 </html>

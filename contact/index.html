@@ -162,54 +162,7 @@
 
           <!-- Booking Form Column -->
           <div>
-            <form id="consultation-form" class="booking-form" action="#" method="POST">
-              <h2 style="font-size: 1.35rem; margin-top: 0; color: var(--green-900);">Request a Consultation</h2>
-              <noscript><p class="form-note">Online booking needs JavaScript at present. Please use the clinic contact options shown on this page.</p></noscript>
-
-              <div id="form-status" style="display: none; margin-bottom: 1rem;"></div>
-
-              <!-- Honeypot anti-spam field -->
-              <input type="text" name="hp_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-              <div class="form-group">
-                <label for="patient-name" class="form-label">Full Name <span style="color: #B91C1C;">*</span></label>
-                <input type="text" id="patient-name" name="name" class="form-control" required autocomplete="name" placeholder="Your full name">
-              </div>
-
-              <div class="form-group">
-                <label for="patient-phone" class="form-label">Phone / WhatsApp Number <span style="color: #B91C1C;">*</span></label>
-                <input type="tel" id="patient-phone" name="phone" class="form-control" required autocomplete="tel" placeholder="+91 90000 00000">
-              </div>
-
-              <div class="form-group">
-                <label for="patient-email" class="form-label">Email Address</label>
-                <input type="email" id="patient-email" name="email" class="form-control" autocomplete="email" placeholder="name@example.com">
-              </div>
-
-              <div class="form-group">
-                <label for="preferred-time" class="form-label">Preferred Contact Time</label>
-                <select id="preferred-time" name="preferred_time" class="form-control">
-                  <option value="morning">Morning (10:00 AM – 1:00 PM)</option>
-                  <option value="afternoon">Afternoon (1:00 PM – 4:00 PM)</option>
-                  <option value="evening">Evening (4:00 PM – 7:00 PM)</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="reason" class="form-label">Reason for Consultation</label>
-                <textarea id="reason" name="reason" class="form-control" rows="3" placeholder="Brief mention of condition (e.g. Type 2 diabetes review, gestational diabetes, thyroid reports, weight management)"></textarea>
-                <div class="form-note">Please do not include detailed medical records or confidential health data here.</div>
-              </div>
-
-              <div class="form-checkbox">
-                <input type="checkbox" id="consent" name="consent" required>
-                <label for="consent">
-                  Consent is provided to use the submitted contact details to arrange this consultation in accordance with the <a href="../privacy-policy/">Privacy Policy</a>. <span style="color: #B91C1C;">*</span>
-                </label>
-              </div>
-
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Booking Request</button>
-            </form>
+            <section id="book" class="booking-form-section"><form class="booking-form" data-booking-form data-subject="Appointment request" novalidate><h2>Book a consultation</h2><div class="form-field"><label for="contact-book-name">Name</label><input id="contact-book-name" name="name" type="text" required><span class="form-error" aria-live="polite"></span></div><div class="form-field"><label for="contact-book-phone">Phone</label><input id="contact-book-phone" name="phone" type="tel" required><span class="form-error" aria-live="polite"></span></div><div class="form-field"><label for="contact-book-clinic">Preferred clinic</label><select id="contact-book-clinic" name="clinic"><option>Jyoti Clinic, Bandra West</option><option>Niramay Diabetes Centre, Mira Road East</option><option>Online</option></select></div><div class="form-field"><label for="contact-book-time">Preferred day or time</label><input id="contact-book-time" name="preferred_time" type="text"><span class="form-error" aria-live="polite"></span></div><div class="form-field"><label for="contact-book-reason">Short reason</label><textarea id="contact-book-reason" name="reason" rows="3"></textarea><small>Please do not include detailed medical information.</small><span class="form-error" aria-live="polite"></span></div><div class="form-field honeypot" aria-hidden="true"><label for="contact-book-website">Website</label><input id="contact-book-website" name="website" type="text" tabindex="-1" autocomplete="off"></div><div class="form-field"><label><input name="consent" type="checkbox" required> I agree to the <a href="../privacy-policy/">privacy policy</a>.</label><span class="form-error" aria-live="polite"></span></div><button type="submit" class="btn btn-primary">Submit request</button><p class="form-status" aria-live="polite"></p></form></section>
           </div>
 
         </div>
@@ -316,7 +269,7 @@
     </a>
   </div>
 
-  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/nav.js" defer></script>`r`n  <script src="../assets/js/booking-form.js" defer></script>
   <script src="../assets/js/booking-form.js"></script>
 </body>
 </html>
