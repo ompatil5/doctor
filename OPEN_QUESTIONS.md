@@ -6,9 +6,12 @@ This document collects all open questions, proposed drafts, and items requiring 
 
 ## 1. Biography, Degrees & Fellowships (Priority)
 
-- [ ] The Home hero now has a Consultation button only. Please confirm whether it should also retain a Book button.
-- [ ] The handwritten Home note may mean an orange-background or orange-frame portrait. Please confirm; no orange styling has been added because the approved palette is white, gold and green.
-- [ ] Please review the CKM and hormonal-imbalance pillar wording before launch.
+### For the doctor's review before launch
+
+- [ ] Diabetes cards: Type 1, Type 2, Prediabetes, Gestational, LADA, MODY, stress-induced and drug-induced diabetes; complication cards for foot care, eye/retinopathy, kidney, nerves/neuropathy and emotional wellbeing/diabetes distress.
+- [ ] Thyroid cards: underactive/hypothyroidism, overactive/hyperthyroidism, Hashimoto's thyroiditis, Graves' disease, thyroid nodules and goitre, subclinical hypothyroidism, and thyroid in pregnancy.
+- [ ] Please review the Cardio-Kidney-Metabolic (CKM) wording on the Obesity page, including the checks for blood pressure, cholesterol, kidney function and urine protein.
+
 
 - [ ] Please confirm Zhejiang University (the recording said Zhengzhou University) and the factual wording that BKC Dedicated Covid Health Centre was one of Mumbai and India's largest Covid centres.
 - [ ] Please confirm Jyoti Clinic (Bandra West), Niramay Diabetes Centre (Mira Road East), and the year private practice began (resume says 2018; recording said 2019).
