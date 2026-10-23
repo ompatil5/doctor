@@ -12,3 +12,10 @@ Appointments: +91 99305 61774. Email: drfirdousshaikh@gmail.com.
 - /mental-wellbeing-diabetes/ — Wellbeing in diabetes
 - /collaboration/ — Partnership enquiries
 - /dawn-foundation/ — DAWN Foundation
+
+- /diabetes-treatment-mumbai/ — Diabetes care and condition information
+- /thyroid-specialist-mumbai/ — Thyroid care and condition information
+- /obesity-treatment-mumbai/ — Obesity and metabolic health care
+- /pcos-gestational-diabetes-mumbai/ — Women's health, PMOS and pregnancy care
+- /contact/ — Appointment contact details for both clinics
+- /gallery/ — Photo gallery and awards
