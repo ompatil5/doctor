@@ -91,3 +91,7 @@ A dedicated, responsive photo gallery has been launched at `/gallery/` with 27 c
 
 - [ ] Please provide a separate email address for patient enquiries; the booking form currently uses the public address.
 - [ ] The booking form endpoint is intentionally empty until a suitable form service endpoint is confirmed.
+
+- [ ] The full invited-lecture list was intentionally not published because many sessions were industry-sponsored. Please confirm the selected academic and society sessions.
+- [ ] Two mDDS papers appear under different journal listings in the resume. Please confirm both listings.
+- [ ] Please clarify any research-resume lines not classifiable as a publication, presentation, chapter, review, editorial role, or selected academic lecture.
