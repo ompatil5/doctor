@@ -1,3 +1,10 @@
+## CR4 CTA wording
+
+- About CTA before: "Whether you are dealing with new-onset diabetes, persistent thyroid symptoms, or weight concerns, consultations are thorough and focused on clear explanations."
+- About CTA after: "Whether you have prediabetes, diabetes, a thyroid condition or difficulty managing your weight, Dr. Shaikh can review your reports and discuss the next step with you. Please bring all previous reports, even the old ones."
+- Home CTA before: "If you or someone in your family needs help with diabetes, thyroid or weight, write to the clinic or book a slot. First visits are unhurried, and please bring all previous reports, even the old ones."
+- Home CTA after: same approved plain-English CTA above.
+
 # Implementation Changelog & QA Verification Report
 
 ## CR4 QA (18 October 2026)
