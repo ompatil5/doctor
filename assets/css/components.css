@@ -1687,9 +1687,11 @@
 .about-slideshow {
   position: relative;
   width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
   aspect-ratio: 4 / 5;
-  max-height: 640px;
-  min-height: 520px;
+  max-height: 560px;
+  min-height: 440px;
   border: 1px solid var(--gold);
   border-radius: var(--radius);
   overflow: hidden;
@@ -1798,7 +1800,10 @@
 @media (max-width: 767px) {
   .about-slideshow {
     aspect-ratio: 4 / 5;
-    min-height: 420px;
+    max-width: 350px;
+    min-height: 380px;
+    max-height: 460px;
+    margin: 0 auto;
   }
   .about-slideshow-indicators {
     gap: 3px;
@@ -1819,7 +1824,7 @@
 .guideline-chips span { padding: .45rem .6rem; border-radius: var(--radius-sm); background: #fff; border: 1px solid var(--line); font-size: .78rem; }
 @media (min-width: 768px) {
   .about-home-grid {
-    grid-template-columns: minmax(360px, 1.05fr) 1.15fr;
+    grid-template-columns: minmax(320px, 0.95fr) 1.2fr;
     align-items: center;
     gap: clamp(2rem, 4vw, 3.5rem);
   }
@@ -1827,7 +1832,7 @@
 }
 @media (min-width: 1024px) {
   .about-home-grid {
-    grid-template-columns: minmax(440px, 1.1fr) 1.15fr;
+    grid-template-columns: minmax(360px, 0.95fr) 1.25fr;
   }
 }
 @media (min-width: 1180px) { .pillars-layout { grid-template-columns: minmax(0, 1.6fr) minmax(260px, .75fr); } .pillar-chain { grid-template-columns: repeat(4, minmax(96px, 1fr)); } .guidelines-panel::before { content: '←'; color: var(--gold); font-size: 2rem; float: left; margin-left: -1.6rem; } }
