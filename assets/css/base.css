@@ -20,6 +20,10 @@ html {
   overflow-x: clip;
 }
 
+:target, [id] {
+  scroll-margin-top: calc(var(--header-height, 68px) + 1.25rem);
+}
+
 body {
   background-color: var(--bg);
   color: var(--ink);
