@@ -48,8 +48,10 @@ Project/
 ├── diabetes-treatment-mumbai/                    # Diabetes clinical focus & care pathways
 ├── thyroid-specialist-mumbai/                     # Thyroid treatment, hypothyroidism & nodules
 ├── obesity-treatment-mumbai/                     # Medical weight management & metabolic health
-├── pcos-gestational-diabetes-mumbai/             # Women's Health and Mental Health
+├── pcos-gestational-diabetes-mumbai/             # Women's Health (PCOS, GDM, pregnancy care)
+├── mental-wellbeing-diabetes/                    # Mental Wellbeing (Diabetes distress, support)
 ├── dawn-foundation/                              # DAWN Foundation (Diabetes and Women's Network)
+├── collaboration/                                # Collaboration & Professional Inquiries
 ├── consultations/                                # In-clinic (2 clinics) & online consultations
 ├── research-publications/                        # Structured publication list, photos & peer review
 ├── community-awareness/                          # Screening camps & public health initiatives

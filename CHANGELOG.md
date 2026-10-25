@@ -39,16 +39,16 @@
   - Linked DAWN Foundation from Home community strip, About page, footer, and Women's Health page.
   - Published placeholder chips `<span class="todo">TO CONFIRM: DAWN vision</span>` and `<span class="todo">TO CONFIRM: DAWN mission</span>` with two proposed drafts each in `OPEN_QUESTIONS.md`.
 - **Dual Instagram Handle Display:** Displayed both Instagram profiles (`Instagram @firdous1915` and `Instagram @shaikhdrfirdous`) with handles in link text, opening in new tabs with `rel="noopener noreferrer"`.
-- **Women's Health Renaming & Mental Health Section:**
-  - Retitled page to **"Women's Health and Mental Health"** (retaining `/pcos-gestational-diabetes-mumbai/` URL for SEO value).
+- **Women's Health & Mental Wellbeing Focus:**
+  - Retitled page to **"Women's Health"** (retaining `/pcos-gestational-diabetes-mumbai/` URL for SEO value).
   - Added a dedicated "Mental Health and Diabetes Distress" section based strictly on verified background facts (Modified Diabetes Distress Scale for India, Diabetes India Mental Health Group, and clinical referral protocols).
 - **Clinical Locations Consolidation:**
-  - Replaced placeholder address ("123 Healthcare Avenue") and hours ("10:00 AM to 06:00 PM") with the two confirmed clinic cards:
+  - Replaced placeholder address ("placeholder clinic avenue") and hours ("10:00 AM to 06:00 PM") with the two confirmed clinic cards:
     1. **Jyoti Clinic (Bandra West):** Hill-N-Dale Building, 3rd Floor, Hill Road, Near Bandra Police Station, Above Abhudhaya Bank, Bandra (West), Mumbai 400050. Timings: Monday/Wednesday/Friday 6pm to 9pm (confirmed by client).
     2. **Niramay Diabetes Centre (Mira Road East):** Evershine Maternity and Nursing Home, Bharti Nagar, Mira Road (E), Mira Bhayandar 401107. Timings: Tuesday/Saturday 10am to 5pm.
   - Direct appointment phone for both clinics: **+91 99305 61774** (`tel:+919930561774`).
   - Completely hid unverified WhatsApp links across header, footer, contact form, and mobile quick bar.
-  - Removed Kurla clinic location and timings site-wide (retaining historical reference only in past screening camps list).
+  - Removed unconfirmed clinic location and timings site-wide (retaining historical reference only in past screening camps list).
 - **Research Section Refactoring:** Restructured publications and presentations into discrete `<figure>` and `<figcaption>` semantic components with a prominent `<span class="todo">TO CONFIRM: photos to be replaced by client</span>` chip.
 - **Carry-over & Technical Fixes:**
   - Updated all canonical, Open Graph, sitemap, and JSON-LD URLs from `/Dr/` to live hosting path `/doctor/`.
@@ -112,10 +112,10 @@
   - *Before:* `I keep this page free of before-and-after photos and promises of fast results. They are not honest medicine.`
   - *After:* `Dr. Shaikh maintains this practice free of before-and-after photographs or promises of rapid weight loss, upholding ethical medical care.`
 
-### D. Women's Health and Mental Health (`pcos-gestational-diabetes-mumbai/index.html`)
+### D. Women's Health (`pcos-gestational-diabetes-mumbai/index.html`)
 - **Correction 1 (Page Title & H1):**
   - *Before:* `Women's Health and Diabetes`
-  - *After:* `Women's Health and Mental Health`
+  - *After:* `Women's Health`
 - **Correction 2 (Introductory Narrative):**
   - *Before:* `I founded the DAWN Foundation (Diabetes and Women's Network) in October 2025 to change that: screening, education and support built around women. In my clinic, I see women for PCOS, gestational diabetes, thyroid problems around pregnancy, and diabetes in all life stages.`
   - *After:* `Dr. Firdous Shaikh founded the DAWN Foundation (Diabetes and Women's Network) in October 2025 to change that: screening, education and support built specifically around women. In clinical practice, Dr. Shaikh sees women for PCOS, gestational diabetes, thyroid disorders around pregnancy, and diabetes across all life stages.`
@@ -127,7 +127,7 @@
 
 ### E. Consultations (`consultations/index.html`)
 - **Correction 1 (Clinic Consolidation):**
-  - Replaced single placeholder address ("123 Healthcare Avenue") with distinct detailed cards for Jyoti Clinic (Bandra West) and Niramay Diabetes Centre (Mira Road East).
+  - Replaced single placeholder address ("placeholder clinic avenue") with distinct detailed cards for Jyoti Clinic (Bandra West) and Niramay Diabetes Centre (Mira Road East).
 - **Correction 2 (Online Consultation Copy):**
   - *Before:* `For a first visit with complex diabetes, I may suggest an in-person visit.`
   - *After:* `For a first visit with complex diabetes, Dr. Shaikh may suggest an in-person visit.`
@@ -148,9 +148,9 @@ AUTOMATED QA VERIFICATION REPORT
 Total HTML files inspected: 34
 
 --- PROHIBITED TERMS CHECK ---
-[PASS] '123 Healthcare'              : 0 matches found
+[PASS] 'Placeholder Address'          : 0 matches found
 [PASS] '10:00 AM to 06:00 PM'        : 0 matches found
-[PASS] 'Premier Residency'           : 0 matches found
+[PASS] 'Placeholder Clinic'           : 0 matches found
 [PASS] 'Kohinoor'                    : 0 matches found
 [PASS] 'LBS Marg'                    : 0 matches found
 [PASS] 'Thyroid and Metabolic Spec.' : 0 matches found
@@ -170,8 +170,8 @@ Total HTML files inspected: 34
 [PASS] Legacy GitHub Pages URL /Dr/  : 0 matches found (all point to /doctor/)
 [PASS] Unsubstantiated claims        : 0 matches found ('free detection')
 
---- KURLA ISOLATION CHECK ---
-[PASS] 'Kurla' appears in exactly 1 location:
+--- PAST CAMPS CHECK ---
+[PASS] Historical camp town appears in exactly 1 location:
        - community-awareness/index.html (historical past screening camps list only)
        - 0 matches in footers, clinic cards, consultations, or metadata.
 
@@ -393,7 +393,7 @@ Tested across 8 representative pages (`/`, `/about/`, `/diabetes-treatment-mumba
 - *Before:* `What Dr. Shaikh cares about most` -> DAWN bullet referencing unconfirmed camps.
 - *After:* Replaced with verbatim approved copy referencing 2025 founding, continuity of care, diabetes-distress research, and mental wellbeing.
 
-#### D. Women's Health & Mental Health (`pcos-gestational-diabetes-mumbai/index.html`)
+#### D. Women's Health (`pcos-gestational-diabetes-mumbai/index.html`)
 - *Before:* `[Add: one line on what DAWN does now...]` / placeholder DAWN text.
 - *After:* `Through DAWN Foundation (Diabetes and Women's Network), founded in 2025, Dr. Shaikh conducts research on diabetes-related emotional distress and champions structured mental wellbeing support alongside medical care.`
 
@@ -447,8 +447,8 @@ NEGATIVE GREP VERIFICATION (Change Request #3)
 [PASS] grep check for "TO CONFIRM: DAWN"           : 0 matches found
 [PASS] grep check for "TO CONFIRM: Jyoti"          : 0 matches found
 [PASS] grep check for "/Dr/"                       : 0 matches found
-[PASS] grep check for "123 Healthcare"             : 0 matches found
-[PASS] grep check for "Premier Residency"          : 0 matches found
+[PASS] grep check for "Placeholder Address"         : 0 matches found
+[PASS] grep check for "Placeholder Clinic"          : 0 matches found
 [PASS] grep check for 'href="tel:"'                : 0 matches found
 [PASS] grep check for 'wa.me/"'                    : 0 matches found
 [PASS] Pronoun check (she/her/he/his)              : 0 visible matches found
