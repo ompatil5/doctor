@@ -1666,7 +1666,7 @@
 .condition-card summary { display:flex; align-items:center; flex-wrap:wrap; gap:.35rem .5rem; min-height:48px; padding:.75rem .85rem; color:var(--green-900); cursor:pointer; list-style:none; }
 .condition-card summary::-webkit-details-marker { display:none; }
 .condition-card summary::after { content:'+'; color:var(--gold); font-size:1.25rem; font-weight:700; flex-shrink:0; margin-left:auto; line-height:1; }
-.condition-card[open] summary::after { content:'2'; }
+.condition-card[open] summary::after { content:'\2212'; }
 .condition-card summary:focus-visible { outline:3px solid var(--green-700); outline-offset:-3px; }
 .condition-card-icon { width:1.25rem; height:1.25rem; flex-shrink:0; fill:none; stroke:currentColor; stroke-width:1.8; }
 .condition-card-label { font-weight:700; font-size:.92rem; white-space:nowrap; flex:0 0 auto; }
@@ -1698,7 +1698,7 @@
 @media (min-width: 768px) { .about-home-grid { grid-template-columns: minmax(260px, .75fr) 1.25fr; } .pillar-chain { grid-template-columns: repeat(4, minmax(96px, 1fr)); } }
 @media (min-width: 1180px) { .pillars-layout { grid-template-columns: minmax(0, 1.6fr) minmax(260px, .75fr); } .pillar-chain { grid-template-columns: repeat(4, minmax(96px, 1fr)); } .guidelines-panel::before { content: '←'; color: var(--gold); font-size: 2rem; float: left; margin-left: -1.6rem; } }
 
-/* WCAG 2.2 target size for non-inline navigation, breadcrumbs, TOC, and list links */
+/* WCAG 2.2 target size for standalone navigation, breadcrumbs, TOC, and list links */
 .site-header .nav-link,
 .dropdown-item,
 .mobile-nav-link,
@@ -1707,8 +1707,8 @@
 .page-toc-list a,
 .dawn-toc a,
 .dawn-toc-list a,
-.card a:not(.btn),
-.grid a:not(.btn),
+.card > a:not(.btn),
+.grid > a:not(.btn),
 .link-list a,
 .breadcrumb a,
 nav[aria-label="Breadcrumb"] a,
@@ -1718,18 +1718,33 @@ nav[aria-label="Table of contents"] a,
 .footer-email a,
 .footer-social a,
 .footer-bottom a,
-.about-home-grid a:not(.btn),
-main ul:not(.nav-list):not(.mobile-nav-list):not(.dropdown-menu) > li > a,
 .booking-form label,
 .booking-form label a,
 a[href="../"][style*="color: var(--text-muted)"],
-a[href*="/about/"][style*="color: var(--green-900)"] {
+.recognition-gallery-link a {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
   min-width: 44px;
   padding: 6px 4px;
   box-sizing: border-box;
+}
+
+/* Ensure inline links in running text remain inline and wrap normally (WCAG 2.2 inline target size exception) */
+p:not(.recognition-gallery-link) a,
+article p a,
+.container-prose p:not(.recognition-gallery-link) a,
+.container-prose li a,
+.accordion-content a,
+.callout-doctor a:not(.btn),
+.lead a,
+.bio-text a,
+.timeline a {
+  display: inline;
+  min-height: auto;
+  min-width: auto;
+  padding: 0;
+  box-sizing: content-box;
 }
 .footer-links li + li,
 .page-toc-list li + li,
