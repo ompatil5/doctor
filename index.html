@@ -165,7 +165,36 @@
 
     <section class="section about-home">
       <div class="container about-home-grid">
-        <img src="assets/img/dr-firdous-shaikh-portrait.webp" srcset="assets/img/dr-firdous-shaikh-portrait-400.webp 400w, assets/img/dr-firdous-shaikh-portrait.webp 800w" sizes="(max-width: 767px) 100vw, 45vw" alt="Dr. Firdous Shaikh, diabetologist in Mumbai" width="800" height="1067" loading="lazy" decoding="async">
+        <div class="about-slideshow" id="aboutSlideshow" aria-label="Dr. Firdous Shaikh photo gallery" aria-roledescription="carousel" data-interval="3000">
+          <div class="about-slideshow-inner">
+            <div class="about-slide active" aria-hidden="false"><img src="assets/img/index-image/1.jpeg" alt="Dr. Firdous Shaikh at RSSDI 2024 Annual Conference" width="720" height="1280" loading="eager" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/2.jpeg" alt="Dr. Firdous Shaikh inaugurating clinical conference with traditional lamp lighting" width="1280" height="853" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/3.jpeg" alt="Dr. Firdous Shaikh participating in medical symposium discussion" width="900" height="974" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/4.jpeg" alt="Dr. Firdous Shaikh delivering diabetes management lecture" width="720" height="1280" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/5.jpeg" alt="Dr. Firdous Shaikh at clinical endocrinology convention" width="985" height="1280" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/6.jpeg" alt="Dr. Firdous Shaikh clinical research podium address" width="1059" height="1280" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/7.jpeg" alt="Dr. Firdous Shaikh healthcare leadership presentation" width="960" height="1280" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/8.jpeg" alt="Dr. Firdous Shaikh at national diabetology panel" width="1280" height="852" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/9.jpeg" alt="Dr. Firdous Shaikh receiving medical excellence award" width="852" height="1280" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/10.jpeg" alt="Dr. Firdous Shaikh on expert panel discussing metabolic health" width="1280" height="576" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/11.jpeg" alt="Dr. Firdous Shaikh academic presentation on diabetes care" width="720" height="1280" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/12.jpeg" alt="Dr. Firdous Shaikh at professional medical education conference" width="960" height="1280" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/13.jpeg" alt="Dr. Firdous Shaikh endocrinology symposium delegate" width="1280" height="852" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/14.jpeg" alt="Dr. Firdous Shaikh interactive clinician workshop" width="1280" height="853" loading="lazy" decoding="async"></div>
+            <div class="about-slide" aria-hidden="true"><img src="assets/img/index-image/15.jpeg" alt="Dr. Firdous Shaikh community health and diabetes awareness program" width="960" height="1280" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="about-slideshow-nav" aria-label="Slideshow controls">
+            <button type="button" class="about-slideshow-btn prev" aria-label="Previous image">&#10094;</button>
+            <button type="button" class="about-slideshow-pause" aria-label="Pause slideshow" aria-pressed="false">
+              <span class="icon-pause" aria-hidden="true">&#10074;&#10074;</span>
+              <span class="icon-play" aria-hidden="true" style="display:none;">&#9658;</span>
+            </button>
+            <button type="button" class="about-slideshow-btn next" aria-label="Next image">&#10095;</button>
+          </div>
+          <div class="about-slideshow-counter" aria-live="polite">
+            <span class="current-slide">1</span> / <span class="total-slides">15</span>
+          </div>
+        </div>
         <div class="container-prose"><h2>About Dr. Firdous Shaikh</h2><p>Dr. Firdous Shaikh trained in Medicine (MBBS) at Zhejiang University School of Medicine in China. She completed her internship there in 2012 and cleared the Foreign Medical Graduate Examination in India on the very first attempt. She practised in Emergency Medicine as a Chief Medical Officer at Lady Hardinge Medical College in Delhi. Emergency work instils rapid clinical decision-making and clear communication, principles that continue to guide her daily clinical practice.</p><p>Diabetes drew Dr. Shaikh's interest because it is a condition where physicians can create progressive, tangible improvements in people living with multiple chronic health conditions. Dr. Shaikh completed Diabetology training at the Asian Heart Institute in Mumbai (BKC), working in the Department of Diabetology and Endocrinology with a focus on perioperative diabetes care. She went on to earn a postgraduate qualification in Clinical Endocrinology and Diabetes from the Royal College of Physicians, UK.</p><p class="text-small">MBBS | Dip. Diab (RCP UK) | CPS Diabetology (Mumbai) &nbsp; Fellow, ISCM | Fellow, Diabetes India</p><a href="about/">Read the full biography</a></div>
       </div>
     </section>
@@ -364,5 +393,6 @@
 
   <script src="assets/js/nav.js" defer></script>
   <script src="assets/js/booking-form.js" defer></script>
+  <script src="assets/js/slideshow.js" defer></script>
 </body>
 </html>
