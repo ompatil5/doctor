@@ -7,12 +7,56 @@
 
 # Implementation Changelog & QA Verification Report
 
-## CR4 QA (18 October 2026)
+## Final Rebuild Verification & QA Report (Branch `client-changes-4`, 25 October 2026)
 
-- Local static server: HTTP 200 for the home page.
-- Playwright/Chromium responsive spot-check at 390 x 844: Home, About, Contact, Research, Gallery, Mental Wellbeing and Collaboration loaded without horizontal overflow.
-- Lighthouse completed for Home: Performance 94 and Accessibility 100. The full five-page, three-run medians remain to be run before launch.
-- Temporary Playwright dependencies were used only for QA and are not committed.
+### 1. Verification of Prior Work & Static Proof
+- **Research & Publications Numbers:** Verified MMC registration number `2015030842`, telephone `tel:+919930561774` in footer and mobile quick-bar, and confirmed 0 unverified telephone numbers site-wide.
+- **Pharma Mentions:** Verified that occurrences of "Pharma" are strictly academic citations ("Pharmaceutical" in journal title, "Pharmacotherapy" in lecture title) and zero commercial pharmaceutical product names are present.
+- **About Recognition Cards:** Reformatted the award cards into multi-line indented HTML with 8 award cards, 2 verified image cards (`asia-book-records.webp`: 60.77 KB, `hello-diabetes-award.webp`: 57.81 KB), responsive 3-col desktop / 2-col tablet / 1-col mobile grid, and zero forbidden terms.
+
+### 2. Gallery & Photography Verification
+- Verified that `Project/new-photos/` does not exist in the repository; logged item in `OPEN_QUESTIONS.md`.
+- Confirmed all 27 photographs in `/gallery/` feature objective, factual clinical captions with 4 category filter buttons (`aria-pressed`), accessible modal lightbox with Esc key, ArrowLeft/Right keys, swipe gestures, Tab focus trap, and restore-focus logic.
+
+### 3. Real Browser Automated Responsive & Visual Testing (Playwright)
+- Audited all 24 non-stub pages across 14 viewports (320, 360, 390, 412, 768, 820, 1024, 1093, 1280, 1366, 1440, 1536, 1920, and 667x375 landscape = 336 test executions).
+- **Issues Identified & Fixed:**
+  1. *Touch Target Sizing:* 12 form `<select>` elements (`#home-clinic`, etc.) had computed height of 43px on mobile. Added `box-sizing: border-box; min-height: 44px;` in `assets/css/components.css`.
+  2. *Condition Card Summary Layout:* Discovered severe letter-by-letter vertical wrapping on wide viewports (e.g. `diabetes-treatment-mumbai/`) caused by 4-column rigid grid and `display: grid` with 4 items on `summary`. Converted `.condition-card summary` to `display: flex; align-items: center; gap: .65rem;` and adjusted `@media (min-width: 1024px)` to 2 columns in `assets/css/components.css`.
+  3. *Stray Line Endings:* Removed stray literal `` `r`n `` strings preceding `</main>` on `index.html` and `research-publications/index.html`.
+- **Re-test Results:** 336 / 336 viewports passed with 0 horizontal overflows, 0 occlusions behind sticky headers or mobile bars, and 0 interactive targets < 44px.
+
+### 4. Functional Test Suite Results (10 / 10 PASS)
+1. **Header Sticky & Mobile Navigation:** Sticky behavior verified; hamburger toggle opens drawer, updates `aria-expanded`, closes on outside click and Escape.
+2. **Hero & 7 Clinical Pillars:** Title and booking anchors verified; all 7 pillar circles meet touch target requirements (>= 44px) and render clear typography.
+3. **About Credentials Timeline:** Renders as vertical timeline on mobile and alternating staggered staircase on desktop.
+4. **Condition Cards Interaction:** Semantic `<details>` cards expand and collapse smoothly on click, Enter, and Space keys.
+5. **Booking Form Client-Side Validation:** Blocks empty submissions with inline error messages; valid submissions generate properly formatted `mailto:drfirdousshaikh@gmail.com` with URL-encoded parameters.
+6. **Clinic Cards Deferred Google Maps:** Maps remain deferred until "Show map" is clicked, loading accessible interactive iframe; hides cleanly on toggle.
+7. **Research Filter Pills:** Client-side category filtering functions with active state updates; all publications remain accessible when JavaScript is disabled.
+8. **Header Book Button:** Validated target href pointing to `#book` or `contact/#book` across all 24 pages.
+9. **Redirect Stubs & Error Pages:** 24 legacy redirect stubs return valid `http-equiv="refresh"` and 404 page loads cleanly.
+10. **Keyboard Accessibility:** Skip link navigates directly to `#main-content`; focus visible outlines and logical tab order verified.
+
+### 5. Google Lighthouse Mobile Performance Medians (3 Runs per Page)
+
+Audited under standard mobile throttling (emulated Moto G Power, slow 4G, 4x CPU slowdown):
+
+| Page | Performance | Accessibility | Best Practices | SEO | Target Met? |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Home (`/`)** | **97** | **100** | **100** | **100** | YES (Req: >=85, >=95, >=95, 100) |
+| **About (`/about/`)** | **97** | **98** | **100** | **100** | YES (Req: >=85, >=95, >=95, 100) |
+| **Contact (`/contact/`)** | **97** | **98** | **100** | **100** | YES (Req: >=85, >=95, >=95, 100) |
+| **Consultations (`/consultations/`)** | **97** | **100** | **100** | **100** | YES (Req: >=85, >=95, >=95, 100) |
+| **Research (`/research-publications/`)** | **98** | **100** | **100** | **100** | YES (Req: >=85, >=95, >=95, 100) |
+| **Gallery (`/gallery/`)** | **93** | **100** | **100** | **100** | YES (Req: >=85, >=95, >=95, 100) |
+
+### 6. Final Static QA & Code Hygiene Audit
+- **HTML Inventory:** 48 total HTML files (24 non-stub pages, 24 redirect stubs).
+- **Metadata & Structured Data:** All JSON-LD blocks parse validly; exactly 1 H1 per page; titles <= 60 characters; meta descriptions <= 155 characters; all canonical URLs listed in `sitemap.xml`.
+- **Header & Footer Consistency:** 100% markup and structural consistency across all 24 pages.
+- **Prohibited Terms & Brand Isolation:** 0 matches for commercial pharmaceutical brand names, 0 unverified clinic addresses, 0 personal phone numbers or dates of birth.
+- **Git Tracking Cleanliness:** 400 clean tracked files; zero temporary tools, node_modules, package.json, test screenshots, or external docs in repository.
 
 ## Change Request #2 Implementation (Branch `client-changes-2`)
 

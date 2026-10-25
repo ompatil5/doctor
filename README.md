@@ -37,7 +37,7 @@ Built in accordance with **Indian Medical Council (NMC & MMC)** professional con
 Project/
 ├── index.html                                    # Home (Physician schema, credentials, overview)
 ├── 404.html                                      # Custom 404 error page
-├── sitemap.xml                                   # XML sitemap (20 canonical URLs including DAWN)
+├── sitemap.xml                                   # XML sitemap (23 canonical URLs including DAWN)
 ├── robots.txt                                    # Robots directive pointing to sitemap
 ├── PLACEHOLDERS.md                               # Catalog of all .todo chips
 ├── OPEN_QUESTIONS.md                             # Outstanding clinical questions & proposals
@@ -88,9 +88,59 @@ python -m http.server 8000
 
 Then open `http://localhost:8000` in your web browser.
 
-## Booking form delivery
+---
 
-The default booking form opens the visitor's email app addressed to `drfirdousshaikh@gmail.com`. To use a form service later, set `FORM_ENDPOINT` in `assets/js/booking-form.js` to the supplied Formspree or Web3Forms endpoint/access-key flow. Do not add SMTP credentials or passwords to this repository.
+## 4. How to Edit Content & Add Blog Posts
 
-## Booking form
-Set FORM_ENDPOINT in ssets/js/booking-form.js to a Web3Forms or Formspree endpoint when available. The public email address is used for the mailto fallback until a separate patient-enquiry address is confirmed.
+- **Editing Existing Pages:** Each page is an `index.html` file within its respective directory. Open the file in any text editor, modify the content inside `<main id="main-content">`, and save.
+- **Adding a New Blog Post:**
+  1. Create a new folder inside `blog/` using hyphenated lowercase (e.g. `blog/managing-insulin-in-heat/`).
+  2. Copy `blog/what-does-hba1c-7-mean/index.html` into the new folder as a template.
+  3. Update `<title>`, `<meta name="description">`, `<link rel="canonical">`, and the MedicalWebPage JSON-LD schema.
+  4. Write the article content using standard semantic HTML (`<h2>`, `<p>`, `<ul>`, `<div class="callout">`).
+  5. Add an entry card linking to the new article on `blog/index.html`.
+  6. Add the new URL `<loc>https://ompatil5.github.io/doctor/blog/your-post-slug/</loc>` to `sitemap.xml`.
+
+---
+
+## 5. Booking Form Delivery Setup
+
+The appointment booking forms on `contact/index.html`, `consultations/index.html`, and `index.html` currently default to a client-side `mailto:` protocol addressed to `drfirdousshaikh@gmail.com`.
+
+To enable direct, serverless form submissions without launching the visitor's mail client:
+1. Sign up for a free or paid endpoint at **Web3Forms** (https://web3forms.com) or **Formspree** (https://formspree.io).
+2. Open `assets/js/booking-form.js`.
+3. Locate the configuration constant at the top of the file:
+   ```javascript
+   const FORM_ENDPOINT = '';
+   ```
+4. Paste your endpoint URL or access key:
+   ```javascript
+   const FORM_ENDPOINT = 'https://api.web3forms.com/submit'; // or your Formspree endpoint URL
+   ```
+5. Ensure your endpoint form fields include `name`, `phone`, `clinic`, `preferred_time`, and `reason`. Do NOT add secret credentials, API tokens, or SMTP passwords to this repository.
+
+---
+
+## 6. Activating the Facebook Link
+
+An inactive slot is pre-configured across all page footers, `contact/index.html`, and `index.html` JSON-LD schema:
+```html
+<!-- FACEBOOK-SLOT: replace FB_URL with the real page URL and remove the comment markers <a href="FB_URL" target="_blank" rel="noopener noreferrer">Facebook</a> -->
+```
+To activate:
+1. Perform a global search in the repository for `FACEBOOK-SLOT`.
+2. Replace `FB_URL` with Dr. Shaikh's verified Facebook page URL (e.g. `https://www.facebook.com/drfirdousshaikh`).
+3. Remove the HTML comment delimiters `<!--` and `-->` around the anchor element.
+
+---
+
+## 7. Custom Domain Migration Guide
+
+When connecting a custom domain (e.g. `https://www.drfirdousshaikh.com`):
+1. **GitHub Pages Custom Domain:** Add the custom domain in the repository's GitHub Settings > Pages > Custom domain, and enforce HTTPS.
+2. **Find and Replace Canonical URLs:**
+   - Find: `https://ompatil5.github.io/doctor/`
+   - Replace: `https://www.drfirdousshaikh.com/` (or client's exact domain, preserving trailing slashes).
+3. Update `sitemap.xml` and `robots.txt` with the new domain URL.
+4. Verify all JSON-LD `@id` and `url` attributes match the new domain.
