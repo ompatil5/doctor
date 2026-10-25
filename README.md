@@ -39,10 +39,10 @@ Project/
 ├── 404.html                                      # Custom 404 error page
 ├── sitemap.xml                                   # XML sitemap (23 canonical URLs including DAWN)
 ├── robots.txt                                    # Robots directive pointing to sitemap
-├── PLACEHOLDERS.md                               # Catalog of all .todo chips
-├── OPEN_QUESTIONS.md                             # Outstanding clinical questions & proposals
 ├── README.md                                     # Project architecture & documentation
-├── CHANGELOG.md                                  # Phase implementation log & proofreading diffs
+│
+> [!NOTE]
+> **Internal Project Notes:** Working notes, client questions, and implementation logs (`OPEN_QUESTIONS.md`, `PLACEHOLDERS.md`, `CHANGELOG.md`, `GALLERY_CAPTIONS.md`) are stored outside the public website repository in `../Doc/project-notes/`.
 │
 ├── about/                                        # About Dr. Firdous Shaikh (bio, timeline)
 ├── diabetes-treatment-mumbai/                    # Diabetes clinical focus & care pathways
