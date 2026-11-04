@@ -33,6 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
       });
+
+      // Automatically open accordion sections containing matching items
+      if (filter !== 'all') {
+        document.querySelectorAll('.research-list details').forEach(function (details) {
+          var hasVisible = details.querySelector('.research-card:not([style*="display: none"])');
+          if (hasVisible) {
+            details.open = true;
+          }
+        });
+      }
     });
   });
 });

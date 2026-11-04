@@ -21,35 +21,56 @@
 }
 
 :root {
-  /* White, Gold and Green Palette per Client Change Request #2 */
-  --bg: #FFFFFF;           /* main background: white */
+  /* White, Gold and Green Palette per Client Standards — Elevated Luxury Medical Aesthetic */
+  --bg: #FFFFFF;           /* main background: pure crisp white */
   --surface: #FFFFFF;      /* pure clean white card background */
-  --surface-soft: #FAF6EA; /* faint gold-tinted alternate sections */
-  --surface-alt: #FAF6EA;  /* alias for surface-soft */
-  --ink: #1B2A22;          /* body text */
-  --muted: #4B5C52;        /* muted text */
+  --surface-soft: #FAF7EE; /* faint gold-tinted warm alternate surface */
+  --surface-alt: #FAF7EE;  /* alias for surface-soft */
+  --surface-card: #FFFFFF; /* card surface */
+  --surface-elevated: #FFFFFF;
+  --ink: #1B2A22;          /* body text: deep forest charcoal */
+  --ink-light: #2D4236;    /* secondary body text */
+  --muted: #4B5C52;        /* muted descriptive text */
+  --text-muted: #4B5C52;   /* alias for inline styles across blog & legal pages */
+  --muted-light: #6E8276;  /* subtle caption text */
   
-  --green-900: #14452F;    /* header, footer, headings */
-  --green-800: #19563B;    /* darker green accent */
+  --green-950: #0B291B;    /* deep obsidian emerald */
+  --green-900: #14452F;    /* primary header, footer, prominent headings */
+  --green-850: #103826;    /* intermediate dark forest */
+  --green-800: #19563B;    /* darker green accent & hover */
   --green-700: #1F6B47;    /* links, secondary buttons, icons */
+  --green-600: #258055;    /* bright emerald highlight */
   --green-100: #E7F1EB;    /* light green tints, cards, chips */
   --green-50: #F3F8F5;     /* ultra-light green surface tint */
   
-  --gold: #D4AF37;         /* primary button background, borders, dividers, small accents */
+  --gold: #D4AF37;         /* classic warm gold */
   --gold-hover: #C29E2C;   /* gold hover state */
+  --gold-dark: #9A7B1C;    /* dark rich gold */
   --gold-light: #FBF7EC;   /* soft gold tint */
   --gold-subtle: #F3EBD0;  /* light gold chip/border tint */
-  
+  --gold-grad: linear-gradient(135deg, #F3DE8A 0%, #D4AF37 50%, #B89020 100%);
+  --gold-grad-hover: linear-gradient(135deg, #FBEBB5 0%, #E0BC45 50%, #C79E25 100%);
+  --gold-border-grad: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4) 20%, rgba(243, 222, 138, 0.9) 50%, rgba(212, 175, 55, 0.4) 80%, transparent);
+  --gold-glow: 0 4px 18px rgba(212, 175, 55, 0.32);
+  --emerald-glow: 0 8px 25px rgba(20, 69, 47, 0.16);
+
   --footer-bg: #14452F;    /* dark green footer */
+  
+  /* Glassmorphism Tokens */
+  --glass-header: rgba(20, 69, 47, 0.92);
+  --glass-header-border: rgba(212, 175, 55, 0.35);
+  --glass-surface: rgba(255, 255, 255, 0.94);
+  --glass-blur: 16px;
   
   /* Button / Accent mappings */
   --accent: #D4AF37;
   --accent-hover: #C29E2C;
-  --accent-light: #FAF6EA;
+  --accent-light: #FAF7EE;
   --accent-subtle: #E7F1EB;
   
   /* Borders and Dividers */
-  --line: #E6E2D5;
+  --line: #E8E4D8;
+  --line-light: #F0ECE0;
   --line-strong: #D4AF37;  /* gold accent divider */
   
   /* Status & Todo Chip Styling */
@@ -58,14 +79,18 @@
   --todo-line: #F59E0B;
   
   /* Geometry & Elevation */
-  --radius: 10px;
-  --radius-sm: 6px;
-  --radius-lg: 16px;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
   --radius-pill: 9999px;
   
-  --shadow-sm: 0 2px 6px rgba(20, 69, 47, 0.05);
-  --shadow-md: 0 6px 18px rgba(20, 69, 47, 0.09);
-  --shadow-lg: 0 12px 30px rgba(20, 69, 47, 0.14);
+  --shadow-xs: 0 1px 3px rgba(20, 69, 47, 0.04);
+  --shadow-sm: 0 2px 8px -2px rgba(20, 69, 47, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 8px 24px -4px rgba(20, 69, 47, 0.09), 0 3px 8px -2px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 18px 36px -8px rgba(20, 69, 47, 0.13), 0 6px 14px -3px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 25px 50px -12px rgba(20, 69, 47, 0.18);
+  --shadow-card-hover: 0 14px 34px -6px rgba(20, 69, 47, 0.13), 0 0 0 1px rgba(212, 175, 55, 0.35);
   
   /* Typography Tokens */
   --font-head: "Fraunces", Georgia, "Times New Roman", serif;
@@ -74,14 +99,16 @@
   /* Layout Dimensions */
   --max-w: 1140px;
   --max-w-prose: 72ch;
-  --header-height: 70px;
-  --mobile-bar-height: calc(52px + env(safe-area-inset-bottom, 0px));
+  --header-height: 72px;
+  --mobile-bar-height: calc(54px + env(safe-area-inset-bottom, 0px));
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
   --safe-right: env(safe-area-inset-right, 0px);
   
   /* Transitions */
-  --ease: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --ease: 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  --ease-slow: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 

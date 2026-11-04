@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -92,13 +92,13 @@
     <article class="section">
       <div class="container container-prose">
         <div style="margin-bottom: 1.5rem;">
-          <a href="../" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem;">&larr; Back to all articles</a>
+          <a href="../" class="article-back-link">&larr; Back to all articles</a>
         </div>
 
         <span class="badge-quiet">Thyroid Health &amp; TSH</span>
         <h1>Why is my thyroid still "borderline" on every report?</h1>
 
-        <div style="display: flex; gap: 1rem; align-items: center; margin: 1rem 0 2rem; color: var(--text-muted); font-size: 0.9rem; flex-wrap: wrap;">
+        <div class="article-meta-bar">
           <span>By <a href="../../about/" style="color: var(--green-900); font-weight: 600;">Dr. Firdous Shaikh</a></span>
           <span>&bull;</span>
           <span>4 min read</span>
@@ -107,7 +107,7 @@
         </div>
 
         <!-- Key points box -->
-        <div class="callout-doctor" style="border-left-color: var(--gold); background-color: var(--surface-soft); margin-bottom: 2rem;">
+        <div class="article-key-takeaways">
           <h4 style="margin-bottom: 0.5rem;">Key points</h4>
           <ul style="padding-left: 1.25rem; margin-bottom: 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem;">
             <li>A &ldquo;borderline&rdquo; result usually means a mildly raised TSH with a normal T4, called subclinical hypothyroidism.</li>
@@ -140,13 +140,21 @@
         <h2>If you are on thyroxine</h2>
         <p>Take it on an empty stomach, with water, 30 to 60 minutes before breakfast, and keep calcium and iron supplements at least four hours away from it. Get your TSH rechecked about six to eight weeks after any dose change.</p>
 
-        <p style="font-style: italic; color: var(--text-muted); margin-bottom: 2.5rem;">Medically reviewed by Dr. Firdous Shaikh.</p>
+                <div class="article-author-card">
+          <div style="width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--gold); overflow: hidden; flex-shrink: 0; box-shadow: 0 2px 8px rgba(20, 69, 47, 0.12);">
+            <img src="../../assets/img/dr-firdous-shaikh-portrait.webp" alt="Dr. Firdous Shaikh" width="52" height="52" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div>
+            <strong style="color: var(--green-950); font-family: var(--font-head); font-size: 1.05rem;">Dr. Firdous Shaikh</strong>
+            <span style="font-size: 0.85rem; color: var(--ink-light); display: block;">Consultant Diabetologist &bull; MMC Reg. No. 2015030842 &bull; Medically Reviewed</span>
+          </div>
+        </div>
 
         <hr style="border: none; border-top: 1px solid var(--line); margin: 2rem 0;">
 
         <!-- VERIFY refs against originals before launch -->
-        <section style="margin-bottom: 3rem;">
-          <h3 style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1rem;">References</h3>
+        <section class="article-references">
+          <h3>References</h3>
           <ol start="6" style="padding-left: 1.25rem; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem;">
             <li>Jonklaas J, Bianco AC, Bauer AJ, et al. Guidelines for the treatment of hypothyroidism (American Thyroid Association). <em>Thyroid.</em> 2014;24(12):1670-1751. Also check the more recent ATA and Indian Thyroid Society guidance for your own reference.</li>
           </ol>
@@ -165,80 +173,110 @@
     </article>
   </main>
 
-      <!-- Footer -->
+        <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
+        <!-- Col 1: Identity & Direct Booking -->
         <div class="footer-col">
-          <div class="footer-heading">Dr. Firdous Shaikh</div>
+          <div class="footer-brand-name">Dr. Firdous Shaikh</div>
+          <div class="footer-brand-title">Diabetologist, Thyroid &amp; Weight Management Physician</div>
           <p class="footer-meta">
-            Diabetologist, Thyroid and Weight Management Physician.<br>
             Maharashtra Medical Council Reg. No. 2015030842<br>
             RSSDI Membership No. 8568
           </p>
-          <div class="footer-clinic">
-            <strong class="footer-clinic-name">Jyoti Clinic</strong>
-            <span>Hill-N-Dale Bldg, 3rd Fl, Hill Rd, Bandra (W), Mumbai 400050</span>
-            <span>Monday/Wednesday/Friday 6pm&nbsp;to&nbsp;9pm</span>
+          <div class="footer-contact-stack">
+            <a href="tel:+919930561774" class="footer-contact-link" aria-label="Call clinic at +91 99305 61774">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 99305 61774</span>
+            </a>
+            <a href="mailto:drfirdousshaikh@gmail.com" class="footer-contact-link" aria-label="Email clinic">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>drfirdousshaikh@gmail.com</span>
+            </a>
           </div>
-          <div class="footer-clinic">
-            <strong class="footer-clinic-name">Niramay Diabetes Centre</strong>
-            <span>Evershine Maternity and Nursing Home, Bharti Nagar, Mira Road (E), Mira Bhayandar 401107</span>
-            <span>Tuesday/Saturday 10am&nbsp;to&nbsp;5pm</span>
-          </div>
-          <div class="footer-appointments">
-            <strong class="footer-appointments-label">Appointments:</strong>
-            <a href="tel:+919930561774" class="footer-phone">+91&nbsp;99305&nbsp;61774</a>
-          </div>
-          <div class="footer-btn-wrap">
-            <a href="../../contact/" class="btn btn-primary btn-sm">Book a consultation</a>
+          <div style="margin-top: 0.5rem; width: 100%;">
+            <a href="../../contact/#book" class="btn btn-primary btn-sm" style="width: 100%; text-align: center;">Book a consultation</a>
           </div>
         </div>
 
+        <!-- Col 2: Clinic Locations & Hours -->
         <div class="footer-col">
-          <div class="footer-heading">Clinical Focus</div>
+          <div class="footer-heading">Clinic Locations</div>
+          
+          <div class="footer-clinic-card">
+            <strong class="footer-clinic-name">Jyoti Clinic &bull; Bandra West</strong>
+            <span class="footer-clinic-address">Hill-N-Dale Bldg, 3rd Floor, Hill Road, Near Bandra Police Station, Bandra (W), Mumbai 400050</span>
+            <span class="footer-schedule-pill">Mon, Wed, Fri &bull; 6:00 PM to 9:00 PM</span>
+          </div>
+
+          <div class="footer-clinic-card">
+            <strong class="footer-clinic-name">Niramay Diabetes Centre &bull; Mira Road</strong>
+            <span class="footer-clinic-address">Evershine Maternity and Nursing Home, Bharti Nagar, Mira Road (E), Mira Bhayandar 401107</span>
+            <span class="footer-schedule-pill">Tue, Sat &bull; 10:00 AM to 5:00 PM</span>
+          </div>
+
+          <div class="footer-online-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>Online video consultations available worldwide</span>
+          </div>
+        </div>
+
+        <!-- Col 3: Clinical Care -->
+        <div class="footer-col">
+          <div class="footer-heading">Clinical Care</div>
           <ul class="footer-links">
             <li><a href="../../diabetes-treatment-mumbai/">Diabetes Care in Mumbai</a></li>
             <li><a href="../../thyroid-specialist-mumbai/">Thyroid Care in Mumbai</a></li>
             <li><a href="../../obesity-treatment-mumbai/">Medical Weight Management</a></li>
-            <li><a href="../../pcos-gestational-diabetes-mumbai/">Women's Health</a></li>
+            <li><a href="../../pcos-gestational-diabetes-mumbai/">Women's Health &amp; PCOS</a></li>
+            <li><a href="../../mental-wellbeing-diabetes/">Mental Wellbeing in Diabetes</a></li>
             <li><a href="../../consultations/">Clinic &amp; Online Consultations</a></li>
-            <li><a href="../../community-awareness/">Community Screening Camps</a></li>
-            <li><a href="../../dawn-foundation/">DAWN Foundation</a></li>
           </ul>
         </div>
 
+        <!-- Col 4: Resources & Connect -->
         <div class="footer-col">
           <div class="footer-heading">Resources &amp; Connect</div>
           <ul class="footer-links">
             <li><a href="../../about/">About Dr. Firdous Shaikh</a></li>
             <li><a href="../../research-publications/">Research &amp; Publications</a></li>
-            <li><a href="../../books-patient-education/">Books &amp; Education</a></li>
-            <li><a href="../../gallery/">Photo Gallery</a></li>
-            <li><a href="../../blog/">Diabetes &amp; Thyroid Articles</a></li>
+            <li><a href="../../dawn-foundation/">DAWN Foundation</a></li>
+            <li><a href="../../books-patient-education/">Books &amp; Patient Education</a></li>
+            <li><a href="../../community-awareness/">Community Screening Camps</a></li>
             <li><a href="../../faqs/">Frequently Asked Questions</a></li>
-            <li><a href="../../contact/">Contact Clinic</a></li>
-            <li><a href="../../privacy-policy/">Privacy Policy</a></li>
+            <li><a href="../../gallery/">Photo Gallery</a></li>
           </ul>
-          <ul class="footer-links"><li><a href="../../mental-wellbeing-diabetes/">Mental Wellbeing</a></li><li><a href="../../collaboration/">Collaboration</a></li></ul><div class="footer-email">Email: <a href="mailto:drfirdousshaikh@gmail.com">drfirdousshaikh@gmail.com</a></div><div class="footer-social">
-            <div>LinkedIn: <a href="https://www.linkedin.com/in/drfirdousshaikh" target="_blank" rel="noopener noreferrer">drfirdousshaikh</a></div>
-            <div><a href="https://www.instagram.com/firdous1915" target="_blank" rel="noopener noreferrer">Instagram @firdous1915</a></div>
-            <div><a href="https://www.instagram.com/shaikhdrfirdous" target="_blank" rel="noopener noreferrer">Instagram @shaikhdrfirdous</a></div>
-            <!-- FACEBOOK-SLOT: replace FB_URL with the real page URL and remove the comment markers
-            <a href="FB_URL" target="_blank" rel="noopener noreferrer">Facebook</a> -->
+
+          <div class="footer-social-wrap">
+            <span class="footer-social-title">Connect</span>
+            <div class="footer-social-grid">
+              <a href="https://www.linkedin.com/in/drfirdousshaikh" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://www.instagram.com/firdous1915" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram @firdous1915">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                <span>@firdous1915</span>
+              </a>
+              <a href="https://www.instagram.com/shaikhdrfirdous" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram @shaikhdrfirdous">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                <span>@shaikhdrfirdous</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="footer-disclaimer">
-        <p><em>This website gives general information and is not a substitute for medical advice. For emergencies, please go to the nearest hospital.</em></p>
+        <p><em>Medical Disclaimer: This website provides general educational information and is not a substitute for professional medical advice, diagnosis, or treatment. For acute emergencies, please proceed immediately to the nearest hospital emergency room.</em></p>
       </div>
 
       <div class="footer-bottom">
         <div>&copy; 2026 Dr. Firdous Shaikh. All rights reserved.</div>
-        <div>
+        <div style="display: flex; gap: 1rem; align-items: center;">
           <a href="../../privacy-policy/">Privacy Policy</a> &bull;
-          <a href="../../contact/">Contact</a>
+          <a href="../../contact/">Contact &amp; Appointments</a>
         </div>
       </div>
     </div>
