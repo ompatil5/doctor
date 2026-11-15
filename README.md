@@ -22,7 +22,7 @@ Built in accordance with **Indian Medical Council (NMC & MMC)** professional con
   - Gold: `#D4AF37` (primary button background, borders, thin accents) & `#C29E2C` (hover)
   - Border line: `#E6E2D5`
   - High-contrast rule: Gold text is strictly prohibited on white backgrounds; gold text is only permitted on dark green backgrounds. Primary buttons feature dark green text on gold for WCAG AA contrast.
-- **Medical Compliance:** Strictly devoid of testimonials, outcome claims, promotional superlatives ("best", "top", "leading", "No. 1"), commercial guarantees, and institutional logos. Uses "remission" instead of "reversal" in clinical body copy and includes the statutory medical disclaimer on every page.
+- **Medical Compliance:** Strictly devoid of testimonials, outcome claims, promotional superlatives ("best", "top", "leading", "No. 1"), commercial guarantees, and institutional logos. Uses "remission" instead of "reversal" in clinical body copy. General medical disclaimer removed per doctor instruction.
 - **Third-Person Editorial Style:** All copy is written in third person referencing *"Dr. Firdous Shaikh"* on first mention and *"Dr. Shaikh"* subsequently, avoiding gendered pronouns (*she/her/he/his*) until client confirmation.
 - **Practice Locations:**
   - **Jyoti Clinic:** Hill-N-Dale Building, 3rd Floor, Hill Road, Near Bandra Police Station, Above Abhudhaya Bank, Bandra (West), Mumbai 400050. Timings: Monday/Wednesday/Friday 6pm to 9pm.

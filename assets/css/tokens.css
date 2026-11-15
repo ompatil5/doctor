@@ -1,6 +1,6 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    Design Tokens & Font Declarations
-   Dr. Firdous Shaikh — Diabetologist & Metabolic Specialist
+   Dr. Firdous Shaikh | Diabetologist & Metabolic Specialist
    ========================================================================== */
 
 /* Self-Hosted Fonts (WOFF2) */
@@ -21,7 +21,7 @@
 }
 
 :root {
-  /* White, Gold and Green Palette per Client Standards — Elevated Luxury Medical Aesthetic */
+  /* White, Gold and Green Palette per Client Standards | Elevated Luxury Medical Aesthetic */
   --bg: #FFFFFF;           /* main background: pure crisp white */
   --surface: #FFFFFF;      /* pure clean white card background */
   --surface-soft: #FAF7EE; /* faint gold-tinted warm alternate surface */
@@ -79,11 +79,11 @@
   --todo-line: #F59E0B;
   
   /* Geometry & Elevation */
-  --radius: 12px;
-  --radius-sm: 8px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
-  --radius-pill: 9999px;
+  --radius: 6px;
+  --radius-sm: 4px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-pill: 6px;
   
   --shadow-xs: 0 1px 3px rgba(20, 69, 47, 0.04);
   --shadow-sm: 0 2px 8px -2px rgba(20, 69, 47, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03);

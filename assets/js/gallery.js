@@ -1,6 +1,6 @@
-/**
+﻿/**
  * Accessible Photo Gallery with Category Filters, Modal Lightbox, and Touch Gestures
- * Dr. Firdous Shaikh — Diabetologist, Thyroid and Weight Management Physician
+ * Dr. Firdous Shaikh | Diabetologist, Thyroid and Weight Management Physician
  */
 document.addEventListener('DOMContentLoaded', function () {
   var filterButtons = document.querySelectorAll('.gallery-filter-btn');

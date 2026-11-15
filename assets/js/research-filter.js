@@ -1,6 +1,6 @@
-/**
+﻿/**
  * Research and Publications Category / Theme Filter
- * Dr. Firdous Shaikh — Diabetologist & Metabolic Specialist
+ * Dr. Firdous Shaikh | Diabetologist & Metabolic Specialist
  */
 document.addEventListener('DOMContentLoaded', function () {
   var filterButtons = document.querySelectorAll('.filter-btn');
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
 
-      // Automatically open accordion sections containing matching items
+      // Automatically open accordion sections or toggle academic sections containing matching items
       if (filter !== 'all') {
         document.querySelectorAll('.research-list details').forEach(function (details) {
           var hasVisible = details.querySelector('.research-card:not([style*="display: none"])');
@@ -43,6 +43,19 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         });
       }
+
+      // Show/hide academic sections based on visible cards
+      document.querySelectorAll('.academic-section').forEach(function (sec) {
+        if (filter === 'all') {
+          sec.style.display = '';
+        } else {
+          var cards = sec.querySelectorAll('.research-card');
+          if (cards.length > 0) {
+            var hasVisible = sec.querySelector('.research-card:not([style*="display: none"])');
+            sec.style.display = hasVisible ? '' : 'none';
+          }
+        }
+      });
     });
   });
 });
