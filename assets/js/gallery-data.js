@@ -2,10 +2,10 @@
 window.GALLERY_ITEMS = [
   {
     "id": 1,
-    "cat": "camps",
-    "badge": "Community Screening",
-    "title": "Mumbai Police Health Screening Drive",
-    "desc": "Conducting preventive blood sugar and hypertension screening for on-duty police personnel.",
+    "cat": "conferences",
+    "badge": "Panel Discussion",
+    "title": "Panel Discussion with Mr. Milind Soman on the Importance of Exercise",
+    "desc": "Panel discussion with fitness advocate Mr. Milind Soman on the importance of exercise and lifestyle in metabolic care, September 2025.",
     "webp": "1.webp",
     "jpeg": "1.jpeg",
     "w": 1077,
