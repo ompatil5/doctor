@@ -2948,20 +2948,21 @@
   display: block;
 }
 /* Doctor-Centric Focal Positioning for Slideshow */
-.about-slide.slide-pos-1 img, .about-slide-pos-1 img { object-position: 50% 48% !important; }
-.about-slide.slide-pos-2 img { object-position: 22% 28% !important; }
-.about-slide.slide-pos-3 img, .about-slide-pos-3 img { object-position: 62% 18% !important; }
-.about-slide.slide-pos-4 img, .about-slide-pos-4 img { object-position: 63% 38% !important; }
-.about-slide.slide-pos-5 img { object-position: 74% 48% !important; }
-.about-slide.slide-pos-6 img, .about-slide-pos-6 img { object-position: 80% 42% !important; }
-.about-slide.slide-pos-7 img { object-position: 80% 20% !important; }
-.about-slide.slide-pos-8 img { object-position: 60% 25% !important; }
-.about-slide.slide-pos-10 img { object-position: 47% 28% !important; }
-.about-slide.slide-pos-11 img { object-position: 50% 34% !important; }
-.about-slide.slide-pos-12 img { object-position: 30% 22% !important; }
-.about-slide.slide-pos-13 img { object-position: 53% 20% !important; }
-.about-slide.slide-pos-14 img { object-position: 46% 32% !important; }
-.about-slide.slide-pos-15 img, .about-slide-pos-15 img { object-position: 50% 55% !important; }
+.about-slide picture { display: block; width: 100%; height: 100%; }
+.about-slide.slide-pos-1 img { object-position: 50% 32% !important; }
+.about-slide.slide-pos-2 img { object-position: 53% 20% !important; }
+.about-slide.slide-pos-3 img { object-position: 30% 22% !important; }
+.about-slide.slide-pos-4 img { object-position: 62% 18% !important; }
+.about-slide.slide-pos-5 img { object-position: 50% 34% !important; }
+.about-slide.slide-pos-6 img { object-position: 63% 38% !important; }
+.about-slide.slide-pos-7 img { object-position: 50% 55% !important; }
+.about-slide.slide-pos-8 img { object-position: 46% 32% !important; }
+.about-slide.slide-pos-9 img { object-position: 50% 28% !important; }
+.about-slide.slide-pos-10 img { object-position: 22% 28% !important; }
+.about-slide.slide-pos-11 img { object-position: 60% 25% !important; }
+.about-slide.slide-pos-12 img { object-position: 80% 20% !important; }
+.about-slide.slide-pos-13 img { object-position: 80% 42% !important; }
+.about-slide.slide-pos-14 img { object-position: 74% 48% !important; }
 .about-slideshow-indicators {
   position: absolute;
   bottom: 14px;
